@@ -1,6 +1,7 @@
 /*
 Archivo estilos comunes portal Easy.
 */
+
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Tipografía general. Es necesario agregar en el header el link a la fuente Open Sans de google */
@@ -126,29 +127,51 @@ body{
 
 /* Categorías */
 
-
-.collapsible{
+.categoryNavWidget.collapsible{
 	background-color: transparent !important; 
 }
 
-.collapsible h3{
+.categoryNavWidget.collapsible h3{
+	background: #fff !important;
+	color: #000 !important;
+	font-weight: bold !important;
+}
+
+/* Se esconde pseudo-selector ::before principal de acuerdo a diseño*/
+.categoryNavWidget.collapsible h3::before{
+	display: none !important;
+}
+
+.categoryNavWidget.collapsible>.content{
+	background-color: #e8e9e6 !important;
+}
+.categoryNavWidget.collapsible>.content ul li{
+	border: #fff 1px solid !important;
+}
+
+/* Subcategorías */
+
+.facetWidget.collapsible{
+	background-color: transparent !important; 
+}
+
+.facetWidget.collapsible h3{
 	background: #e8e9e6 !important;
 	color: #000 !important;
 	font-weight: bold !important;
 }
 
 /* Se esconde pseudo-selector ::before principal de acuerdo a diseño*/
-.collapsible h3::before{
+.facetWidget.collapsible h3::before{
 	display: none !important;
 }
 
-.collapsible>.content{
+.facetWidget.collapsible>.content{
 	background-color: #e8e9e6 !important;
 }
-.collapsible>.content ul li{
+.facetWidget.collapsible>.content ul li{
 	border: 0 !important;
 }
-
 
 div.widget_left_nav > div.content_left_border > div.content_right_border > div.content div.content_section div.section_list {
 	background-color: #e8e9e6 !important;
