@@ -1,0 +1,500 @@
+/*
+Archivo estilos comunes portal Easy.
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Tipografía general. Es necesario agregar en el header el link a la fuente Open Sans de google */
+body{
+	font-family: 'Open Sans', sans-serif !important; 
+}
+
+
+/* Header */
+
+#headerRow2{
+	min-height: 40px !important;	
+	background: #e2e4e3 !important; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #e2e4e3 0%, #b5b7b7 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e4e3), color-stop(100%,#b5b7b7)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #e2e4e3 0%,#b5b7b7 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e3', endColorstr='#b5b7b7',GradientType=0 ) !important; /* IE6-9 */
+	border-top: 0 !important; 
+	border-bottom: 0 !important; 
+}
+
+#departmentsMenu{
+	border-left: #fff 2px solid; 
+}
+#departmentsMenu li{
+	border-right: #fff 2px solid; 
+}
+.departmentButton{
+	background: none !important; 
+	border: 0 !important;
+	color: #fff !important;
+}
+
+.departmentButton span{
+	color: #000 !important;
+	font-weight: bold !important;
+	background: none !important; 
+	border: 0 !important;
+}
+
+#widget_minishopcart{
+	background: none !important;
+	border: 0 !important;
+}
+
+/* Se esconde la flecha, ya que est{a definida mediante css, no html */
+#widget_minishopcart:after{
+	display: none !important; 
+}
+
+/* Buscador */
+
+#searchBar {
+  background: #e2e4e3 !important; /* Old browsers */ 
+  background: -moz-linear-gradient(top, #e2e4e3 0%, #b5b7b7 100%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e4e3), color-stop(100%,#b5b7b7)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #e2e4e3 0%,#b5b7b7 100%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e3', endColorstr='#b5b7b7',GradientType=0 ) !important; /* IE6-9 */
+  border-radius: 5px;
+}
+
+/* Se corrigen márgenes para igualarlo al diseño aprobado */
+#searchBox{
+	border: 0 !important;
+	margin: 5px !important;
+	height: 28px !important;
+	background: none !important;
+	border-radius: 0 !important;
+}
+/* Se corrige padding para igualarlo al diseño aprobado */
+
+#searchTermWrapper{
+	margin-top: 0px !important;
+	padding: 5px 0 !important;
+	background-color: #fff;
+}
+/* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
+#searchTermWrapper > input {
+	background-color: #fff !important;
+	padding: 0 3px; 
+	margin-left: 5px !important;
+	width: 95% !important;
+}
+/* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
+#searchFilterButton{
+	margin-top: -7px !important;
+  	border-right: #fff 2px solid !important;
+  	border-left: 0 !important;
+  	padding-top: 14px !important;
+  	height: 23px !important;
+}
+/* Se corrigen márgenes para igualarlo al diseño aprobado */
+.submitButton{
+	margin: 5px 9px 9px 10px !important;
+	border: 0 !important; 
+}
+
+/* Footer */
+#footer{
+	background: #ebeced !important;
+	background-image: none !important
+}
+/* Se esconde elemento innecesario. Es posible eliminarlo via html*/
+#footer .section > .header:before {
+	display: none !important;
+}
+#footer .section > .header {
+	border-bottom: #c2c4c4 2px solid !important;
+	color: #231f20 !important;
+}
+
+#footer .section > ul {
+	color: #2b2e31 !important;
+	padding-left: 0 !important;
+}
+
+
+/* Categorías */
+
+
+.collapsible{
+	background-color: transparent !important; 
+}
+
+.collapsible h3{
+	background: #e8e9e6 !important;
+	color: #000 !important;
+	font-weight: bold !important;
+}
+
+/* Se esconde pseudo-selector ::before principal de acuerdo a diseño*/
+.collapsible h3::before{
+	display: none !important;
+}
+
+.collapsible>.content{
+	background-color: #e8e9e6 !important;
+}
+.collapsible>.content ul li{
+	border: 0 !important;
+}
+
+
+div.widget_left_nav > div.content_left_border > div.content_right_border > div.content div.content_section div.section_list {
+	background-color: #e8e9e6 !important;
+}
+
+/* Breadcrumbs*/
+div#widget_breadcrumb > ul li a{
+	color: #df3136 !important;
+}
+
+/* Filtros de búsqueda */
+.optionContainer > .title {
+	border-radius: 0 !important;
+	background: #df303c !important;
+  	color: #fff !important;
+  	margin: 0 !important; 
+}
+
+.optionContainer .arrow{
+	float: right !important;
+}
+
+.facetSelectContainer{
+	background-color: #e8e9e6 !important;
+}
+
+
+#low_price_input, #high_price_input{
+	background-color: #bcbebb !important;
+	border: 0 !important; 
+}
+
+/* Navegación productos */
+.pageControl.number > a{
+	border: 0 !important;
+	background-color: #d5d6d2 !important;
+}
+.pageControl.number > a.active, .pageControl.number > a.selected{
+	background: #df303c !important;
+}
+
+/* Se cambia posición para coincidir con diseño */ 
+.view_controls{
+  float: left !important;
+}
+
+
+
+/* Página producto */
+
+.main_header{
+	color: #000 !important;
+	font-size: 24px !important;
+}
+
+
+div.namePartPriceContainer > span.sku{
+	font-size: 16px !important;
+}
+
+/* Se cambia rl margen derecho para posicionarlo de acuerdo al diseño */
+div.namePartPriceContainer > div > span.price{
+	font-size: 25px !important;
+	color: #df3136 !important;
+}
+.product_text, div.namePartPriceContainer, .clear_float.attBorder, .left.available{
+	border: 0 !important; 
+}
+/* Se cambian los márgenes para coincidir con el diseño */
+.color_swatch_list{
+	float: left !important;
+}
+
+.color_swatch_list .color_swatch_selected, .color_swatch_list .color_swatch:hover, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch_selected, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch:hover{
+	box-shadow: 0 0 0 0 !important;
+}
+/* Se cambia ancho y posición para coincidir con diseño aprobado */
+.quantity_section{
+	float: left !important;
+}
+.tab_header >div {
+	border: #e8e9e6 1px solid !important;
+	background: #e8e9e6 !important;
+	color: #000 !important;
+}
+
+.tab_container{
+	outline: none !important;
+}
+
+.button.primary, .basicButton{
+	background: #ef4036 !important; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #ef4036 0%, #c01f2e 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef4036), color-stop(100%,#c01f2e)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #ef4036 0%,#c01f2e 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4036', endColorstr='#c01f2e',GradientType=0 ) !important; /* IE6-9 */
+	border: #c3c6c4 1px solid !important;
+	color: #fff !important;
+	border-bottom: #fff 1px solid !important;
+	border-radius: 0 !important;
+	font-weight: bold;
+	background-color: #fff !important;
+}
+
+.basicButton span{
+	border: 0px !important;
+    border-radius: 0px !important;
+}
+
+ .tab_header .active_tab, .tab_header .tab_container:hover{
+	border: #c3c6c4 1px solid !important;
+	color: #000 !important;
+	border-bottom: #fff 1px solid !important;
+	border-radius: 0 !important;
+	font-weight: bold;
+	background-color: #fff !important;
+}
+
+
+.shopperActions .dropdown_primary{
+	background: none !important;
+	border: 0 !important; 
+}
+
+.drop{
+	display: none !important;
+}
+
+
+.tab{
+	border-radius: 0 !important;
+	border: #c3c6c4 1px solid !important;
+}
+
+
+/* Recuadros productos */ 
+.compare_target{
+	background-color: #bcbebb !important;
+}
+
+.grid_mode.grid li{
+	border: #c3c6c4 1px solid !important;
+    box-sizing: border-box !important; 
+}
+
+.product_name a{
+	font-size: 14px !important;
+	color: #000 !important;
+	font-weight: bold !important; 
+}
+/* Se esconde separador de grilla para coincidir con diseño */
+.catEntryGrid_border{
+	display: none !important;
+}
+
+.product_price .price{
+	font-size: 16px !important;
+	float: right !important;
+	color: #df3136 !important;
+	
+}
+
+
+/* Comparador */
+.widget_product_compare .compare_heading {
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+
+#compareBackLink{
+	color: #252b29;
+	background: #e1e3e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #e1e3e2 0%, #e1e3e2 0%, #aeafae 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e3e2), color-stop(0%,#e1e3e2), color-stop(100%,#aeafae)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e2', endColorstr='#aeafae',GradientType=0 ); /* IE6-9 */
+}
+
+
+.widget_product_compare > .middle > .left_border > .right_border > .content .zebra:nth-of-type(1){
+	background-color: #555b59 !important;
+	color: #fff !important;
+	text-align: center;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row_border{
+	border: 0 !important;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .heading{
+	background-color: #e8e9e6 !important;
+	color: #000 !important;
+	font-size: 12px !important;
+	border: #fff 3px solid;
+}
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .heading:empty{
+	background-color: #fff !important;
+}
+
+.row{
+	background: #fff !important;
+}
+
+.row .item{
+	color: #000;
+}
+
+.button_primary{
+	color: #fff !important;
+	border: 0 !important; 
+	background: #ef4036 !important; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #ef4036 0%, #c01f2e 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef4036), color-stop(100%,#c01f2e)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #ef4036 0%,#c01f2e 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4036', endColorstr='#c01f2e',GradientType=0 ) !important; /* IE6-9 */
+	border-radius: 0 !important;
+}
+
+.button_primary .button_text{
+	border: 0 !important;
+	font-size: 16px !important;
+}
+
+.button_secondary{
+	color: #252b29 !important;
+	background: #e1e3e2 !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #e1e3e2 0%, #e1e3e2 0%, #aeafae 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e3e2), color-stop(0%,#e1e3e2), color-stop(100%,#aeafae)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #e1e3e2 0%,#e1e3e2 0%,#aeafae 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e2', endColorstr='#aeafae',GradientType=0 ) !important; /* IE6-9 */
+	border: 0 !important;
+	border-radius: 0 !important; 
+}
+
+.button_secondary .button_text{
+	font-size: 14px !important;
+	border: 0 !important; 
+}
+
+.row .item .button_primary .button_text{
+	border: 0 !important;
+}
+
+.row .item .button_primary .button_text span{
+	font-size: 14px !important;
+	font-weight: normal;
+}
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .item > .price{
+	color: #000 !important;
+	font-weight: normal !important;
+}
+
+
+/* Home */
+.textContainer .button{
+	background: #df303c !important; 
+}
+
+
+/* Checkout */
+
+#box .main_header{
+	background: #df303c !important; 
+	color: #fff !important;	
+}
+#box .main_header .main_header_text{
+	color: #fff !important;	
+}
+#box .main_header .left_corner, #box .main_header .right_corner, .left_corner_straight, .right_corner_straight{
+	display: none;
+}
+
+.button_footer_line{
+	float: right !important;
+}
+
+/* Carro de compras */
+
+.shopping_cart_box >div:first-child{
+	background: #df303c !important; 
+	color: #fff !important;	
+}
+
+.myaccount_header{
+	border-top: none !important;
+}
+
+#order_details tr.nested th{
+	font-size: 14px;
+	background: #df303c !important; 
+	color: #fff !important;	
+	text-align: center !important;
+}
+
+#order_details .img p a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+
+#order_details .img >a>img{
+	border: #c3c6c4 1px solid !important;
+}
+
+#order_details .dropdown_primary > .button > .content{
+	background: none !important; 
+}
+/* Se esconde borde. tb se puede eliminar vía html.*/
+#order_details .dropdown_primary > .button > .left_border, #order_details .dropdown_primary > .button > .right_border{
+	display: none;
+}
+
+
+/* Shipping and billing */
+.myaccount_header{
+	background: #df303c !important; 
+	color: #fff !important;	
+}
+
+
+/* Headers registro / Checkout */
+
+.registration_header{
+	color: #fff !important;
+}
+.headingtext{
+	color: #000 !important;
+	font-weight: bold !important;
+}
+
+/* Estilos inputs*/
+.sign_in_registration .content input, .sign_in_registration .align input, .sign_in_registration .content .column select{
+	background-color: #bcbebb !important;
+	border: 0 !important;
+}
