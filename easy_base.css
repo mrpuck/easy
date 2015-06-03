@@ -147,6 +147,7 @@ body{
 }
 .categoryNavWidget.collapsible>.content ul li{
 	border: #fff 1px solid !important;
+	font-weight: bold !important;
 }
 
 /* Subcategorías */
@@ -171,6 +172,7 @@ body{
 }
 .facetWidget.collapsible>.content ul li{
 	border: 0 !important;
+	font-weight: bold !important;
 }
 
 div.widget_left_nav > div.content_left_border > div.content_right_border > div.content div.content_section div.section_list {
@@ -521,3 +523,26 @@ div.namePartPriceContainer > div > span.price{
 	background-color: #bcbebb !important;
 	border: 0 !important;
 }
+
+
+/* Panel de control usuario */
+.widget_left_nav .header.bottom_border, .myaccount_section_header{
+	background: #df303c !important; 
+	color: #fff !important;	
+}
+
+.widget_left_nav .header.bottom_border span, .myaccount_section_header span{
+	color: #fff !important;	
+}
+.widget_left_nav .content_left_border{
+	border: 0 !important;
+}
+
+div.widget_left_nav > div.content_left_border > div.content_right_border > div.content div.content_section div.section_list > ul > li > a{
+	color: #000 !important;
+}
+
+.my_account .body, .myaccount_desc_title{
+	color: #000 !important;
+}
+
