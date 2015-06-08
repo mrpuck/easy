@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<!-- BEGIN TopCategoriesDisplay.jsp -->
+<html class="dj_gecko dj_contentbox" xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#" xmlns:waistate="http://www.w3.org/2005/07/aaa" xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Welcome to AuroraDemo</title>
+		<meta name="description" content="Shop AuroraDemo online. Commerce Model Store entity">
+		<meta name="keywords" content="AuroraDemo Commerce Model Store entity">
+		<meta name="pageName" content="HomePage">
+	    <link rel="canonical" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo">
+		
+		<!--Main Stylesheet for browser -->
+		<link rel="stylesheet" href="home_files/common1_1.css" type="text/css" media="screen">
+		<!-- Style sheet for print -->
+		<link rel="stylesheet" href="home_files/print.css" type="text/css" media="print">
+		
+		<!-- Include script files -->
+		
+<!-- BEGIN CommonJSToInclude.jspf -->
+
+<!-- Style sheet for RWD -->
+<link rel="stylesheet" href="home_files/styles_005.css" type="text/css">
+<!--[if IE 8]>
+<link rel="stylesheet" href="/wcsstore/AuroraDemo/css/stylesIE8.css" type="text/css" />
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="shortcut icon" href="http://localhost/wcsstore/AuroraDemo/images/icon-favicon.ico" mce_href="/wcsstore/AuroraDemo/images/icon-favicon.ico">
+		
+	</head>
+	<body>
+
+		
+
+<span class="spanacce" style="display:none" id="MessageArea_ACCE_Title">Message Dialog</span>
+<div id="MessageArea" class="store_message" role="alert" aria-labelledby="MessageArea_ACCE_Title">
+	<div id="msgpopup_content_wrapper" class="content">
+		<a id="clickableErrorMessageImg" role="button" class="close tlignore" href="javascript:MessageHelper.hideMessageArea();" title="Close">
+			<div class="close_text">Close</div>
+			<div class="close_icon"></div>
+			<div class="clear_float"></div>
+		</a>
+		
+		<div class="clear_float"></div>
+		
+		<div class="message">
+			<div class="message_icon">
+				<img id="error_icon" style="display:none;" class="error_icon" src="home_files/error_icon.txt" alt="">
+				<img id="success_icon" style="display:none;" class="error_icon" src="home_files/success_icon.txt" alt="">
+			</div>
+			<div class="message_text" role="region" aria-required="true" aria-labelledby="MessageArea">
+				<span id="ErrorMessageText">
+					
+				</span>
+			</div>
+			<div class="clear_float"></div>
+		</div>		
+	</div>
+</div>
+<span class="spanacce" id="ariaMessage_ACCE_Label" style="display:none">Display Update Message</span>
+<span class="spanacce" role="region" aria-labelledby="ariaMessage_ACCE_Label" id="ariaMessage" aria-live="assertive" aria-atomic="true" aria-relevant="additions"></span>
+
+		<div id="page">
+			<div id="headerWrapper">
+				
+
+
+<div id="header" role="banner">
+	<!-- Elemento nuevo -->
+	<div class="preHeader">
+		<ul>
+			<!-- Elemento nuevo. Esconder cuando el usuario no esté logueado -->
+			<li class="login"><a href="" >Hola, Usuario</a></li>
+
+			<li class="encuentra"><a href="" >Encuentra tu tienda</a></li>
+			<li class=""><a href="" >Ayuda</a></li>
+		</ul>
+		<div class="clear_float"></div>
+	</div>
+	<!-- fin -->
+	<div id="headerRow1">
+		<div id="logo">
+			
+			
+			<div id="contentRecommendationWidget_HeaderStoreLogo_Content" class="contentRecommendationWidget">
+
+
+<div class="left_espot centered">
+	
+	
+					<a id="contentLink_1_HeaderStoreLogo_Content" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=13960&amp;intv_id=0&amp;storeId=10851&amp;catalogId=10701&amp;langId=-1&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo" title="AuroraDemo">
+						<img id="contentImage_1_HeaderStoreLogo_Content" src="home_files/img/logo.png" alt="AuroraDemo">
+					</a>
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp -->
+			
+		</div>
+
+<a id="searchButton" href="#" role="button" data-toggle="searchBar" aria-label="Search" title="Search"><span id="searchButton_ACCE_Label" class="spanacce">Search</span></a>
+
+<div id="searchBar" data-parent="header">
+	
+	<form id="searchBox" name="CatalogSearchForm" method="get" action="http://localhost/webapp/wcs/stores/servlet/SearchDisplay">
+		<input id="categoryId" name="categoryId" type="hidden">
+		<input name="storeId" value="10851" type="hidden">
+		<input name="catalogId" value="10701" type="hidden">
+		<input name="langId" value="-1" type="hidden">
+		<input name="sType" value="SimpleSearch" type="hidden">
+		<input name="resultCatEntryType" value="2" type="hidden">
+		<input name="showResultsPage" value="true" type="hidden">
+		<input name="searchSource" value="Q" type="hidden">
+		<input name="pageView" value="" type="hidden">
+		<input name="beginIndex" value="0" type="hidden">
+		<input name="pageSize" value="12" type="hidden">
+
+		<div id="searchTermWrapper"><label id="searchFormLabel" for="SimpleSearchForm_SearchTerm">Search</label><input id="SimpleSearchForm_SearchTerm" name="searchTerm" placeholder="Search" autocomplete="off" type="text"></div>
+		<!-- Start SearchDropdownWidget -->
+		<div id="searchDropdown">
+			<div id="autoSuggest_Result_div">
+				<div id="widget_search_dropdown">
+					<!-- Main Content Area -->
+					<div id="AutoSuggestDiv" role="list" aria-required="true" onmouseover="SearchJS.autoSuggestHover = true;" onmouseout="SearchJS.autoSuggestHover = false; document.getElementById('SimpleSearchForm_SearchTerm').focus();">
+						<ul><li><span id="autoSuggestDynamic_Result_div_ACCE_Label" class="spanacce">Suggested keywords menu</span>
+						<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestDynamic_Result_div" controllerid="AutoSuggestDisplayController" id="autoSuggestDynamic_Result_div" role="list" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestDynamic_Result_div_ACCE_Label" lang="en">
+						
+						</div></li></ul>
+						<ul><li><div id="autoSuggestStatic_1"></div></li></ul>
+						<ul><li><div id="autoSuggestStatic_2"></div></li></ul>
+						<ul><li><div id="autoSuggestStatic_3"></div></li></ul>
+						<ul><li><div id="autoSuggestHistory"></div></li></ul>
+						<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851" onclick="SearchJS.gotoAdvancedSearch('http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851');return false;" id="advancedSearch"><div>Advanced Search</div></a></li></ul>
+					</div>
+					<!-- End content Section -->
+				</div>
+			</div>
+		</div>
+		<!-- End SearchDropdownWidget -->
+		<!-- Refresh area to retrieve cached suggestions -->
+		<span id="autoSuggestCachedSuggestions_div_ACCE_Label" class="spanacce">Suggested site content and search history menu</span>
+		<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestCachedSuggestions_div" controllerid="AutoSuggestCachedSuggestionsController" id="autoSuggestCachedSuggestions_div" role="region" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestCachedSuggestions_div_ACCE_Label" lang="en"></div>
+		<div class="separator"></div>
+		<a href="#" class="submitButton" role="button" aria-label="Search" title="Search"><span id="submitButton_ACCE_Label" class="spanacce">Search</span></a>
+	</form>
+</div>
+<!-- Elemento nuevo -->
+<div class="contactInfo">
+	<ul>
+		<li class="phone">600 600 3279</li>
+		<li class="mobile">02 2213 1652</li>
+	</ul>
+	<p>Servicio al cliente & Fono Compras</p>
+</div>
+
+		<ul id="quickLinksBar"><li class="">
+					<a id="signInOutQuickLink_alt" href="https://localhost/webapp/wcs/stores/servlet/LogonForm?catalogId=10701&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10851">
+						<img src="home_files/img/register.png" /><br />
+						Regístrate / Crear cuenta
+					</a>
+				</li><li class="separator-false">
+			
+
+
+<span id="MiniShoppingCart_Label" class="spanacce">Shopping <br>Cart</span>
+<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" id="MiniShoppingCart" widgetid="MiniShoppingCart" controllerid="MiniShoppingCartController" ariamessage="Shopping Cart Display Updated" arialiveid="ariaMessage" role="region" aria-labelledby="MiniShoppingCart_Label" lang="en">
+	
+
+
+<a id="widget_minishopcart" href="#" role="button" onclick="javascript:toggleMiniShopCartDropDown('widget_minishopcart','quick_cart_container','orderItemsList');" onkeypress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');" aria-label="Shopping Cart">
+	<img src="home_files/img/redCart.png" /><br />
+	<!-- Elemento nuevo -->
+	4 Items - $596.000
+</a>
+
+<div id="placeHolder"></div>
+<div id="MiniShopCartProductAdded">
+	<div id="MiniShopCartProductAddedWrapper" style="display:none;" aria-labelledby="cartDropdownMessage">
+		<div id="widget_minishopcart_popup_1">
+			<div id="cartDropdown">
+				<h3 id="cartDropdownMessage">This item has been successfully added:</h3>
+				<a id="MiniShopCartCloseButton_2" href="javascript:dijit.byId('MiniShopCartProductAdded').hide();" class="closeButton">Close</a>
+				<div class="content">
+					<div class="products added">
+						
+					</div>
+				</div>
+				<div class="footer">
+					<a id="GotoCartButton2" href="http://localhost/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10701&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10851&amp;URL=https%3A%2F%2Flocalhost%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FAjaxOrderItemDisplayView%3F" class="basicButton">
+						<span>Go to Cart</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<input id="currentOrderQuantity" value="0" type="hidden">
+<input id="currentOrderAmount" value="0.00" type="hidden">
+<input id="currentOrderCurrency" value="USD" type="hidden">
+<input id="currentOrderLanguage" value="-1" type="hidden">
+<input id="currentOrderId" value="" type="hidden">
+	
+</div>
+
+<div role="group" title="" class="dijitContentPane" id="MiniShopCartContents" dojotype="wc.widget.RefreshArea" widgetid="MiniShopCartContents" controllerid="MiniShopCartContentsController" aria-labelledby="MiniShoppingCart_Label" lang="en">
+</div>
+
+
+		</li></ul>
+	</div>
+
+	<div id="headerRow2">
+		<a id="departmentsButton" href="#" class="basicButton" role="button" aria-haspopup="true" data-toggle="departmentsMenu"><span>Departments</span></a><div id="wc_widget_RefreshArea_0" role="group" title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="wc_widget_RefreshArea_0" controllerid="departmentSubMenu_Controller" aria-labelledby="departmentsButton" lang="en">
+		<ul id="departmentsMenu" role="menu" class="active" data-parent="header" aria-labelledby="departmentsButton"><li class="active">
+			<a id="departmentButton_10701" href="#" class="departmentButton selected" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10701"><span>Apparel</span></a>
+			<div id="departmentMenu_10701" class="departmentMenu active" role="menu" data-parent="departmentsMenu" data-id="10701" aria-label="Apparel">
+				<div class="header">
+					<a id="departmentLink_10701" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="link menuLink" role="menuitem" tabindex="-1">Apparel</a>
+					<a id="departmentToggle_10701" href="#" class="toggle" role="button" data-toggle="departmentMenu_10701" aria-labelledby="departmentLink_10701"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10701_10705" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls" class="menuLink" role="menuitem" tabindex="-1">Girls</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10705_10720" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10721" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/pants-10721--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10722" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/skirts-10722--1" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10723" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/tops-10723--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10704" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys" class="menuLink" role="menuitem" tabindex="-1">Boys</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10704_10724" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/pants-10724--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10704_10725" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/tops-10725--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10704_10726" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/shoes-10726--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10703" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women" class="menuLink" role="menuitem" tabindex="-1">Women</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10703_10706" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/dresses" class="menuLink" role="menuitem" tabindex="-1">Dresses</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10707" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/blouses" class="menuLink" role="menuitem" tabindex="-1">Blouses</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10708" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/sweaters" class="menuLink" role="menuitem" tabindex="-1">Sweaters</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10709" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/skirts" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10710" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/pants" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10711" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/shoes" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10712" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/handbags" class="menuLink" role="menuitem" tabindex="-1">Handbags</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10713" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/accessories" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10702" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men" class="menuLink" role="menuitem" tabindex="-1">Men</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10702_10714" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/jackets" class="menuLink" role="menuitem" tabindex="-1">Jackets</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10715" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shirts" class="menuLink" role="menuitem" tabindex="-1">Shirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10716" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/suits" class="menuLink" role="menuitem" tabindex="-1">Suits</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10717" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/pants-10717--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10718" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/accessories-10718--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10719" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shoes-10719--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li></ul>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10727" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10727"><span>Electronics</span></a>
+			<div id="departmentMenu_10727" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10727" aria-label="Electronics">
+				<div class="header">
+					<a id="departmentLink_10727" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="link menuLink" role="menuitem" tabindex="-1">Electronics</a>
+					<a id="departmentToggle_10727" href="#" class="toggle" role="button" data-toggle="departmentMenu_10727" aria-labelledby="departmentLink_10727"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10727_10728" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/accessories-10728--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10729" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/tablets-10729--1" class="menuLink" role="menuitem" tabindex="-1">Tablets</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10730" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/laptops-10730--1" class="menuLink" role="menuitem" tabindex="-1">Laptops</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10731" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/desktops" class="menuLink" role="menuitem" tabindex="-1">Desktops</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10732" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/components" class="menuLink" role="menuitem" tabindex="-1">Components</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10733" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10733"><span>Grocery</span></a>
+			<div id="departmentMenu_10733" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10733" aria-label="Grocery">
+				<div class="header">
+					<a id="departmentLink_10733" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="link menuLink" role="menuitem" tabindex="-1">Grocery</a>
+					<a id="departmentToggle_10733" href="#" class="toggle" role="button" data-toggle="departmentMenu_10733" aria-labelledby="departmentLink_10733"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10733_10734" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/dairy" class="menuLink" role="menuitem" tabindex="-1">Dairy</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10735" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/fruit-10735--1" class="menuLink" role="menuitem" tabindex="-1">Fruit</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10736" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/meat" class="menuLink" role="menuitem" tabindex="-1">Meat</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10737" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/vegetables" class="menuLink" role="menuitem" tabindex="-1">Vegetables</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10738" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10738"><span>Health</span></a>
+			<div id="departmentMenu_10738" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10738" aria-label="Health">
+				<div class="header">
+					<a id="departmentLink_10738" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="link menuLink" role="menuitem" tabindex="-1">Health</a>
+					<a id="departmentToggle_10738" href="#" class="toggle" role="button" data-toggle="departmentMenu_10738" aria-labelledby="departmentLink_10738"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10738_10739" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/medicine" class="menuLink" role="menuitem" tabindex="-1">Medicine</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10738_10740" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/vitamins" class="menuLink" role="menuitem" tabindex="-1">Vitamins</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10741" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10741"><span>Home &amp; Furnishing</span></a>
+			<div id="departmentMenu_10741" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10741" aria-label="Home &amp; Furnishing">
+				<div class="header">
+					<a id="departmentLink_10741" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="link menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
+					<a id="departmentToggle_10741" href="#" class="toggle" role="button" data-toggle="departmentMenu_10741" aria-labelledby="departmentLink_10741"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10741_10742" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/bath-accessories" class="menuLink" role="menuitem" tabindex="-1">Bath Accessories</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10743" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/furniture" class="menuLink" role="menuitem" tabindex="-1">Furniture</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10744" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/kitchenware" class="menuLink" role="menuitem" tabindex="-1">Kitchenware</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10745" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/lighting" class="menuLink" role="menuitem" tabindex="-1">Lighting</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10746" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/tableware" class="menuLink" role="menuitem" tabindex="-1">Tableware</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10747" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/appliances" class="menuLink" role="menuitem" tabindex="-1">Appliances</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="hidden">
+			<a id="departmentButton_10748" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10748"><span>Newsletters &amp; Magazines</span></a>
+			<div id="departmentMenu_10748" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10748" aria-label="Newsletters &amp; Magazines">
+				<div class="header">
+					<a id="departmentLink_10748" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="link menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
+					<a id="departmentToggle_10748" href="#" class="toggle" role="button" data-toggle="departmentMenu_10748" aria-labelledby="departmentLink_10748"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10748_10749" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/magazines-10749--1" class="menuLink" role="menuitem" tabindex="-1">Magazines</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10748_10750" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/newsletters" class="menuLink" role="menuitem" tabindex="-1">Newsletters</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="allDepartmentsButton" href="#" class="departmentButton" role="button" aria-haspopup="true" data-toggle="allDepartmentsMenu"><span>All Departments</span></a>
+			<ul id="allDepartmentsMenu" class="departmentMenu" role="menu" data-parent="departmentsMenu" aria-labelledby="allDepartmentsButton"><li>
+				<a id="departmentLink_10701_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="menuLink" role="menuitem" tabindex="-1">Apparel</a>
+			</li><li>
+				<a id="departmentLink_10727_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="menuLink" role="menuitem" tabindex="-1">Electronics</a>
+			</li><li>
+				<a id="departmentLink_10733_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="menuLink" role="menuitem" tabindex="-1">Grocery</a>
+			</li><li>
+				<a id="departmentLink_10738_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="menuLink" role="menuitem" tabindex="-1">Health</a>
+			</li><li>
+				<a id="departmentLink_10741_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
+			</li><li>
+				<a id="departmentLink_10748_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
+			</li></ul>
+		</li></ul>
+		<ul class="social">
+				<li>
+					<a href=""><img src="home_files/img/facebook.png"></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/pinterest.png"></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/twitter.png"></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/instagram.png"></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/youtube.png"></a>
+				</li>
+			</ul>
+
+	</div>
+		
+
+<!-- BEGIN Search.jsp -->
+
+
+	</div>
+</div>
+
+
+
+<!-- END Header.jsp -->
+				
+			</div>
+			
+			<div id="contentWrapper">
+				<div id="content" role="main">
+					
+				
+<!-- BEGIN HomePageContainer.jsp -->
+
+
+
+<div class="rowContainer" id="container_11251">
+	<div class="row">
+		<div class="col6 acol12" data-slot-id="1"></div>
+		<div class="col6 acol12" data-slot-id="2"></div>
+	</div>
+	<div class="row">
+		<div class="col12" data-slot-id="3">
+
+<!-- BEGIN ContentCarousel.jsp -->
+
+
+<!-- BEGIN ContentCarousel_UI.jspf -->
+	
+	<div dir="ltr" widgetid="contentCarouselWidget_3_-1003_2906" id="contentCarouselWidget_3_-1003_2906" class="contentCarouselWidget carousel" data-dojo-type="wc/widget/Carousel" data-dojo-props="speed:2000" lang="en">
+		<div style="transition: all 2000ms ease 0s;" id="homeHero1-background" class="homeHero-background" data-carousel-background=""></div><div style="opacity: 0;" id="homeHero2-background" class="homeHero-background" data-carousel-background=""></div><div style="opacity: 0;" id="homeHero3-background" class="homeHero-background" data-carousel-background=""></div><div class="content" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<li>
+					<a href=""><img src="home_files/img/slide_principal.png" /></a>
+				</li>
+				<li class="hidden">
+					<a href=""><img src="home_files/img/slide_principal.png" /></a>
+				</li>
+				<li class="hidden">
+					<a href=""><img src="home_files/img/slide_principal.png" /></a>	
+				</li>
+			</ul>
+		</div>
+		
+			<a id="prevPageButton_3_-1003_2906" href="#" class="prevPageButton" data-dojo-attach-point="prevPageButton" role="button" aria-label="Show previous page"></a>
+			<a id="nextPageButton_3_-1003_2906" href="#" class="nextPageButton" data-dojo-attach-point="nextPageButton" role="button" aria-label="Show next page"></a>
+		
+		
+			<div class="pageControl dot" data-dojo-attach-point="pageControl"><a class="selected" role="button" href="#" title="Move to page 1" aria-label="Move to page 1"></a><a role="button" href="#" title="Move to page 2" aria-label="Move to page 2"></a><a role="button" href="#" title="Move to page 3" aria-label="Move to page 3"></a></div>
+		
+		
+			
+		
+	</div>
+
+
+<!-- END ContentCarousel_UI.jspf -->
+
+
+
+
+<!-- END ContentCarousel.jsp -->
+</div>
+	</div>
+	<div class="row margin-true">
+		<div class="col12 acol12" data-slot-id="4">
+			<!-- BEGIN CategoryRecommendation.jsp --><!-- BEGIN CategoryRecommendation_UI.jspf -->
+	
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="-1010_2907" class="categoryRecommendationWidget  clip-true padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+			<!-- Elemento nuevo -->
+			<h2 class="homeSectionTitle">
+				Promociones de temporada
+			</h2>
+		
+		<div class="content list section" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<!-- Elemento nuevo -->
+				<li>
+					<a href="">
+						<img src="home_files/img/nuevapromo1.png" alt="Blouses">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/nuevapromo2.png" alt="Blouses">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/nuevapromo3.png" alt="Blouses">
+					</a>
+				</li>
+			</ul>
+			<div class="clear_float"></div>
+		</div>
+		<div class="clear_float"></div>
+	</div>
+
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="-1010_2907" class="categoryRecommendationWidget  clip-true padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+		
+			<h2 class="homeSectionTitle">
+				Categorías populares
+			</h2>
+		
+		<div class="content categoryList" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/dormitorio.png" alt="Blouses">
+						<p class="categoryTitle">
+							categoría 1
+						</p>
+					</a>
+				</li>
+			</ul>
+			<div class="clear_float"></div>
+		</div>
+		<div class="clear_float"></div>
+	</div>
+
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="-1010_2907" class="categoryRecommendationWidget clip-true carousel padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+		
+			<h2 class="homeSectionTitle">
+				Recomendado para tí
+			</h2>
+		
+		<div class="content productSlider" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+								<!-- Elemento nuevo -->
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="clear_float"></div>
+		</div>
+		<a alt="Show previous page" aria-label="Show previous page" role="button" data-dojo-attach-point="prevPageButton" class="prevPageButton secondary" href="#" id="prevPageButton_4_-1010_2907"></a>
+		<a alt="Show next page" aria-label="Show next page" role="button" data-dojo-attach-point="nextPageButton" class="nextPageButton secondary" href="#" id="nextPageButton_4_-1010_2907"></a>
+		<div class="clear_float"></div>
+	</div>
+
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="-1010_2907" class="categoryRecommendationWidget clip-true padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+		
+			<h2 class="homeSectionTitle">
+				Comprar con Easy
+			</h2>
+		
+		<div class="content comprarconEasy" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<li>
+					<a href="">
+						<img src="home_files/img/comprarconeasy1.png" alt="Blouses">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/comprarconeasy2.png" alt="Blouses">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="home_files/img/comprarconeasy3.png" alt="Blouses">
+					</a>
+				</li>
+			</ul>
+			<div class="clear_float"></div>
+		</div>
+		<div class="clear_float"></div>
+	</div>
+
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="-1010_2907" class="categoryRecommendationWidget  carousel clip-true padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+		
+			<h2 class="homeSectionTitle">
+				Productos vistos recientemente
+			</h2>
+		
+		<div class="content productSlider" data-dojo-attach-point="content">
+			<ul data-dojo-attach-point="ul">
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div id="CatalogEntryProdImg_17429" class="product_image">
+							<div class="image">
+								<a id="catalogEntry_img17429" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1/synergy-athletic-shoes" title="Synergy Athletic Shoes">
+									<img src="home_files/img/closet1.png" />		
+								</a>
+							</div>
+						</div>
+						<div class="product_info">
+							<div class="product_name">
+								<p>Clóset 4 puertas 2 cajones 118 x 46 x 200 cm Texturado tabaco.</p>
+								<span class="marca">Zanzino</span>
+							</div>
+							<div class="product_price" id="product_price_17429">
+									
+								<div class="especial">
+									<img src="home_files/img/exclusiva.png" />
+									<span class="priceNumber">$59.990</span>
+								</div>
+								<div class="internet">
+									<span class="textLeft">Internet:</span>
+									<span class="priceNumber">$69.990</span>
+								</div>
+								<div class="normal">
+									<span class="textLeft">Normal:</span>
+									<span class="priceNumber">$129.990</span>
+								</div>
+								<input id="ProductInfoPrice_17429" value="$30.00" type="hidden">
+								<a href="" class="wishlist">Agregar a la lista de deseos</a>
+							</div>
+							<a class="button basicButton whiteCart" href="">
+								<span>Comprar</span>
+								<img src="home_files/img/addCartWhite.png" />
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="clear_float"></div>
+		</div>
+		<a alt="Show previous page" aria-label="Show previous page" role="button" data-dojo-attach-point="prevPageButton" class="prevPageButton secondary" href="#" id="prevPageButton_4_-1010_2907"></a>
+		<a alt="Show next page" aria-label="Show next page" role="button" data-dojo-attach-point="nextPageButton" class="nextPageButton secondary" href="#" id="nextPageButton_4_-1010_2907"></a>
+		<div class="clear_float"></div>
+	</div>
+
+			
+</div>
+
+<!-- END HomePageContainer.jsp -->
+
+				</div>
+			</div>
+			
+			<div id="footerWrapper">
+				
+				
+
+<!-- BEGIN Footer.jsp -->
+
+
+<div id="footer" role="navigation" aria-label="Content Information">
+	<div id="footerRow1">
+		<div id="footerCustomerServiceSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
+				<h3>Customer Service</h3>
+			</div>
+			<ul>
+				
+				<li><a id="footerHelpLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/help">Help</a></li>
+				<li><a id="footerContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/contact-us">Contact Us</a></li>
+				<li><a id="footerReturnPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/return-policy">Return Policy</a></li>
+				<li><a id="footerPrivacyPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/privacy-policy">Privacy Policy</a></li>
+			</ul>
+		</div><div id="footerCorporateInfoSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCorporateInfoSection" role="button"><span id="footerCorporateInfoSection_div_ACCE_Label" class="spanacce">Corporate Info</span></a>
+				<h3>Corporate Info</h3>
+			</div>
+			<ul>
+				<li><a id="footerAboutUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-info">About Us</a></li>
+				<li><a id="footerCorporateContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-contact-us">Contact Us</a></li>
+				
+					<li><a id="footerStoreLocatorLink" href="http://localhost/webapp/wcs/stores/servlet/AjaxStoreLocatorDisplayView?catalogId=10701&amp;langId=-1&amp;storeId=10851">Store Locator</a></li>
+				
+			</ul>
+		</div><div id="footerExploreSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerExploreSection" role="button"><span id="footerExploreSection_div_ACCE_Label" class="spanacce">Explore</span></a>
+				<h3>Explore</h3>
+			</div>
+			<ul>
+				<li><a id="footerSiteMapLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/sitemap">Site Map</a></li>
+				
+				
+					<li><a id="footerAdvancedSearchLink" href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851">Advanced Search</a></li>
+				
+			</ul>
+		</div>
+		<div id="footerSocial" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
+				<h3>Customer Service</h3>
+			</div>
+			<ul>
+				
+				<li><a id="footerHelpLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/help">Help</a></li>
+				<li><a id="footerContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/contact-us">Contact Us</a></li>
+				<li><a id="footerReturnPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/return-policy">Return Policy</a></li>
+				<li><a id="footerPrivacyPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/privacy-policy">Privacy Policy</a></li>
+			</ul>
+		</div>
+		<div id="footerCustomerServiceSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
+				<h3>Customer Service</h3>
+			</div>
+			<ul class="social">
+				<li>
+					<a href=""><img src="home_files/img/facebook.png" /></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/pinterest.png" /></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/twitter.png" /></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/instagram.png" /></a>
+				</li>
+				<li>
+					<a href=""><img src="home_files/img/youtube.png" /></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<img src="home_files/img/footerInfo.png" class="footerInfo"/>
+
+				
+			</div>
+		</div>
+		
+
+<div widgetid="progress_bar_dialog" id="progress_bar_dialog" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="progress_bar_dialog_title" lang="en">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="progress_bar_dialog_title" role="header" level="1"></span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+	<div id="progress_bar">
+		<div id="loading_popup">
+			<div class="top_left" id="WC_StoreCommonUtilities_div_1"><img src="home_files/transparent.gif" alt="No image available"></div>
+		        <div class="top_right" id="WC_StoreCommonUtilities_div_2"><img src="home_files/transparent.gif" alt="No image available"></div>
+		        <div class="header" id="WC_StoreCommonUtilities_div_3"></div>
+		        <div class="bodyarea" id="WC_StoreCommonUtilities_div_4">
+				<div class="bodycontent" id="WC_StoreCommonUtilities_div_5">
+					<img src="home_files/loading.gif" alt="Your request is being processed." border="0" height="44" width="44">
+			        </div>
+			</div>
+			<div class="footer" id="WC_StoreCommonUtilities_div_6">
+				 <div class="bot_left" id="WC_StoreCommonUtilities_div_7"></div>
+				 <div class="bot_right" id="WC_StoreCommonUtilities_div_8"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div><div widgetid="widget_product_comparison_popup" id="widget_product_comparison_popup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_product_comparison_popup_title" lang="en">
+	<div title="Product Comparison" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_product_comparison_popup_title" role="header" level="1">Product Comparison</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_product_comparison_popup widget_site_popup">													
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Product Comparison</span>
+								<a id="ComparePopupClose" class="close" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="CLOSE"></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="body">
+								The maximum number of products that can be compared is 4. Please refine your selection.
+							</div>
+							
+							<div class="footer">
+								<div class="button_container ">
+									<a id="ComparePopupOK" class="button_primary" tabindex="0" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="OK">
+										<div class="left_border"></div>
+										<div class="button_text">OK</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div><div widgetid="inactivityWarningPopup" id="inactivityWarningPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="inactivityWarningPopup_title" lang="en">
+	<div title="Inactivity Warning Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="inactivityWarningPopup_title" role="header" level="1">Inactivity Warning Dialog</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+	<div class="widget_site_popup">
+		<div class="top">
+			<div class="left_border"></div>
+			<div class="middle"></div>
+			<div class="right_border"></div>
+		</div>
+		<div class="clear_float"></div>
+		<div class="middle">
+			<div class="content_left_border">
+				<div class="content_right_border">
+					<div class="content">
+						<a role="button" id="inactivityWarningPopup_close" class="close_acce" title="CLOSE" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);}"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="home_files/close_normal.txt" class="closeImg" alt="CLOSE"></a>
+						<div class="clear_float"></div>
+						<div id="inactivityWarningPopup_body" class="body">
+							<div class="message_icon left">
+								<img class="error_icon" src="home_files/warning_icon.txt" alt="Warning">
+							</div>
+							
+							
+							
+							<div class="message_text left">
+							Your session is about to timeout due to inactivity.  Click OK to extend your time for an additional 30 minutes.
+							</div>
+							<div class="clear_float"></div>
+						</div>
+						<div class="footer">
+							<div class="button_container">
+								<a role="button" aria-labelledby="inactivityWarningPopupOK_Label" id="inactivityWarningPopupOK" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);} resetServerInactivity();" class="button_primary">
+									<div class="left_border"></div>
+									<div id="inactivityWarningPopupOK_Label" class="button_text">OK</div>
+									<div class="right_border"></div>
+								</a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="clear_float"></div>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear_float"></div>
+		<div class="bottom">
+			<div class="left_border"></div>
+			<div class="middle"></div>
+			<div class="right_border"></div>
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+</div><div widgetid="shoppingListItemAddedPopup" id="shoppingListItemAddedPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="shoppingListItemAddedPopup_title" lang="en">
+	<div title="This item has been successfully added to your list." data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="shoppingListItemAddedPopup_title" role="header" level="1">This item has been successfully added to your list.</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_site_popup">
+													
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>This item has been successfully added to your list.</span>
+								<a role="button" id="shoppingListItemAddedClose" href="javascript:ShoppingListDialogJS.close();" onclick="javascript: document.getElementById('addToShoppingList').focus();" class="close tlignore" title="Close" aria-label="Close"></a>
+								<div class="clear_float"></div>
+							</div>
+							
+								<div class="product">
+									<div class="product_image">
+										<img id="shoppingListItemAddedImg" alt="">
+									</div>
+									<div id="shoppingListItemAddedName" class="product_name"></div>
+									<div class="clear_float"></div>
+								</div>
+							
+							<div class="footer">
+								<div class="button_container ">
+									<a id="shoppingListItemAddedContinue" href="javascript:ShoppingListDialogJS.close();" class="button_primary tlignore" title="Continue Shopping">
+										<div class="left_border"></div>
+										<div class="button_text">Continue Shopping</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div><div style="display: none; position: absolute;" widgetid="widget_language_and_currency_popup" id="widget_language_and_currency_popup" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_language_and_currency_popup_title" lang="en">
+	<div title="Language and Currency Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_language_and_currency_popup_title" role="header" level="1">Language and Currency Dialog</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_language_and_currency_popup widget_site_popup">										
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Please select a language and currency</span>
+								<a id="close" class="close_acce tlignore" title="CLOSE" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="home_files/close_normal.txt" class="closeImg" alt="CLOSE"></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="selectors">
+								<div class="selector">
+									<span class="option_name">Language:&nbsp;</span>
+									<label for="languageSelection" class="nodisplay">Language:</label>
+									<select id="languageSelection" name="langId" onchange="javascript:document.getElementById('languageSelectionHidden').value=this.value">
+										
+											
+												
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+											
+												
+													
+												
+											
+											
+												
+													<option value="-1" selected="selected">United States English</option>
+												
+												
+											
+										
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<div class="selector">
+									<span class="option_name">Currency:&nbsp;</span>
+									<label for="currencySelection" class="nodisplay">Currency:</label>
+									<select id="currencySelection" name="currency" onchange="javascript:document.getElementById('currencySelectionHidden').value=this.value">
+										
+											
+												
+													
+												
+											
+											
+												
+													<option value="USD" selected="selected">US Dollar</option>
+												
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="BRL">Brazilian Real</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="CAD">Canadian Dollar</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="CNY">Chinese Yuan</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="EGP">Egyptian Pound</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="EUR">Euro</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="GBP">British Pound</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="JPY">Japanese Yen</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="KRW">South Korean Won</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="PLN">Polish Zloty</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="RON">Romanian Leu</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="RUB">Russian Ruble</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="TWD">Taiwan Dollar</option>
+												
+											
+										
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<form id="SetLanguageCurrencyPreferenceForm" action="/webapp/wcs/stores/servlet/SetCurrencyPreference" method="post">
+									<input name="storeId" value="10851" type="hidden">
+									<input name="catalogId" value="10701" type="hidden">
+									<input id="languageSelectionHidden" name="langId" value="-1" type="hidden">
+									<input id="currencySelectionHidden" name="currency" value="USD" type="hidden">									
+									
+									
+										
+										
+											<input name="URL" value="/webapp/wcs/stores/servlet/TopCategoriesDisplay?currency*=" id="WC_SidebarDisplay_FormInput_URL_2" type="hidden">
+										
+									
+									
+										
+											
+												<input name="pageGroup" value="Content" id="WC_SidebarDisplay_FormInput_parm_1_1" type="hidden">
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+												<input name="pageName" value="HomePage" id="WC_SidebarDisplay_FormInput_parm_4_1" type="hidden">
+											
+										
+									
+										
+											
+										
+									
+									
+								</form>
+							</div>
+							<div class="footer">
+								<div class="button_container ">
+									<a id="LangCurrencyApplyBtn" class="button_primary tlignore" tabindex="0" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();document.getElementById('SetLanguageCurrencyPreferenceForm').submit();">
+										<div class="left_border"></div>
+										<div id="LangCurrencyApplyBtnText" class="button_text">Apply</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div></body><!-- END TopCategoriesDisplay.jsp --></html>
