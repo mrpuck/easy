@@ -1,0 +1,6175 @@
+<!DOCTYPE html>
+<!-- BEGIN TopCategoriesDisplay.jsp -->
+<html class="dj_gecko dj_contentbox" xmlns:wairole="http://www.w3.org/2005/01/wai-rdf/GUIRoleTaxonomy#" xmlns:waistate="http://www.w3.org/2005/07/aaa" xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Welcome to AuroraDemo</title>
+		<meta name="description" content="Shop AuroraDemo online. Commerce Model Store entity">
+		<meta name="keywords" content="AuroraDemo Commerce Model Store entity">
+		<meta name="pageName" content="HomePage">
+	    <link rel="canonical" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo">
+		
+		<!--Main Stylesheet for browser -->
+		<link rel="stylesheet" href="home_files/common1_1.css" type="text/css" media="screen">
+		<!-- Style sheet for print -->
+		<link rel="stylesheet" href="home_files/print.css" type="text/css" media="print">
+		
+		<!-- Include script files -->
+		
+<!-- BEGIN CommonJSToInclude.jspf -->
+
+<!-- Style sheet for RWD -->
+<link rel="stylesheet" href="home_files/styles_005.css" type="text/css">
+<!--[if IE 8]>
+<link rel="stylesheet" href="/wcsstore/AuroraDemo/css/stylesIE8.css" type="text/css" />
+<![endif]-->
+
+
+
+
+<script type="text/javascript" charset="UTF-8" src="home_files/dojo.js" djconfig="parseOnLoad: true, isDebug: false,  modulePaths: {storetext: '/wcsstore/AuroraDemo/'}, useCommentedJson: true,locale: 'en-us' "></script>
+<script type="text/javascript" charset="UTF-8" src="home_files/dojodesktop-rwd.js" djconfig="parseOnLoad: true, isDebug: false,  modulePaths: {storetext: '/wcsstore/AuroraDemo/'}, useCommentedJson: true,locale: 'en-us' "></script>
+
+
+
+
+
+<meta name="CommerceSearch" content="storeId_10851">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="shortcut icon" href="http://localhost/wcsstore/AuroraDemo/images/icon-favicon.ico" mce_href="/wcsstore/AuroraDemo/images/icon-favicon.ico">
+
+
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-60px.png" sizes="60x60">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-72px.png" sizes="72x72">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-76px.png" sizes="76x76">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-114px.png" sizes="114x114">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-120px.png" sizes="120x120">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-144px.png" sizes="144x144">
+<link rel="apple-touch-icon-precomposed" href="http://localhost/wcsstore/AuroraDemo/images/touch-icon-152px.png" sizes="152x152">
+
+<script type="text/javascript">
+	// Convert the WCParam object which contains request properties into javascript object
+	var WCParamJS = {
+		"storeId":'10851',
+		"catalogId":'10701',
+		"langId":'-1',
+		"pageView":'',
+		"orderBy":'',
+		"orderByContent":'',
+		"searchTerm":''
+	};
+	var absoluteURL = "http://localhost/webapp/wcs/stores/servlet/";
+	var imageDirectoryPath = "/wcsstore/AuroraDemo/";
+	var styleDirectoryPath = "images/colors/color1/";
+	var supportPaymentTypePromotions = false;
+	
+	var subsFulfillmentFrequencyAttrName = "fulfillmentFrequency";
+	var subsPaymentFrequencyAttrName = "paymentFrequency";
+	var subsTimePeriodAttrName = "timePeriod";
+	
+	var storeNLS = null;
+	var storeUserType = "G";
+	var ios = false;
+	var android = false;
+	var multiSessionEnabled = false;
+	
+	// Store the amount of time of inactivity before a re-login is required, this value is retrieved from wc-server.xml, default is 30 mins
+	var inactivityTimeout = 1800000;
+	
+	// Store the amount of time the inactivity warning dialog will be displayed before it closes itself, default is 20 seconds
+	var inactivityWarningDialogDisplayTimer = 20000;
+	
+	// Store the amount of time to display a inactivity warning dialog before a re-login is required, default is 30 seconds
+	var inactivityWarningDialogBuffer = 30000;
+	
+	// Store the timing event to display the inactivity dialog
+	var inactivityTimeoutTracker = null;
+
+	// Store the timing event to close the inactivity dialog
+	var dialogTimeoutTracker = null;
+	
+	//Summary: Returns the absolute URL to use for prefixing any Ajax URL call.
+	//Description: Dojo does not handle the case where the parameters in the URL are delimeted by the "/" forward slash. Therefore, in order to
+	//             workaround the issue, all AJAX requests must be done using absolute URLs rather than relative.
+	//Returns: The absolute URL to use for prefixing any Ajax URL call.
+	function getAbsoluteURL() {
+		if (absoluteURL != "") {
+			var currentURL = document.URL;
+			var currentProtocol = "";
+		
+			if (currentURL.indexOf("://") != -1) {
+				currentProtocol = currentURL.substring(0, currentURL.indexOf("://"));
+			}
+			
+			var savedProtocol = "";
+			if (absoluteURL.indexOf("://") != -1) {
+				savedProtocol = absoluteURL.substring(0, absoluteURL.indexOf("://"));
+			}
+			
+			if (currentProtocol != savedProtocol) {
+				absoluteURL = currentProtocol + absoluteURL.substring(absoluteURL.indexOf("://"));
+			}
+		}
+		
+		return absoluteURL;
+	}
+	//Summary: Returns the path pointing to the shared image directory.
+	//Description: In order to get the image directory path in any javascript file, this function can be used.
+	//Returns: The path to reference images.
+	function getImageDirectoryPath() {
+		return imageDirectoryPath;
+	}
+	//Summary: Returns the path pointing to the directory containing color-dependant image files.
+	//Description: In order to get the directory containing color-dependant image files in any javascript file, this function can be used.
+	//Returns: The path to reference color-dependant image files.
+	function getStyleDirectoryPath() {
+		return styleDirectoryPath;
+	}
+</script>
+
+<script type="text/javascript" src="home_files/MessageHelper.js"></script>
+<script type="text/javascript" src="home_files/StoreCommonUtilities.js"></script>
+<script type="text/javascript" src="home_files/Responsive.js"></script>
+<script type="text/javascript" src="home_files/Search.js"></script>
+<script type="text/javascript" src="home_files/MiniShopCartDisplay.js"></script>
+<script type="text/javascript" src="home_files/Department.js"></script>
+<script type="text/javascript" src="home_files/ShoppingActions.js"></script>
+<script type="text/javascript" src="home_files/ShoppingActionsServicesDeclaration.js"></script>
+
+<script>
+	dojo.require("wc.service.common");
+	dojo.require("dojo.number");
+	dojo.require("dojo.has");
+</script>
+
+
+
+	
+	
+	
+
+
+<script type="text/javascript">
+ //Set the default NLS to use in the store.
+ if(storeNLS == null) {
+	 dojo.requireLocalization("storetext", "StoreText");
+	 storeNLS = dojo.i18n.getLocalization("storetext","StoreText");
+ }
+ initializeInactivityWarning();
+ var ie6 = false;
+ var ie7 = false;
+ if (navigator != null && navigator.userAgent != null) {
+	 ie6 = (navigator.userAgent.toLowerCase().indexOf("msie 6.0") > -1);
+	 ie7 = (navigator.userAgent.toLowerCase().indexOf("msie 7.0") > -1); 
+ }
+ if (location.href.indexOf('UnsupportedBrowserErrorView') == -1 && (ie6 || ie7)) {
+	 document.write('<meta http-equiv="Refresh" content="0;URL=http://localhost/webapp/wcs/stores/servlet/UnsupportedBrowserErrorView?catalogId=10701&amp;langId=-1&amp;storeId=10851"/>');
+ }
+</script>
+
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		shoppingActionsJS.setCommonParameters('-1','10851','10701','G','$');
+		
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+		if (isChrome || isSafari) {
+			var hiddenFields = dojo.query('input[type=\"hidden\"]');
+			for (var i = 0; i < hiddenFields.length; i++) {
+				hiddenFields[i].autocomplete="off"
+			}
+		}
+		if (dojo.has("ios") || dojo.has("android")){
+			dojo.attr(dojo.body(),"data-wc-device","mobile");
+		}		
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+		
+	
+
+	
+	
+	
+		
+			
+			
+		
+		 
+			
+			
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		
+	
+
+
+
+
+
+
+<!-- END CommonJSToInclude.jspf -->
+		
+		<script type="text/javascript" src="home_files/StoreCommonUtilities.js"></script>
+		<script type="text/javascript" src="home_files/CommonContextsDeclarations.js"></script>
+		<script type="text/javascript" src="home_files/CommonControllersDeclaration.js"></script>
+		<script type="text/javascript" src="home_files/collapsible.js"></script>
+		<script type="text/javascript">
+			dojo.addOnLoad(function() { 
+				shoppingActionsJS.setCommonParameters('-1','10851','10701','G','$');
+				shoppingActionsServicesDeclarationJS.setCommonParameters('-1','10851','10701');
+				});
+			
+		</script>
+		<!-- Start including widget java script files -->
+<script type="text/javascript" src="home_files/video.js"></script>
+<!-- End including widget java script files -->
+
+		
+		
+	</head>
+	<body>
+
+		
+		
+<!-- BEGIN CommonJSPFToInclude.jspf -->
+
+	
+
+<!-- BEGIN ProgressBar.jspf -->
+
+<!-- END ProgressBar.jspf -->
+	
+
+
+
+
+<!-- BEGIN MessageDisplay.jspf -->
+
+<span class="spanacce" style="display:none" id="MessageArea_ACCE_Title">Message Dialog</span>
+<div id="MessageArea" class="store_message" role="alert" aria-labelledby="MessageArea_ACCE_Title">
+	<div id="msgpopup_content_wrapper" class="content">
+		<a id="clickableErrorMessageImg" role="button" class="close tlignore" href="javascript:MessageHelper.hideMessageArea();" title="Close">
+			<div class="close_text">Close</div>
+			<div class="close_icon"></div>
+			<div class="clear_float"></div>
+		</a>
+		
+		<div class="clear_float"></div>
+		
+		<div class="message">
+			<div class="message_icon">
+				<img id="error_icon" style="display:none;" class="error_icon" src="home_files/error_icon.txt" alt="">
+				<img id="success_icon" style="display:none;" class="error_icon" src="home_files/success_icon.txt" alt="">
+			</div>
+			<div class="message_text" role="region" aria-required="true" aria-labelledby="MessageArea">
+				<span id="ErrorMessageText">
+					
+				</span>
+			</div>
+			<div class="clear_float"></div>
+		</div>		
+	</div>
+</div>
+<span class="spanacce" id="ariaMessage_ACCE_Label" style="display:none">Display Update Message</span>
+<span class="spanacce" role="region" aria-labelledby="ariaMessage_ACCE_Label" id="ariaMessage" aria-live="assertive" aria-atomic="true" aria-relevant="additions"></span>
+<!-- END MessageDisplay.jspf -->
+
+	
+
+	
+
+	
+
+
+	
+	
+<!-- END CommonJSPFToInclude.jspf -->
+		
+		<!-- Begin Page -->
+		
+		
+		
+
+<!-- BEGIN LayoutPreviewSetup.jspf-->
+		<!-- layoutPreviewLayoutId/Name/Default needs to be set before calling widgetImport  -->
+		
+<!-- END LayoutPreviewSetup.jspf-->
+
+		<div id="page">
+			<div id="headerWrapper">
+				
+				
+				
+					
+				
+
+<!-- BEGIN Header.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+	
+
+	
+		
+
+
+
+	
+	
+	
+
+
+
+
+	
+	
+	
+
+
+
+  
+  
+  
+  
+
+
+
+
+	
+		
+		
+		
+		  
+		  
+		  
+		  
+		
+		
+		
+			
+			
+			
+			
+		
+		
+		
+	
+	
+
+
+
+   
+
+		
+
+   
+	  		
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+	
+	
+
+			
+	
+	
+
+
+
+
+
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+		
+	
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+
+	
+		
+				
+		
+		
+		
+		
+		
+	
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		
+	
+
+
+	
+
+	
+
+	
+		
+
+
+
+
+
+
+<script>var isGuest = true;</script>
+
+<script src="home_files/header.js"></script>
+
+<div id="header" role="banner">
+	<div id="headerRow1">
+		<div id="logo">
+			
+			
+				
+				
+				
+				
+				
+			<!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_HeaderStoreLogo_Content" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot centered">
+	
+	
+					<a id="contentLink_1_HeaderStoreLogo_Content" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=13960&amp;intv_id=0&amp;storeId=10851&amp;catalogId=10701&amp;langId=-1&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo" title="AuroraDemo">
+						<img id="contentImage_1_HeaderStoreLogo_Content" src="home_files/logo.txt" alt="AuroraDemo">
+					</a>
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp -->
+			
+		</div>
+		<ul id="quickLinksBar"><li class="border-right">
+					<span id="contactQuickLink_alt">1-800-555-1234</span>
+				</li><li class="border-right">
+					<a id="wishListQuickLink_alt" href="javascript:redirectToSignOn('https://localhost/webapp/wcs/stores/servlet/WishListDisplayView?catalogId=10701&amp;langId=-1&amp;listId=.&amp;storeId=10851');">Wish <br>List</a>
+				</li><li class="border-right">
+					<a id="storeLocatorQuickLink_alt" href="http://localhost/webapp/wcs/stores/servlet/AjaxStoreLocatorDisplayView?catalogId=10701&amp;langId=-1&amp;storeId=10851">Store <br>Locator</a>
+				</li><li class="border-right">
+					
+
+<!-- BEGIN LanguageCurrency.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+	
+
+
+	
+
+	
+	
+
+
+
+	
+		
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	
+
+
+	
+
+	
+	
+
+
+
+	
+		
+	
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+		
+			
+
+
+<div id="widget_language_and_currency_alt" style="display:none;">
+	
+</div>
+
+
+<a id="LanguageCurrencyChangeLink_alt" class="tlignore" href="javascript:%20shoppingActionsJS.showWCDialogPopup('widget_language_and_currency_popup');">Language / <br>Currency</a>
+
+		
+	
+
+
+
+<!-- END LanguageCurrency.jsp -->
+				</li><li class="border-right">
+					<a id="signInOutQuickLink_alt" href="https://localhost/webapp/wcs/stores/servlet/LogonForm?catalogId=10701&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10851">Sign In / <br>Register</a>
+				</li><li class="separator-false">
+			<a id="quickLinksButton" href="#" role="button" aria-haspopup="true" data-toggle="quickLinksMenu" aria-label="Quick Links">Quick <br>Links</a>
+			<div id="quickLinksMenu" class="basicMenu" role="menu" data-parent="header" aria-label="Quick Links" tabindex="0">
+				<h3>Quick Links</h3><a href="#" class="closeButton" role="button" data-toggle="quickLinksMenu"><span role="presentation"></span></a>
+				<ul><li>
+					<a tabindex="-1" role="menuitem" id="signInOutQuickLink" href="https://localhost/webapp/wcs/stores/servlet/LogonForm?catalogId=10701&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10851">Sign In / Register</a>
+				</li><li>
+					
+
+<!-- BEGIN LanguageCurrency.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+	
+
+
+	
+
+	
+	
+
+
+
+	
+		
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	
+
+
+	
+
+	
+	
+
+
+
+	
+		
+	
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+		
+			
+
+
+<div id="widget_language_and_currency" style="display:none;">
+	
+</div>
+
+
+<a tabindex="-1" role="menuitem" id="LanguageCurrencyChangeLink" class="tlignore" href="javascript:%20shoppingActionsJS.showWCDialogPopup('widget_language_and_currency_popup');">Language / Currency</a>
+
+		
+	
+
+
+
+<!-- END LanguageCurrency.jsp -->
+				</li><li>
+					<a tabindex="-1" role="menuitem" id="storeLocatorQuickLink" href="http://localhost/webapp/wcs/stores/servlet/AjaxStoreLocatorDisplayView?catalogId=10701&amp;langId=-1&amp;storeId=10851">Store Locator</a>
+				</li><li>
+					<a tabindex="-1" role="menuitem" id="wishListQuickLink" href="javascript:redirectToSignOn('https://localhost/webapp/wcs/stores/servlet/WishListDisplayView?catalogId=10701&amp;langId=-1&amp;listId=.&amp;storeId=10851');">Wish List</a>
+				</li><li>
+					<span id="contactQuickLink">1-800-555-1234</span>
+				</li></ul>
+			</div>
+		</li><li class="separator-false">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<span id="MiniShoppingCart_Label" class="spanacce">Shopping <br>Cart</span>
+<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" id="MiniShoppingCart" widgetid="MiniShoppingCart" controllerid="MiniShoppingCartController" ariamessage="Shopping Cart Display Updated" arialiveid="ariaMessage" role="region" aria-labelledby="MiniShoppingCart_Label" lang="en">
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+ 
+
+
+
+
+	
+ 
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+
+
+
+
+
+
+<a id="widget_minishopcart" href="#" role="button" onclick="javascript:toggleMiniShopCartDropDown('widget_minishopcart','quick_cart_container','orderItemsList');" onkeypress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');" aria-label="Shopping Cart">
+	<div id="minishopcart_total">
+ 0
+ </div>
+</a>
+
+<div id="placeHolder"></div>
+<div id="MiniShopCartProductAdded">
+	<div id="MiniShopCartProductAddedWrapper" style="display:none;" aria-labelledby="cartDropdownMessage">
+		<div id="widget_minishopcart_popup_1">
+			<div id="cartDropdown">
+				<h3 id="cartDropdownMessage">This item has been successfully added:</h3>
+				<a id="MiniShopCartCloseButton_2" href="javascript:dijit.byId('MiniShopCartProductAdded').hide();" class="closeButton">Close</a>
+				<div class="content">
+					<div class="products added">
+						
+					</div>
+				</div>
+				<div class="footer">
+					<a id="GotoCartButton2" href="http://localhost/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10701&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10851&amp;URL=https%3A%2F%2Flocalhost%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FAjaxOrderItemDisplayView%3F" class="basicButton">
+						<span>Go to Cart</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<input id="currentOrderQuantity" value="0" type="hidden">
+<input id="currentOrderAmount" value="0.00" type="hidden">
+<input id="currentOrderCurrency" value="USD" type="hidden">
+<input id="currentOrderLanguage" value="-1" type="hidden">
+<input id="currentOrderId" value="" type="hidden">
+
+
+
+		
+	
+
+
+
+
+
+	
+</div>
+
+<div role="group" title="" class="dijitContentPane" id="MiniShopCartContents" dojotype="wc.widget.RefreshArea" widgetid="MiniShopCartContents" controllerid="MiniShopCartContentsController" aria-labelledby="MiniShoppingCart_Label" lang="en">
+</div>
+
+<script type="text/javascript">
+  dojo.addOnLoad(function() {
+		setMiniShopCartControllerURL(getAbsoluteURL()+'MiniShopCartDisplayView?storeId=10851&catalogId=10701&langId=-1');
+		wc.render.getRefreshControllerById("MiniShopCartContentsController").url = getAbsoluteURL()+'MiniShopCartDisplayView?storeId=10851&catalogId=10701&langId=-1&page_view=dropdown';
+		if(dojo.byId('MiniShoppingCart') != null && !multiSessionEnabled){
+			loadMiniCart("USD","-1");
+		}		
+	});
+</script>
+
+
+		</li></ul>
+	</div>
+
+	<div id="headerRow2">
+		<a id="departmentsButton" href="#" class="basicButton" role="button" aria-haspopup="true" data-toggle="departmentsMenu"><span>Departments</span></a><div id="wc_widget_RefreshArea_0" role="group" title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="wc_widget_RefreshArea_0" controllerid="departmentSubMenu_Controller" aria-labelledby="departmentsButton" lang="en">
+		<ul id="departmentsMenu" role="menu" data-parent="header" aria-labelledby="departmentsButton"><li class="">
+			<a id="departmentButton_10701" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10701"><span>Apparel</span></a>
+			<div id="departmentMenu_10701" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10701" aria-label="Apparel">
+				<div class="header">
+					<a id="departmentLink_10701" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="link menuLink" role="menuitem" tabindex="-1">Apparel</a>
+					<a id="departmentToggle_10701" href="#" class="toggle" role="button" data-toggle="departmentMenu_10701" aria-labelledby="departmentLink_10701"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10701_10705" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls" class="menuLink" role="menuitem" tabindex="-1">Girls</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10705_10720" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10721" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/pants-10721--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10722" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/skirts-10722--1" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10705_10723" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/tops-10723--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10704" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys" class="menuLink" role="menuitem" tabindex="-1">Boys</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10704_10724" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/pants-10724--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10704_10725" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/tops-10725--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10704_10726" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/shoes-10726--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10703" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women" class="menuLink" role="menuitem" tabindex="-1">Women</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10703_10706" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/dresses" class="menuLink" role="menuitem" tabindex="-1">Dresses</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10707" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/blouses" class="menuLink" role="menuitem" tabindex="-1">Blouses</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10708" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/sweaters" class="menuLink" role="menuitem" tabindex="-1">Sweaters</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10709" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/skirts" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10710" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/pants" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10711" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/shoes" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10712" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/handbags" class="menuLink" role="menuitem" tabindex="-1">Handbags</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10703_10713" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/accessories" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+							</li></ul>
+						
+					</li><li>
+						
+						<a id="categoryLink_10701_10702" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men" class="menuLink" role="menuitem" tabindex="-1">Men</a>
+						
+							<ul class="subcategoryList"><li>
+								
+								<a id="subcategoryLink_10701_10702_10714" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/jackets" class="menuLink" role="menuitem" tabindex="-1">Jackets</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10715" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shirts" class="menuLink" role="menuitem" tabindex="-1">Shirts</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10716" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/suits" class="menuLink" role="menuitem" tabindex="-1">Suits</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10717" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/pants-10717--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10718" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/accessories-10718--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+							</li><li>
+								
+								<a id="subcategoryLink_10701_10702_10719" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shoes-10719--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
+							</li></ul>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10727" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10727"><span>Electronics</span></a>
+			<div id="departmentMenu_10727" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10727" aria-label="Electronics">
+				<div class="header">
+					<a id="departmentLink_10727" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="link menuLink" role="menuitem" tabindex="-1">Electronics</a>
+					<a id="departmentToggle_10727" href="#" class="toggle" role="button" data-toggle="departmentMenu_10727" aria-labelledby="departmentLink_10727"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10727_10728" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/accessories-10728--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10729" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/tablets-10729--1" class="menuLink" role="menuitem" tabindex="-1">Tablets</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10730" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/laptops-10730--1" class="menuLink" role="menuitem" tabindex="-1">Laptops</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10731" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/desktops" class="menuLink" role="menuitem" tabindex="-1">Desktops</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10727_10732" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/components" class="menuLink" role="menuitem" tabindex="-1">Components</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10733" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10733"><span>Grocery</span></a>
+			<div id="departmentMenu_10733" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10733" aria-label="Grocery">
+				<div class="header">
+					<a id="departmentLink_10733" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="link menuLink" role="menuitem" tabindex="-1">Grocery</a>
+					<a id="departmentToggle_10733" href="#" class="toggle" role="button" data-toggle="departmentMenu_10733" aria-labelledby="departmentLink_10733"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10733_10734" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/dairy" class="menuLink" role="menuitem" tabindex="-1">Dairy</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10735" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/fruit-10735--1" class="menuLink" role="menuitem" tabindex="-1">Fruit</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10736" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/meat" class="menuLink" role="menuitem" tabindex="-1">Meat</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10733_10737" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/vegetables" class="menuLink" role="menuitem" tabindex="-1">Vegetables</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10738" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10738"><span>Health</span></a>
+			<div id="departmentMenu_10738" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10738" aria-label="Health">
+				<div class="header">
+					<a id="departmentLink_10738" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="link menuLink" role="menuitem" tabindex="-1">Health</a>
+					<a id="departmentToggle_10738" href="#" class="toggle" role="button" data-toggle="departmentMenu_10738" aria-labelledby="departmentLink_10738"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10738_10739" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/medicine" class="menuLink" role="menuitem" tabindex="-1">Medicine</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10738_10740" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/vitamins" class="menuLink" role="menuitem" tabindex="-1">Vitamins</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="">
+			<a id="departmentButton_10741" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10741"><span>Home &amp; Furnishing</span></a>
+			<div id="departmentMenu_10741" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10741" aria-label="Home &amp; Furnishing">
+				<div class="header">
+					<a id="departmentLink_10741" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="link menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
+					<a id="departmentToggle_10741" href="#" class="toggle" role="button" data-toggle="departmentMenu_10741" aria-labelledby="departmentLink_10741"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10741_10742" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/bath-accessories" class="menuLink" role="menuitem" tabindex="-1">Bath Accessories</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10743" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/furniture" class="menuLink" role="menuitem" tabindex="-1">Furniture</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10744" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/kitchenware" class="menuLink" role="menuitem" tabindex="-1">Kitchenware</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10745" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/lighting" class="menuLink" role="menuitem" tabindex="-1">Lighting</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10746" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/tableware" class="menuLink" role="menuitem" tabindex="-1">Tableware</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10741_10747" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/appliances" class="menuLink" role="menuitem" tabindex="-1">Appliances</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="hidden">
+			<a id="departmentButton_10748" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10748"><span>Newsletters &amp; Magazines</span></a>
+			<div id="departmentMenu_10748" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10748" aria-label="Newsletters &amp; Magazines">
+				<div class="header">
+					<a id="departmentLink_10748" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="link menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
+					<a id="departmentToggle_10748" href="#" class="toggle" role="button" data-toggle="departmentMenu_10748" aria-labelledby="departmentLink_10748"><span role="presentation"></span></a>
+				</div>
+				
+					<ul class="categoryList"><li>
+						
+						<a id="categoryLink_10748_10749" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/magazines-10749--1" class="menuLink" role="menuitem" tabindex="-1">Magazines</a>
+						
+					</li><li>
+						
+						<a id="categoryLink_10748_10750" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/newsletters" class="menuLink" role="menuitem" tabindex="-1">Newsletters</a>
+						
+					</li></ul>
+				
+			</div>
+		</li><li class="active">
+			<a id="allDepartmentsButton" href="#" class="departmentButton" role="button" aria-haspopup="true" data-toggle="allDepartmentsMenu"><span>All Departments</span></a>
+			<ul id="allDepartmentsMenu" class="departmentMenu" role="menu" data-parent="departmentsMenu" aria-labelledby="allDepartmentsButton"><li>
+				<a id="departmentLink_10701_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="menuLink" role="menuitem" tabindex="-1">Apparel</a>
+			</li><li>
+				<a id="departmentLink_10727_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="menuLink" role="menuitem" tabindex="-1">Electronics</a>
+			</li><li>
+				<a id="departmentLink_10733_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="menuLink" role="menuitem" tabindex="-1">Grocery</a>
+			</li><li>
+				<a id="departmentLink_10738_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="menuLink" role="menuitem" tabindex="-1">Health</a>
+			</li><li>
+				<a id="departmentLink_10741_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
+			</li><li>
+				<a id="departmentLink_10748_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
+			</li></ul>
+		</li></ul></div>
+		
+
+<!-- BEGIN Search.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<meta name="CommerceSearch" content="storeId_10851">
+		
+	
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+	
+	
+	
+	
+
+			
+	
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+			
+	
+
+	
+
+	
+		
+
+<script>
+require(["dojo/domReady!"], function() {
+	SearchJS.init();
+	SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=10851&catalogId=10701");
+	SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_10701_CatalogEntry_en_US&serverURL=http%3a%2f%2flocalhost%3a80%2fsolr%2fMC_10701_CatalogEntry_en_US&langId=-1&storeId=10851&catalogId=10701");
+	document.forms["searchBox"].action = getAbsoluteURL() + "SearchDisplay";
+});
+var staticContent = [];
+var staticContentHeaders = [];
+</script>	
+
+
+<a id="searchButton" href="#" role="button" data-toggle="searchBar" aria-label="Search" title="Search"><span id="searchButton_ACCE_Label" class="spanacce">Search</span></a>
+
+<div id="searchBar" data-parent="header">
+	
+	<form id="searchBox" name="CatalogSearchForm" method="get" action="http://localhost/webapp/wcs/stores/servlet/SearchDisplay">
+		<input id="categoryId" name="categoryId" type="hidden">
+		<input name="storeId" value="10851" type="hidden">
+		<input name="catalogId" value="10701" type="hidden">
+		<input name="langId" value="-1" type="hidden">
+		<input name="sType" value="SimpleSearch" type="hidden">
+		<input name="resultCatEntryType" value="2" type="hidden">
+		<input name="showResultsPage" value="true" type="hidden">
+		<input name="searchSource" value="Q" type="hidden">
+		<input name="pageView" value="" type="hidden">
+		<input name="beginIndex" value="0" type="hidden">
+		<input name="pageSize" value="12" type="hidden">
+
+		<div id="searchTermWrapper"><label id="searchFormLabel" for="SimpleSearchForm_SearchTerm">Search</label><input id="SimpleSearchForm_SearchTerm" name="searchTerm" placeholder="Search" autocomplete="off" type="text"></div>
+		<!-- Start SearchDropdownWidget -->
+		<div id="searchDropdown">
+			<div id="autoSuggest_Result_div">
+				<div id="widget_search_dropdown">
+					<!-- Main Content Area -->
+					<div id="AutoSuggestDiv" role="list" aria-required="true" onmouseover="SearchJS.autoSuggestHover = true;" onmouseout="SearchJS.autoSuggestHover = false; document.getElementById('SimpleSearchForm_SearchTerm').focus();">
+						<ul><li><span id="autoSuggestDynamic_Result_div_ACCE_Label" class="spanacce">Suggested keywords menu</span>
+						<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestDynamic_Result_div" controllerid="AutoSuggestDisplayController" id="autoSuggestDynamic_Result_div" role="list" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestDynamic_Result_div_ACCE_Label" lang="en">
+						
+						</div></li></ul>
+						<ul><li><div id="autoSuggestStatic_1"></div></li></ul>
+						<ul><li><div id="autoSuggestStatic_2"></div></li></ul>
+						<ul><li><div id="autoSuggestStatic_3"></div></li></ul>
+						<ul><li><div id="autoSuggestHistory"></div></li></ul>
+						<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851" onclick="SearchJS.gotoAdvancedSearch('http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851');return false;" id="advancedSearch"><div>Advanced Search</div></a></li></ul>
+					</div>
+					<!-- End content Section -->
+				</div>
+			</div>
+		</div>
+		<!-- End SearchDropdownWidget -->
+		<!-- Refresh area to retrieve cached suggestions -->
+		<span id="autoSuggestCachedSuggestions_div_ACCE_Label" class="spanacce">Suggested site content and search history menu</span>
+		<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestCachedSuggestions_div" controllerid="AutoSuggestCachedSuggestionsController" id="autoSuggestCachedSuggestions_div" role="region" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestCachedSuggestions_div_ACCE_Label" lang="en"></div>
+		<a id="searchFilterButton" href="#" role="button" data-toggle="searchFilterMenu">All Departments</a>
+		<div id="searchFilterMenu" class="basicMenu" data-parent="searchBar">
+			<ul>
+				<li><a href="#" data-value="" class="menuLink" tabindex="-1">All Departments</a></li>
+				
+					<li><a href="#" data-value="10701" class="menuLink" tabindex="-1">Apparel</a></li>
+				
+					<li><a href="#" data-value="10727" class="menuLink" tabindex="-1">Electronics</a></li>
+				
+					<li><a href="#" data-value="10733" class="menuLink" tabindex="-1">Grocery</a></li>
+				
+					<li><a href="#" data-value="10738" class="menuLink" tabindex="-1">Health</a></li>
+				
+					<li><a href="#" data-value="10741" class="menuLink" tabindex="-1">Home &amp; Furnishing</a></li>
+				
+					<li><a href="#" data-value="10748" class="menuLink" tabindex="-1">Newsletters &amp; Magazines</a></li>
+				
+			</ul>
+		</div>
+		<a href="#" class="submitButton" role="button" aria-label="Search" title="Search"><span id="submitButton_ACCE_Label" class="spanacce">Search</span></a>
+	</form>
+</div>
+
+	
+
+	
+
+	<!-- End Search Widget -->
+
+
+
+<!-- END Search.jsp -->
+
+	</div>
+</div>
+
+<script>
+dojo.addOnLoad(function() {
+	setAjaxRefresh(""); // Default value in header.js is empty/false.
+	if(wc.render.getRefreshControllerById("departmentSubMenu_Controller")){
+		wc.render.getRefreshControllerById("departmentSubMenu_Controller").url = getAbsoluteURL()+"DepartmentDropdownViewRWD?storeId=10851&catalogId=10701&langId=-1";
+	}
+});
+</script>
+
+	
+
+
+
+<!-- END Header.jsp -->
+				
+			</div>
+			
+			<div id="contentWrapper">
+				<div id="content" role="main">
+					
+					
+
+<!-- BEGIN HomePageContainer.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div class="rowContainer" id="container_11251">
+	<div class="row">
+		<div class="col6 acol12" data-slot-id="1"></div>
+		<div class="col6 acol12" data-slot-id="2"></div>
+	</div>
+	<div class="row">
+		<div class="col12" data-slot-id="3">
+
+<!-- BEGIN ContentCarousel.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+            
+            
+
+			
+
+            
+            
+
+            
+                                            
+            
+            
+                
+			
+				
+					
+						
+					
+				
+					
+						
+					
+				
+					
+						
+					
+				
+					
+						
+					
+				
+					
+						
+					
+				
+            
+                        
+			
+			
+			
+			
+            
+			
+				
+				
+			
+			
+				
+				
+			
+			
+				
+				
+			
+
+			
+			
+
+			
+			
+
+			
+			
+							
+			
+			    
+			
+			            
+            
+
+        
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+
+        
+		
+		
+			
+		
+
+        
+        
+        
+        
+
+
+        
+        
+            
+            
+            
+				
+                
+                    
+                    
+                                                  
+                        
+						
+							
+							         
+                    
+                
+                
+            
+            
+                
+
+    
+
+    
+    
+        
+
+        
+		
+		
+			
+		
+
+        
+        
+        
+        
+
+
+        
+        
+            
+            
+            
+				
+                
+                    
+                    
+                                                  
+                        
+						
+							
+							         
+                    
+                
+                
+            
+            
+                
+
+    
+
+    
+    
+        
+
+        
+		
+		
+			
+		
+
+        
+        
+        
+        
+
+
+        
+        
+            
+            
+            
+				
+                
+                    
+                    
+                                                  
+                        
+						
+							
+							         
+                    
+                
+                
+            
+            
+                
+
+    
+
+
+    
+    
+        
+    
+
+
+
+	
+
+
+
+    
+    
+        
+    
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN ContentCarousel_UI.jspf -->
+
+
+	
+	
+	
+	
+	<div dir="ltr" widgetid="contentCarouselWidget_3_-1003_2906" id="contentCarouselWidget_3_-1003_2906" class="contentCarouselWidget carousel" data-dojo-type="wc/widget/Carousel" data-dojo-props="speed:2000" lang="en">
+		<div style="transition: all 2000ms ease 0s;" id="homeHero1-background" class="homeHero-background" data-carousel-background=""></div><div style="opacity: 0;" id="homeHero2-background" class="homeHero-background" data-carousel-background=""></div><div style="opacity: 0;" id="homeHero3-background" class="homeHero-background" data-carousel-background=""></div><div class="content" data-dojo-attach-point="content">
+			<ul style="left: 0%; transition: all 2000ms ease 0s;" data-dojo-attach-point="ul">
+				<li style="width: 100%;">
+					
+					
+
+<!-- BEGIN Content_UI.jspf -->
+
+
+
+
+<div class="left_espot">
+	
+	
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<link href="home_files/styles_004.css" rel="stylesheet"> <div id="homeHero1" class="homeHero">      <div class="imageContainer">   <!--[if !IE 8]><!--><div></div><!--<![endif]-->   <!--[if IE 8]><img src="/wcsstore/AuroraDemo/rwdWebAssets/homePageMainESpot/girl.png"/><![endif]-->  </div>  <div class="textContainer">   <h3><span class="m">COLORS</span><span class="s"> OF </span><span class="l">SUMMER</span></h3>   <a class="toggle" href="#" data-toggle="contentCarouselWidget_3_-1003_2906">Show Details</a>   <p id="homeHero1-details">Vivid hues, relaxed shapes, and fluid fabrics dominate our summer dress collection. Effortless style at unbelievable prices.</p>   <a class="button" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/dresses">shop now</a>  </div> </div>
+				
+			
+		
+		
+	
+	
+	
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+
+				</li><li class="hidden" style="width: 100%;">
+					
+					
+
+<!-- BEGIN Content_UI.jspf -->
+
+
+
+
+<div class="left_espot">
+	
+	
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<link href="home_files/styles_004.css" rel="stylesheet"> <div id="homeHero2" class="homeHero">      <div class="imageContainer">   <!--[if !IE 8]><!--><div></div><!--<![endif]-->   <!--[if IE 8]><img src="/wcsstore/AuroraDemo/rwdWebAssets/homePageMainESpot/rob.png"/><![endif]-->  </div>  <div class="textContainer">   <h3><span class="m">LUXURY</span><span class="s"> LIGHTWEIGHT </span><span class="l">JACKETS</span></h3>   <a class="toggle" href="#" data-toggle="contentCarouselWidget_3_-1003_2906">Show Details</a>   <p id="homeHero2-details">Look
+ sharp and stay cool in our new unstructured sport jackets for summer. 
+Remarkably comfortable and incredibly versatile, these light wool 
+jackets combine formal and casual style into one slick look.</p>   <a class="button" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/jackets">shop now</a>  </div> </div>
+				
+			
+		
+		
+	
+	
+	
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+
+				</li><li class="hidden" style="width: 100%;">
+					
+					
+
+<!-- BEGIN Content_UI.jspf -->
+
+
+
+
+<div class="left_espot">
+	
+	
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<link href="home_files/styles_004.css" rel="stylesheet"> <div id="homeHero3" class="homeHero">      <div class="imageContainer">   <!--[if !IE 8]><!--><div></div><!--<![endif]-->   <!--[if IE 8]><img src="/wcsstore/AuroraDemo/rwdWebAssets/homePageMainESpot/teen.png"/><![endif]-->  </div>  <div class="textContainer">   <h3><span class="s">SIMPLE, </span><span class="m">CLASSIC </span><span class="l">DRESSES</span></h3>   <a class="toggle" href="#" data-toggle="contentCarouselWidget_3_-1003_2906">Show Details</a>   <p id="homeHero3-details">Flirty
+ florals, playful prints, sophisticated stripes, and eye-popping polka 
+dots. Whatever strikes your fancy, browse our teen dress collection and 
+discover your new favorite.</p>   <a class="button" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/skirts">shop now</a>  </div> </div>
+				
+			
+		
+		
+	
+	
+	
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+
+				</li>
+			</ul>
+		</div>
+		
+			<a id="prevPageButton_3_-1003_2906" href="#" class="prevPageButton" data-dojo-attach-point="prevPageButton" role="button" aria-label="Show previous page"></a>
+			<a id="nextPageButton_3_-1003_2906" href="#" class="nextPageButton" data-dojo-attach-point="nextPageButton" role="button" aria-label="Show next page"></a>
+		
+		
+			<div class="pageControl dot" data-dojo-attach-point="pageControl"><a class="selected" role="button" href="#" title="Move to page 1" aria-label="Move to page 1"></a><a role="button" href="#" title="Move to page 2" aria-label="Move to page 2"></a><a role="button" href="#" title="Move to page 3" aria-label="Move to page 3"></a></div>
+		
+		
+			
+		
+	</div>
+
+
+<!-- END ContentCarousel_UI.jspf -->
+
+
+
+
+<!-- END ContentCarousel.jsp -->
+</div>
+	</div>
+	<div class="row margin-true">
+		<div class="col8 acol12" data-slot-id="4"><!-- BEGIN CategoryRecommendation.jsp --><!-- BEGIN CategoryRecommendation_UI.jspf -->
+	
+	<div dir="ltr" widgetid="categoryRecommendationWidget_4_-1010_2907" id="categoryRecommendationWidget_4_-1010_2907" class="categoryRecommendationWidget carousel clip-true padding-true background-true border-false" data-dojo-type="wc/widget/Carousel" data-dojo-props="columnCountByWidth:{0:1,201:2,451:3,651:4,801:5,1001:6}" role="region" aria-labelledby="title_4_-1010_2907" lang="en">
+		
+			<h2 id="title_4_-1010_2907"><!-- BEGIN ESpotTitle_UI.jspf -->
+							<div class="titleItems">
+							New Summer Arrivals In...
+							</div>
+						<!-- END ESpotTitle_UI.jspf --></h2>
+		
+		<div class="content" data-dojo-attach-point="content">
+			<ul style="left: 0%; transition: all 500ms ease 0s;" data-dojo-attach-point="ul">
+				<li style="width: 25%;">
+					<!-- BEGIN CategorySpot.jspf--><!--<div class="product">-->
+<div class="catPos categorySpot">
+	
+	<div id="CategoryImage_14051_1" class="product_image">
+		
+			<a id="CategoriesESpotImgLink_14051_1" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fblouses" aria-label="Blouses" title="Blouses" onfocus="dojo.style('CategoriesESpotImgLink_14051_1', 'outline', 'none'); 
+						if (dojo.isChrome) {dojo.style('CategoryImage_14051_1', 'border', '1px solid orange');} 
+						else {dojo.style('CategoryImage_14051_1', 'border', '1px dotted gray');}" onblur="dojo.style('CategoryImage_14051_1', 'border', '1px solid transparent');">
+		
+		<img src="home_files/catr_wcl_blouses.txt" alt="Blouses">
+		
+			</a>
+		
+	</div>
+	<div class="container">
+		<a tabindex="-1" aria-hidden="true" class="product_group_name product_info" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fblouses">Blouses</a>
+	</div>
+</div>
+<!-- END CategorySpot.jspf-->
+				</li><li style="width: 25%;">
+					<!-- BEGIN CategorySpot.jspf--><!--<div class="product">-->
+<div class="catPos categorySpot">
+	
+	<div id="CategoryImage_14051_2" class="product_image">
+		
+			<a id="CategoriesESpotImgLink_14051_2" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2faccessories" aria-label="Accessories" title="Accessories" onfocus="dojo.style('CategoriesESpotImgLink_14051_2', 'outline', 'none'); 
+						if (dojo.isChrome) {dojo.style('CategoryImage_14051_2', 'border', '1px solid orange');} 
+						else {dojo.style('CategoryImage_14051_2', 'border', '1px dotted gray');}" onblur="dojo.style('CategoryImage_14051_2', 'border', '1px solid transparent');">
+		
+		<img src="home_files/catr_wac_accessories.txt" alt="Accessories">
+		
+			</a>
+		
+	</div>
+	<div class="container">
+		<a tabindex="-1" aria-hidden="true" class="product_group_name product_info" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2faccessories">Accessories</a>
+	</div>
+</div>
+<!-- END CategorySpot.jspf-->
+				</li><li style="width: 25%;">
+					<!-- BEGIN CategorySpot.jspf--><!--<div class="product">-->
+<div class="catPos categorySpot">
+	
+	<div id="CategoryImage_14051_3" class="product_image">
+		
+			<a id="CategoriesESpotImgLink_14051_3" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fsuits" aria-label="Suits" title="Suits" onfocus="dojo.style('CategoriesESpotImgLink_14051_3', 'outline', 'none'); 
+						if (dojo.isChrome) {dojo.style('CategoryImage_14051_3', 'border', '1px solid orange');} 
+						else {dojo.style('CategoryImage_14051_3', 'border', '1px dotted gray');}" onblur="dojo.style('CategoryImage_14051_3', 'border', '1px solid transparent');">
+		
+		<img src="home_files/catr_mcl_suits.txt" alt="Suits">
+		
+			</a>
+		
+	</div>
+	<div class="container">
+		<a tabindex="-1" aria-hidden="true" class="product_group_name product_info" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fsuits">Suits</a>
+	</div>
+</div>
+<!-- END CategorySpot.jspf-->
+				</li><li style="width: 25%;">
+					<!-- BEGIN CategorySpot.jspf--><!--<div class="product">-->
+<div class="catPos categorySpot">
+	
+	<div id="CategoryImage_14051_4" class="product_image">
+		
+			<a id="CategoriesESpotImgLink_14051_4" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fskirts-10722--1" aria-label="Skirts" title="Skirts" onfocus="dojo.style('CategoriesESpotImgLink_14051_4', 'outline', 'none'); 
+						if (dojo.isChrome) {dojo.style('CategoryImage_14051_4', 'border', '1px solid orange');} 
+						else {dojo.style('CategoryImage_14051_4', 'border', '1px dotted gray');}" onblur="dojo.style('CategoryImage_14051_4', 'border', '1px solid transparent');">
+		
+		<img src="home_files/catr_gcl_skirts.txt" alt="Skirts">
+		
+			</a>
+		
+	</div>
+	<div class="container">
+		<a tabindex="-1" aria-hidden="true" class="product_group_name product_info" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2fskirts-10722--1">Skirts</a>
+	</div>
+</div>
+<!-- END CategorySpot.jspf-->
+				</li><li class="hidden" style="width: 25%;">
+					<!-- BEGIN CategorySpot.jspf--><!--<div class="product">-->
+<div class="catPos categorySpot">
+	
+	<div id="CategoryImage_14051_5" class="product_image">
+		
+			<a id="CategoriesESpotImgLink_14051_5" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2ftops-10725--1" aria-label="Tops" title="Tops" onfocus="dojo.style('CategoriesESpotImgLink_14051_5', 'outline', 'none'); 
+						if (dojo.isChrome) {dojo.style('CategoryImage_14051_5', 'border', '1px solid orange');} 
+						else {dojo.style('CategoryImage_14051_5', 'border', '1px dotted gray');}" onblur="dojo.style('CategoryImage_14051_5', 'border', '1px solid transparent');">
+		
+		<img src="home_files/catr_bcl_tops.txt" alt="Tops">
+		
+			</a>
+		
+	</div>
+	<div class="container">
+		<a tabindex="-1" aria-hidden="true" class="product_group_name product_info" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=14051&amp;intv_id=11951&amp;storeId=10851&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo%2ftops-10725--1">Tops</a>
+	</div>
+</div>
+<!-- END CategorySpot.jspf-->
+				</li>
+			</ul>
+		</div>
+		<a id="prevPageButton_4_-1010_2907" href="#" class="prevPageButton" data-dojo-attach-point="prevPageButton" role="button" aria-label="Show previous page" alt="Show previous page"></a>
+		<a id="nextPageButton_4_-1010_2907" href="#" class="nextPageButton" data-dojo-attach-point="nextPageButton" role="button" aria-label="Show next page" alt="Show next page"></a>
+	</div>
+<!-- END CategoryRecommendation_UI.jspf --><!-- END CategoryRecommendation.jsp --><!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_4_-1000_2908" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot">
+	
+	
+					<link rel="stylesheet" href="home_files/styles_002.css"> <div class="col8" id="homePageEspot1" role="region" aria-label="home page Espot home furnishing">    <div class="homeESpotContainer" id="homePageEspot1_Slot">       <div class="textContainer">          <div class="title">                     Bright Ideas                   </div>          <div class="bodyText">
+                     Bring summer into your space with vibrant colors, 
+patterns, and shapes, inspired by the earth and sky.  Brighten every 
+corner of your home with our eclectic collection of traditional and 
+modern home accents.                   </div>          <div class="button"><a alt="" role="link" aria-label="Shop now home furnishing" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing">shop now</a></div>       </div>       <div class="imageContainer">                      <img alt="" id="accent1" src="home_files/accent1.txt">                      <img alt="" id="accent2" src="home_files/accent2.txt">    <div id="accent3" class="container">    <div class="accent3">                                 <!--[if IE 8]>            <img alt="" id="accent3" src="/wcsstore/AuroraDemo/rwdWebAssets/homePageEspot1/accent3.png">         <![endif]-->          <!--[if gte IE 9]><!-->                                                        <div></div>                                 <!--<![endif]-->                                                               </div>   </div>     <img alt="" id="accent4" src="home_files/accent4.txt">                   </div>    </div> </div> 
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --><!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_4_-1000_2909" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot">
+	
+	
+					<link rel="stylesheet" href="home_files/styles_003.css"> <div class="col8" id="homePageEspot2" role="region" aria-label="home Page Espot handbags">    <div class="homeESpotContainer" id="homePageEspot2_Slot">       <div class="textContainer">          <div class="title">                     Handbags                   </div>          <div class="bodyText">
+                     Indulge in luxurious leather and sumptuous suede 
+handbags, in colors that will take your breath away. From oversized 
+totes to elegant clutches, you'll find your perfect match at a perfect 
+price in our handcrafted designer collection.                    </div>          <div class="button"><a alt="" role="link" aria-label="Shop now womens handbags" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/handbags">shop now</a></div>       </div>       <div class="imageContainer">                   <img alt="" src="home_files/bags.jpg">                 </div>    </div> </div>
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --></div>
+		<div class="col4 acol12" data-slot-id="5"></div>
+	</div>
+	<div class="row homePageContainerRow4">
+		<div class="col4 acol12" data-slot-id="6"><!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_6_-1000_2910" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot">
+	
+	
+					<link rel="stylesheet" href="home_files/styles.css"> <div class="col4" id="homePageEspot_Left" role="region" aria-label="home page Espot womens shoes">    <div class="homeESpotContainer" id="homePageEspot_Left_Slot">       <div class="textContainer">          <div class="title">                         Flat-out Comfort                       </div>          <div class="bodyText">
+                         Beautifully designed, soft leather shoes with 
+an elasticized edge for perfect fit. Lightweight and durable, these 
+flats will provide all-day comfort with their cushioned insole and soft 
+lining. Multi-colored accent lace combinations and patterns are 
+available as a special order.                       </div>          <div class="button"><a alt="" role="link" aria-label="Shop now womens shoes" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/shoes">shop now</a></div>       </div>       <div class="imageContainer">       <img alt="" src="home_files/eyeCandy.jpg">                     </div>    </div> </div> 
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --></div>
+		<div class="col4 acol12" data-slot-id="7"><!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_7_-1000_2911" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot">
+	
+	
+					<link rel="stylesheet" href="home_files/styles_007.css"> <div class="col4" id="homePageEspot_Middle" role="region" aria-label="home page Espot mens shirts">    <div class="homeESpotContainer" id="homePageEspot_Middle_Slot">       <div class="imageContainer">                       <img alt="" src="home_files/mens.jpg">                     </div>       <div class="textContainer">          <div class="title">                         50% Off Polos                       </div>          <div class="bodyText">
+                         Select from our collection of modern, 
+easy-to-coordinate polo shirts to create a smart but casual look. 
+Available in a kaleidoscope of colors, with superior shape retention and
+ wrinkle resistance.   Free shipping on purchases over $60 before taxes.
+                       </div>          <div class="button"><a alt="" role="link" aria-label="Shop now mens shirts" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shirts">shop now</a></div>       </div>    </div> </div>
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --></div>
+		<div class="col4 acol12" data-slot-id="8"><!-- BEGIN ContentRecommendation.jsp --><!-- JSPs References: HomePage.jsp, BundleDisplay.jsp , CategoryNavigationDisplay.jsp, CompareProductsDisplay.jsp
+					  DynamicKitDisplay.jsp, PackageDisplay.jsp, ProductDisplay.jsp, 
+					  SearchResultDisplay.jsp, SubCategoryPage.jsp, TopCategoryPage.jsp
+					   , Footer.jsp , OrderCancelNotify.jsp , OrderCreateNotify.jsp
+					  OrderShipmentNotify.jsp, AccountActivationNotify.jsp, PasswordChangeNotify.jsp,
+					  PasswordResetNotify.jsp, WishlistCreateNotify.jsp,  LandingPage.jsp, 	
+					  ShippingDetailDisplay.jsp, ShopCartDisplay.jsp, StaticContent, 
+					  Static JSPs, Footer_UI.jsp, Header_UI.jsp, ProductDescription_UI.jsp  
+					  UserTime--><!-- BEGIN ContentRecommendation_UI.jspf -->
+			<div id="contentRecommendationWidget_8_-1000_2912" class="contentRecommendationWidget">
+			<!-- BEGIN Content_UI.jspf -->
+
+<div class="left_espot">
+	
+	
+					<link rel="stylesheet" href="home_files/styles_006.css"> <div class="col4" id="homePageEspot_Right" role="region" aria-label="home page Espot kids">    <div class="homeESpotContainer" id="homePageEspot_Right_Slot">       <div class="textContainer">          <div class="title">                       Kids' Stuff                      </div>          <div class="bodyText">
+             Summer style is all about fun prints, bright colors, 
+comfort, and durability. Stock up on our easy-to-wear and affordable 
+fashions for kids. Spend $100* or more, and earn a $25 gift certificate.
+                                    <div class="finePrint">                         *Before taxes. Gift certificates are redeemable on your next visit.                       </div>          </div>          <div class="button"><a alt="" role="link" aria-label="Shop now girls category" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls">shop now</a></div>       </div>       <div class="imageContainer">                     <img alt="" id="kids1" src="home_files/kids1.jpg">                     <img alt="" id="kids2" src="home_files/kids2.txt">                   </div>    </div> </div>
+				
+	
+</div>
+
+<!-- END Content_UI.jspf -->
+			</div>
+		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --></div>
+	</div>
+</div>
+
+<!-- END HomePageContainer.jsp -->
+
+				</div>
+			</div>
+			
+			<div id="footerWrapper">
+				
+				
+
+<!-- BEGIN Footer.jsp -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+	
+
+	
+		
+
+
+
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	
+
+
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+	
+
+
+
+	
+	
+	
+
+
+
+
+
+	
+		
+		
+		
+	
+
+
+
+
+	
+		
+		
+	
+
+	
+
+	
+
+	
+		
+
+<div id="footer" role="navigation" aria-label="Content Information">
+	<div id="footerRow1">
+		<div id="footerCustomerServiceSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
+				<h3>Customer Service</h3>
+			</div>
+			<ul>
+				
+				<li><a id="footerHelpLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/help">Help</a></li>
+				<li><a id="footerContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/contact-us">Contact Us</a></li>
+				<li><a id="footerReturnPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/return-policy">Return Policy</a></li>
+				<li><a id="footerPrivacyPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/privacy-policy">Privacy Policy</a></li>
+			</ul>
+		</div><div id="footerCorporateInfoSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerCorporateInfoSection" role="button"><span id="footerCorporateInfoSection_div_ACCE_Label" class="spanacce">Corporate Info</span></a>
+				<h3>Corporate Info</h3>
+			</div>
+			<ul>
+				<li><a id="footerAboutUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-info">About Us</a></li>
+				<li><a id="footerCorporateContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-contact-us">Contact Us</a></li>
+				
+					<li><a id="footerStoreLocatorLink" href="http://localhost/webapp/wcs/stores/servlet/AjaxStoreLocatorDisplayView?catalogId=10701&amp;langId=-1&amp;storeId=10851">Store Locator</a></li>
+				
+			</ul>
+		</div><div id="footerExploreSection" class="section">
+			<div class="header">
+				<a class="toggle" href="#" data-toggle="footerExploreSection" role="button"><span id="footerExploreSection_div_ACCE_Label" class="spanacce">Explore</span></a>
+				<h3>Explore</h3>
+			</div>
+			<ul>
+				<li><a id="footerSiteMapLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/sitemap">Site Map</a></li>
+				
+				
+					<li><a id="footerAdvancedSearchLink" href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851">Advanced Search</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		//Make sure page is loaded at this point
+		//Set requestedSubmitted to false
+		requestSubmitted = false;
+
+		// All div's whose id attribute contains dojoWidget subString -- dojo.query('div[id*="dojoWidget"]')
+		// All div's which contains dojoType attribute -- dojo.query(div[dojoType])
+		dojo.query('div[dojoType]').forEach(function(node, index, arr){
+			addToWidgetsList(node.id);
+		});
+		parseAllWidgets();
+	}); 	
+</script>
+
+
+
+
+
+
+
+
+<!-- END Footer.jsp -->
+
+				
+			</div>
+		</div>
+		
+		
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+ 
+
+
+		
+
+<div widgetid="progress_bar_dialog" id="progress_bar_dialog" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="progress_bar_dialog_title" lang="en">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="progress_bar_dialog_title" role="header" level="1"></span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+	<div id="progress_bar">
+		<div id="loading_popup">
+			<div class="top_left" id="WC_StoreCommonUtilities_div_1"><img src="home_files/transparent.gif" alt="No image available"></div>
+		        <div class="top_right" id="WC_StoreCommonUtilities_div_2"><img src="home_files/transparent.gif" alt="No image available"></div>
+		        <div class="header" id="WC_StoreCommonUtilities_div_3"></div>
+		        <div class="bodyarea" id="WC_StoreCommonUtilities_div_4">
+				<div class="bodycontent" id="WC_StoreCommonUtilities_div_5">
+					<img src="home_files/loading.gif" alt="Your request is being processed." border="0" height="44" width="44">
+			        </div>
+			</div>
+			<div class="footer" id="WC_StoreCommonUtilities_div_6">
+				 <div class="bot_left" id="WC_StoreCommonUtilities_div_7"></div>
+				 <div class="bot_right" id="WC_StoreCommonUtilities_div_8"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div><div widgetid="widget_product_comparison_popup" id="widget_product_comparison_popup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_product_comparison_popup_title" lang="en">
+	<div title="Product Comparison" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_product_comparison_popup_title" role="header" level="1">Product Comparison</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_product_comparison_popup widget_site_popup">													
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Product Comparison</span>
+								<a id="ComparePopupClose" class="close" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="CLOSE"></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="body">
+								The maximum number of products that can be compared is 4. Please refine your selection.
+							</div>
+							
+							<div class="footer">
+								<div class="button_container ">
+									<a id="ComparePopupOK" class="button_primary" tabindex="0" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="OK">
+										<div class="left_border"></div>
+										<div class="button_text">OK</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div><div widgetid="inactivityWarningPopup" id="inactivityWarningPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="inactivityWarningPopup_title" lang="en">
+	<div title="Inactivity Warning Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="inactivityWarningPopup_title" role="header" level="1">Inactivity Warning Dialog</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+	<div class="widget_site_popup">
+		<div class="top">
+			<div class="left_border"></div>
+			<div class="middle"></div>
+			<div class="right_border"></div>
+		</div>
+		<div class="clear_float"></div>
+		<div class="middle">
+			<div class="content_left_border">
+				<div class="content_right_border">
+					<div class="content">
+						<a role="button" id="inactivityWarningPopup_close" class="close_acce" title="CLOSE" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);}"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="home_files/close_normal.txt" class="closeImg" alt="CLOSE"></a>
+						<div class="clear_float"></div>
+						<div id="inactivityWarningPopup_body" class="body">
+							<div class="message_icon left">
+								<img class="error_icon" src="home_files/warning_icon.txt" alt="Warning">
+							</div>
+							
+							
+							
+							<div class="message_text left">
+							Your session is about to timeout due to inactivity.  Click OK to extend your time for an additional 30 minutes.
+							</div>
+							<div class="clear_float"></div>
+						</div>
+						<div class="footer">
+							<div class="button_container">
+								<a role="button" aria-labelledby="inactivityWarningPopupOK_Label" id="inactivityWarningPopupOK" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);} resetServerInactivity();" class="button_primary">
+									<div class="left_border"></div>
+									<div id="inactivityWarningPopupOK_Label" class="button_text">OK</div>
+									<div class="right_border"></div>
+								</a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="clear_float"></div>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear_float"></div>
+		<div class="bottom">
+			<div class="left_border"></div>
+			<div class="middle"></div>
+			<div class="right_border"></div>
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+</div><div widgetid="shoppingListItemAddedPopup" id="shoppingListItemAddedPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="shoppingListItemAddedPopup_title" lang="en">
+	<div title="This item has been successfully added to your list." data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="shoppingListItemAddedPopup_title" role="header" level="1">This item has been successfully added to your list.</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_site_popup">
+													
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>This item has been successfully added to your list.</span>
+								<a role="button" id="shoppingListItemAddedClose" href="javascript:ShoppingListDialogJS.close();" onclick="javascript: document.getElementById('addToShoppingList').focus();" class="close tlignore" title="Close" aria-label="Close"></a>
+								<div class="clear_float"></div>
+							</div>
+							
+								<div class="product">
+									<div class="product_image">
+										<img id="shoppingListItemAddedImg" alt="">
+									</div>
+									<div id="shoppingListItemAddedName" class="product_name"></div>
+									<div class="clear_float"></div>
+								</div>
+							
+							<div class="footer">
+								<div class="button_container ">
+									<a id="shoppingListItemAddedContinue" href="javascript:ShoppingListDialogJS.close();" class="button_primary tlignore" title="Continue Shopping">
+										<div class="left_border"></div>
+										<div class="button_text">Continue Shopping</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div><div style="display: none; position: absolute;" widgetid="widget_language_and_currency_popup" id="widget_language_and_currency_popup" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_language_and_currency_popup_title" lang="en">
+	<div title="Language and Currency Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_language_and_currency_popup_title" role="header" level="1">Language and Currency Dialog</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
+		<div class="widget_language_and_currency_popup widget_site_popup">										
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Please select a language and currency</span>
+								<a id="close" class="close_acce tlignore" title="CLOSE" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="home_files/close_normal.txt" class="closeImg" alt="CLOSE"></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="selectors">
+								<div class="selector">
+									<span class="option_name">Language:&nbsp;</span>
+									<label for="languageSelection" class="nodisplay">Language:</label>
+									<select id="languageSelection" name="langId" onchange="javascript:document.getElementById('languageSelectionHidden').value=this.value">
+										
+											
+												
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+											
+												
+													
+												
+											
+											
+												
+													<option value="-1" selected="selected">United States English</option>
+												
+												
+											
+										
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<div class="selector">
+									<span class="option_name">Currency:&nbsp;</span>
+									<label for="currencySelection" class="nodisplay">Currency:</label>
+									<select id="currencySelection" name="currency" onchange="javascript:document.getElementById('currencySelectionHidden').value=this.value">
+										
+											
+												
+													
+												
+											
+											
+												
+													<option value="USD" selected="selected">US Dollar</option>
+												
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="BRL">Brazilian Real</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="CAD">Canadian Dollar</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="CNY">Chinese Yuan</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="EGP">Egyptian Pound</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="EUR">Euro</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="GBP">British Pound</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="JPY">Japanese Yen</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="KRW">South Korean Won</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="PLN">Polish Zloty</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="RON">Romanian Leu</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="RUB">Russian Ruble</option>
+												
+											
+										
+											
+												
+													
+												
+											
+											
+												
+												
+													<option value="TWD">Taiwan Dollar</option>
+												
+											
+										
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<form id="SetLanguageCurrencyPreferenceForm" action="/webapp/wcs/stores/servlet/SetCurrencyPreference" method="post">
+									<input name="storeId" value="10851" type="hidden">
+									<input name="catalogId" value="10701" type="hidden">
+									<input id="languageSelectionHidden" name="langId" value="-1" type="hidden">
+									<input id="currencySelectionHidden" name="currency" value="USD" type="hidden">									
+									
+									
+										
+										
+											<input name="URL" value="/webapp/wcs/stores/servlet/TopCategoriesDisplay?currency*=" id="WC_SidebarDisplay_FormInput_URL_2" type="hidden">
+										
+									
+									
+										
+											
+												<input name="pageGroup" value="Content" id="WC_SidebarDisplay_FormInput_parm_1_1" type="hidden">
+											
+										
+									
+										
+											
+										
+									
+										
+											
+										
+									
+										
+											
+												<input name="pageName" value="HomePage" id="WC_SidebarDisplay_FormInput_parm_4_1" type="hidden">
+											
+										
+									
+										
+											
+										
+									
+									
+								</form>
+							</div>
+							<div class="footer">
+								<div class="button_container ">
+									<a id="LangCurrencyApplyBtn" class="button_primary tlignore" tabindex="0" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();document.getElementById('SetLanguageCurrencyPreferenceForm').submit();">
+										<div class="left_border"></div>
+										<div id="LangCurrencyApplyBtnText" class="button_text">Apply</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div></body><!-- END TopCategoriesDisplay.jsp --></html>
