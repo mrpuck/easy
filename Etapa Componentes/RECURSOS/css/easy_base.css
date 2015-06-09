@@ -582,28 +582,34 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 /* Categorías populares */
-.content.categoryList{
+.content.categoryListHome{
 	padding: 0 !important;
 	margin: 20px 0 35px 0;
 }
 
-.content.categoryList ul{
+.content.categoryListHome ul{
 	list-style: none;
 	width: 95%;
 	margin: 0 auto;
 	padding: 0 !important;
 }
 
-.content.categoryList ul li{
+.content.categoryListHome ul li{
 	float: left;
 	text-align: center;
 	width: 25%;
 	margin-bottom: 30px;
 }
 
-.content.categoryList ul li img{
+.content.categoryListHome ul li img{
 	margin: 0 auto;
 	width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+	.content.categoryListHome ul li{
+		width: 100%;
+	}	
 }
 
 .categoryTitle{
