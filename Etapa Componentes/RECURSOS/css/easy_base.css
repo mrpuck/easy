@@ -2,7 +2,8 @@
 Archivo estilos comunes portal Easy.
 */
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700');
+
 
 /* Tipografía general. Es necesario agregar en el header el link a la fuente Open Sans de google */
 body{
@@ -73,7 +74,7 @@ body{
 /* Se corrigen márgenes para igualarlo al diseño aprobado */
 #searchBox{
 	border: 0 !important;
-	margin: 5px !important;
+	margin: 6px !important;
 	height: 28px !important;
 	background: none !important;
 	border-radius: 0 !important;
@@ -84,6 +85,7 @@ body{
 	margin-top: 0px !important;
 	padding: 5px 0 !important;
 	background-color: #fff;
+	left: 5px !important;
 }
 /* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
 #searchTermWrapper > input {
@@ -125,7 +127,18 @@ body{
 	padding-left: 0 !important;
 }
 
+#footer h3 {
+	font-weight: 16px;
+}
 
+#footerRow1 > .section{
+	width: 19% !important;
+	box-sizing: border-box;
+}
+
+#footerRow1 > .section > ul > li > a{
+	padding: 5px 10px !important; 
+}
 /* Categorías */
 
 .categoryNavWidget.collapsible{
@@ -603,7 +616,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 .content.categoryListHome ul li img{
 	margin: 0 auto;
-	width: 80%;
+	width: 85%;
 }
 
 @media screen and (max-width: 800px) {
@@ -615,7 +628,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 .categoryTitle{
 	opacity: 0.7;
 	position: relative;
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 	height: 30px;
 	margin-top: -40px;
@@ -694,6 +707,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 .productSlider ul li .product_price .especial{
 	color: #E42420;
+	min-height: 32px;
 	font-size: 18px;
 	text-align: left;
 	width: 87%;
@@ -702,13 +716,13 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 .productSlider ul li .product_price .especial img{
 	position: relative;
-	top: 7px;
 }
 
-.productSlider ul li .product_price>div{
+.productSlider ul li .product_price>a{
   	width: 86%;
   	margin: 0 auto;
   	text-align: left;
+  	font-weight: normal !important;
 }
 .productSlider ul li .product_price .textLeft{
 	width: 60%;
@@ -720,12 +734,21 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	font-size: 13px;
 	font-weight: bold;
 	margin-top: 15px;
+	width: 95%;
+	display: block;
+	min-height: 18px
 }
 
 .productSlider ul li .product_price .normal{
 	color: #666666;
+	width: 95%;
 	font-size: 13px;
+	font-weight: normal !important;
 	margin-bottom: 15px;
+}
+
+.productSlider ul li .product_price .priceNumber{
+	float: right;
 }
 
 .productSlider ul li .product_price .wishlist{
@@ -733,7 +756,6 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	color: #000;
 	padding-left: 15px;
 	background: url('../img/heart.png') center left no-repeat; 
-	font-weight: bold;
 	margin-bottom: 14px;
 	display: inline-block;
 	width: 78%;
@@ -756,12 +778,14 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 .whiteCart span{
 	float: left;
 	padding-top: 5px !important;
-	font-size: 14px;
+	font-size: 16px;
+	padding-right: 0 !important;
+	font-weight: normal;
 }
 .whiteCart img{
 	margin-top: 2px;
   	margin-right: 10px;
-  	margin-left: 19px;
+  	margin-left: 12px;
 }
 
 .prevPageButton.secondary{
@@ -824,7 +848,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 /* Footer */
 @media (min-width: 961px) {
 	#footerRow1 {
-		width: 1200px !important;
+		width: 100% !important;
 		text-align: center;
 	}
 }
@@ -881,7 +905,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 #searchTermWrapper{
-	width: 90%;
+	width: 85%;
 }
 
 .separator{
@@ -905,6 +929,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 .contactInfo{
+	font-weight: bold;
 	border-top: #E2E2E1 2px solid;
 	border-bottom: #E2E2E1 2px solid;
 	width: 20%;
@@ -949,7 +974,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 #quickLinksBar{
-	float: left;
+	float: right;
 	margin-top: 45px !important;
 }
 
@@ -1032,6 +1057,14 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 
 /* Menu */ 
+@media (min-width: 1025px){
+	.departmentMenu {
+	  width: 800px !important	;
+	}
+}
+.categoryList{
+	font-size: 14px;
+}
 #departmentsMenu{
 	margin: 0 !important;
 	float: left;
@@ -1056,20 +1089,22 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	position: relative;
 	bottom: -4px;
 }
-
+.departmentButton.selected > span{
+	color: #4d4d4d !important;
+}
 #headerRow2 ul.social{
 	list-style: none;
 	padding: 0;
 	padding: 9px 0 0 0;
 	float: right;
-	width: 15%;
+	width: 12%;
 }
 
 #headerRow2 ul.social li{
 	float: left;
 	width: auto;
-	padding: 0 3px;
-	width: 13%;
+	padding: 0 1%;
+	width: 16%;
 }
 
 #headerRow2 ul.social li img{
@@ -1098,7 +1133,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 .subcategoryList > li > a{
-	padding: 3px 8px !important	;
+	padding: 5px 8px !important	;
 }
 
 .categoryList>li{
