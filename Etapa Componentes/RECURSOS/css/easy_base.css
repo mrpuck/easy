@@ -569,6 +569,8 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	background-color: #EAEAEA;
 	text-transform: uppercase;
 	padding: 10px 20px !important; 
+	color: #323330 !important;
+    font-size: 20px !important;
 }
 
 /* Promociones de temporada */
