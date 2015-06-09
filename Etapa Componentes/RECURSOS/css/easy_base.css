@@ -287,9 +287,8 @@ div.namePartPriceContainer > div > span.price{
 	background: -ms-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* IE10+ */
 	background: linear-gradient(to bottom, #ef4036 0%,#c01f2e 100%) !important; /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4036', endColorstr='#c01f2e',GradientType=0 ) !important; /* IE6-9 */
-	border: #c3c6c4 1px solid !important;
+	border: 0 !important;
 	color: #fff !important;
-	border-bottom: #fff 1px solid !important;
 	border-radius: 0 !important;
 	font-weight: bold;
 	background-color: #fff !important;
@@ -566,9 +565,10 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 /* Títulos home */
 .homeSectionTitle{
+	font-weight: bold !important;
 	background-color: #EAEAEA;
 	text-transform: uppercase;
-	padding: 10px !important; 
+	padding: 10px 20px !important; 
 }
 
 /* Promociones de temporada */
@@ -616,7 +616,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 .content.categoryListHome ul li img{
 	margin: 0 auto;
-	width: 85%;
+	width: 90%;
 }
 
 @media screen and (max-width: 800px) {
@@ -628,7 +628,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 .categoryTitle{
 	opacity: 0.7;
 	position: relative;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	height: 30px;
 	margin-top: -40px;
@@ -690,6 +690,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	text-align: left;
 	font-size: 12px;
 	color: #000;
+	font-weight: bold;
 }
 
 .productSlider ul li .marca{
