@@ -847,12 +847,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 
 /* Footer */
-@media (min-width: 961px) {
-	#footerRow1 {
-		width: 100% !important;
-		text-align: center;
-	}
-}
+
 #footerWrapper{
 	text-align: center;
 }
@@ -870,6 +865,12 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 #footerRow1 > .section > ul.social > li > a{
 	padding: 0 !important;
 	text-align: center;
+}
+
+@media (max-width: 961px) {
+	#footerRow1 > .section {
+		width: 100% !important;
+	}
 }
 
 
