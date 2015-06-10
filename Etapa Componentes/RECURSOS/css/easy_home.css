@@ -349,7 +349,7 @@
 	position: relative !important;
 	float: left;
 	margin-top: 25px;
-	width: 25%;
+	width: 30%;
 	padding: 2px;
 	margin-left: 145px;
 }
@@ -367,8 +367,8 @@
 	right: 34px;
 	top: 0;
 	margin-left: 15px;
-	padding: 7px 0px;
-	margin-top: -7px;
+	padding: 9px 0px;
+	margin-top: -8px;
 }
 
 /* Se esconde Pseudo selector ::before */
@@ -477,14 +477,14 @@
 }
 
 .preHeader ul li{
-	width: 25%;
+	width: 10%;
 	float: left;
 	font-size: 12px;
 	font-weight: bold;
 }
 
 .preHeader ul li.encuentra{
-	width: 45%;
+	width: 50%;
 	background: url('../img/casita.png') left center no-repeat; 
 	padding-left: 24px;
 	margin-right: -24px;

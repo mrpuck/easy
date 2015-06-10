@@ -2,7 +2,8 @@
 Archivo estilos comunes portal Easy.
 */
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700');
+
 
 /* Tipografía general. Es necesario agregar en el header el link a la fuente Open Sans de google */
 body{
@@ -59,21 +60,21 @@ body{
 /* Buscador */
 
 #searchBar {
-  background: #e2e4e3 !important; /* Old browsers */ 
-  background: -moz-linear-gradient(top, #e2e4e3 0%, #b5b7b7 100%) !important; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e4e3), color-stop(100%,#b5b7b7)) !important; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #e2e4e3 0%,#b5b7b7 100%) !important; /* IE10+ */
-  background: linear-gradient(to bottom, #e2e4e3 0%,#b5b7b7 100%) !important; /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e3', endColorstr='#b5b7b7',GradientType=0 ) !important; /* IE6-9 */
+  background: #ededed !important; /* Old browsers */ 
+  background: -moz-linear-gradient(top, #ededed 0%, #c7c6c6 100%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#c7c6c6)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #ededed 0%,#c7c6c6 100%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#c7c6c6',GradientType=0 ) !important; /* IE6-9 */
   border-radius: 5px;
 }
 
 /* Se corrigen márgenes para igualarlo al diseño aprobado */
 #searchBox{
 	border: 0 !important;
-	margin: 5px !important;
+	margin: 6px !important;
 	height: 28px !important;
 	background: none !important;
 	border-radius: 0 !important;
@@ -84,6 +85,7 @@ body{
 	margin-top: 0px !important;
 	padding: 5px 0 !important;
 	background-color: #fff;
+	left: 5px !important;
 }
 /* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
 #searchTermWrapper > input {
@@ -125,7 +127,18 @@ body{
 	padding-left: 0 !important;
 }
 
+#footer h3 {
+	font-weight: 16px;
+}
 
+#footerRow1 > .section{
+	width: 19% !important;
+	box-sizing: border-box;
+}
+
+#footerRow1 > .section > ul > li > a{
+	padding: 5px 10px !important; 
+}
 /* Categorías */
 
 .categoryNavWidget.collapsible{
@@ -274,9 +287,8 @@ div.namePartPriceContainer > div > span.price{
 	background: -ms-linear-gradient(top, #ef4036 0%,#c01f2e 100%) !important; /* IE10+ */
 	background: linear-gradient(to bottom, #ef4036 0%,#c01f2e 100%) !important; /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4036', endColorstr='#c01f2e',GradientType=0 ) !important; /* IE6-9 */
-	border: #c3c6c4 1px solid !important;
+	border: 0 !important;
 	color: #fff !important;
-	border-bottom: #fff 1px solid !important;
 	border-radius: 0 !important;
 	font-weight: bold;
 	background-color: #fff !important;
@@ -546,4 +558,3 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 .my_account .body, .myaccount_desc_title{
 	color: #000 !important;
 }
-
