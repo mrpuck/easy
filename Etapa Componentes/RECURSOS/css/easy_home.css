@@ -31,7 +31,8 @@
 
 .content.list.section ul li img {
 	margin: 0 auto;
-	width: 98%;
+	width: 94%;
+	border: #ccc 1px solid;
 }
 
 /* Categorías populares */
@@ -42,7 +43,7 @@
 
 .content.categoryListHome ul{
 	list-style: none;
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 0 !important;
 }
@@ -56,7 +57,7 @@
 
 .content.categoryListHome ul li img{
 	margin: 0 auto;
-	width: 90%;
+	width: 88%;
 }
 
 @media screen and (max-width: 800px) {
@@ -381,6 +382,11 @@
 	height: 30px !important;
 	margin: 0 !important;
 }
+@media (max-width: 600px){
+	#searchButton{
+		display: none !important;
+	}
+}
 
 .contactInfo{
 	font-weight: bold;
@@ -407,9 +413,10 @@
 
 .contactInfo p{
 	width: 50%;
-	margin: 0 auto;
+	margin: 6px auto;
 	text-align: center;
 	font-size: 12px;
+	padding-top: 17px;
 }
 
 .contactInfo ul li.phone{
@@ -429,6 +436,7 @@
 
 #quickLinksBar{
 	float: right;
+	margin-right: 10px;
 	margin-top: 45px !important;
 }
 
@@ -552,12 +560,13 @@
 	padding: 9px 0 0 0;
 	float: right;
 	width: 12%;
+	margin-right: 10px;
 }
 
 #headerRow2 ul.social li{
 	float: left;
 	width: auto;
-	padding: 0 1%;
+	padding: 0 2px;
 	width: 16%;
 }
 
@@ -573,6 +582,7 @@
 
 .departmentMenu{
 	border-top: 0 !important;
+	padding-top: 10px;
 }
 
 .departmentMenu>.header{
@@ -587,7 +597,7 @@
 }
 
 .subcategoryList > li > a{
-	padding: 5px 8px !important	;
+	padding: 4px 8px !important	;
 }
 
 .categoryList>li{
