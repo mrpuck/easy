@@ -13,6 +13,25 @@ body{
 
 /* Header */
 
+.mundoexperto #quickLinksBar>li a img.experto, .mundoexperto a img.experto{
+	display: inline-block !important;
+}
+.mundoexperto #quickLinksBar>li a img.user, .experto a img.user{
+	display: none !important;
+}
+
+.left_espot.centered > a > img.experto {
+	display: none !important;
+}
+
+.mundoexperto .left_espot.centered > a > img.experto {
+	display: block !important;
+}
+
+.mundoexperto .user, .mundoexperto .left_espot.centered > a > img.user {
+	display: none !important;
+}
+
 #headerRow2{
 	min-height: 42px !important;	
 	background: #e2e4e3 !important; /* Old browsers */ 
@@ -25,6 +44,41 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e3', endColorstr='#b5b7b7',GradientType=0 ) !important; /* IE6-9 */
 	border-top: 0 !important; 
 	border-bottom: 0 !important; 
+}
+
+.mundoexperto #headerRow2{
+	min-height: 42px !important;	
+	background: #575656 !important; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #575656 0%, #373736 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575656), color-stop(100%,#373736)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #575656 0%,#373736 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #575656 0%,#373736 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #575656 0%,#373736 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #575656 0%,#373736 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575656', endColorstr='#373736',GradientType=0 ) !important; /* IE6-9 */
+	border-top: 0 !important; 
+	border-bottom: 0 !important; 
+}
+
+.mundoexperto .departmentButton span{
+	color: #fff !important;
+}
+
+.mundoexperto #searchBar{
+	background: #575656 !important; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #575656 0%, #373736 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#575656), color-stop(100%,#373736)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #575656 0%,#373736 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #575656 0%,#373736 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #575656 0%,#373736 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #575656 0%,#373736 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575656', endColorstr='#373736',GradientType=0 ) !important; /* IE6-9 */
+	border-top: 0 !important; 
+	border-bottom: 0 !important; 
+}
+
+.mundoexperto #searchBox > .submitButton{
+	background: url('../img/searchExperto.png') center center no-repeat
 }
 
 #departmentsMenu{
@@ -575,7 +629,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 /* Promociones de temporada */
 .content.list.section, .comprarconEasy{
 	padding: 0 !important;
-	margin: 20px 0 35px 0;
+	margin: 20px 0 35px 0 !important;
 }
 
 .content.list.section ul, .comprarconEasy ul{
@@ -599,7 +653,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 /* Categorías populares */
 .content.categoryListHome{
 	padding: 0 !important;
-	margin: 20px 0 35px 0;
+	margin: 20px 0 35px 0 !important;
 }
 
 .content.categoryListHome ul{
@@ -805,22 +859,22 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 
 /* Slider Principal */
-.contentCarouselWidget .content {
+.mainCarousel .content {
 	width: 100% !important;
 	margin: 0 !important;	
 }
 
-.contentCarouselWidget ul {
+.mainCarousel ul {
 	width: 96%;
 	margin: 0 auto !important;
 	left: auto !important;
 }
 
-.contentCarouselWidget ul li {
+.mainCarousel ul li {
 	width: 100%;
 }
 
-.contentCarouselWidget ul li img{
+.mainCarousel ul li img{
 	width: 100%;
 }
 
@@ -829,10 +883,10 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 /* Se esconden pseudo-selectores ::before */
-.contentCarouselWidget > .prevPageButton:before, .contentCarouselWidget > .nextPageButton:before{
+.carousel > .prevPageButton:before, .carousel > .nextPageButton:before{
 	display: none;
 }
-.contentCarouselWidget > .prevPageButton, .contentCarouselWidget > .nextPageButton {
+.mainCarousel > .prevPageButton, .mainCarousel > .nextPageButton {
   width: 60px !important;
   height: 100% !important;
   margin-top: 0 !important;
@@ -841,12 +895,12 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
   opacity: 0.6;
 }
 
-.contentCarouselWidget > .prevPageButton{
+.mainCarousel > .prevPageButton{
 	left: 2% !important;
 	background: url('../img/prevSliderSecondary.png') #fff center center no-repeat; 
 }
 
-.contentCarouselWidget > .nextPageButton{
+.mainCarousel > .nextPageButton{
 	background: url('../img/nextSliderSecondary.png') #fff center center no-repeat; 
 	right: 2% !important;
 }
@@ -1017,6 +1071,29 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	display: inline-block !important;
 }
 
+#quickLinksBar>li>a img.experto{
+	display: none !important;
+}
+
+.mundoexperto #quickLinksBar a img.experto{
+	display: inline-block !important;
+}
+
+#quickLinksBar>li>a.experto, #quickLinksBar>li>div>a img.experto{
+	display: none;
+}
+
+.warninglabel{
+	display: none;
+}
+.mundoexperto .warninglabel{
+	display: block;
+	width: 100%;
+	background: url('../img/expertBack.png') left center repeat-x;
+	height: 10px;
+	clear: both; 
+}
+
 #quickLinksBar > li > a > br {
 	display: block !important;
 }
@@ -1078,6 +1155,11 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
     }
 }
 
+.mundoexperto .preHeader{
+	background: #6f6f6e !important;
+	color: #fff !important;
+}
+
 
 /* Menu */ 
 @media (min-width: 1025px){
@@ -1101,6 +1183,10 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 .departmentButton{
 	padding-right: 30px;
 	background: url('../img/arrowDown.png') right 15px center no-repeat !important; 
+}
+
+.mundoexperto .departmentButton{
+	background: url('../img/flechaExperto.png') right 15px center no-repeat !important; 	
 }
 
 .departmentButton.selected{
@@ -1172,6 +1258,100 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 
+/* Newsletter */
 
+.newsletter{
+	width: 70%;
+  	margin: 0 auto !important;
+  	float: none !important;
+}
 
+#newsletterBar {
+  background: #ededed !important; /* Old browsers */ 
+  background: -moz-linear-gradient(top, #ededed 0%, #c7c6c6 100%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#c7c6c6)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ededed 0%,#c7c6c6 100%) !important; /* IE10+ */
+  background: linear-gradient(to bottom, #ededed 0%,#c7c6c6 100%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#c7c6c6',GradientType=0 ) !important; /* IE6-9 */
+  border-radius: 5px;
+  position: relative;
+  float: left;
+  width: 33%;
+}
 
+/* Se corrigen márgenes para igualarlo al diseño aprobado */
+#newsletterBox{
+	border: 0 !important;
+	margin: 6px !important;
+	height: 28px !important;
+	background: none !important;
+	border-radius: 0 !important;
+	position: relative;
+}
+/* Se corrige padding para igualarlo al diseño aprobado */
+
+#newsletterTermWrapper{
+	margin-top: 0px !important;
+	padding: 5px 0 !important;
+	left: 5px !important;
+	position: relative;
+	width: 76%;
+}
+/* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
+#newsletterTermWrapper > input {
+	font-size: 14px;
+  	background-color: #fff !important;
+ 	margin-left: 5px !important;
+  	width: 100% !important;
+  	border: 0;
+  	margin-top: 4px;
+  	margin-bottom: 4px;
+  	height: 20px
+}
+/* Se corrigen ancho y márgenes para igualarlo al diseño aprobado */
+#newsletterFilterButton{
+	margin-top: -7px !important;
+  	border-right: #fff 2px solid !important;
+  	border-left: 0 !important;
+  	padding-top: 14px !important;
+  	height: 23px !important;
+}
+/* Se corrigen márgenes para igualarlo al diseño aprobado */
+#newsetterBox .submitButton{
+	float: left;
+	background: url('../img/newsletter.png') center center no-repeat;
+	height: 31px;
+	width: 32px;
+	position: absolute;
+	right: 0px;
+	top: -1px;
+}
+
+#newsetterBox .separator{
+	right: 15% !important;
+}
+
+.newsletterText{
+	font-size: 15px;
+	float: left;
+	margin-right: 20px;
+    margin-top: 7px;
+}
+
+.newsletterButton{
+	float: left;
+  	margin-left: 20px;
+}
+
+.newsletterButton .basicButton{
+  height: 28px;
+  margin-top: 5px;
+}
+
+.newsletterButton .basicButton span{
+	padding-right: 15px !important;
+	text-transform: uppercase;
+	font-size: 14px;
+}
