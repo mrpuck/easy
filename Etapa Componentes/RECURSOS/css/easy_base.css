@@ -1478,6 +1478,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 
 .consejosWrapper .content.list.section >div>div img, .consejosWrapper .categoryTitle{
 	width: 75%;
+	font-weight: bold;
 }
 
 .consejosWrapper .content.list.section{
