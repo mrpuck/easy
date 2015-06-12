@@ -1110,6 +1110,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	float: right;
 	margin-right: 10px;
 	margin-top: 45px !important;
+	margin-left: -2px !important;
 }
 
 #quickLinksBar > li{

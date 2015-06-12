@@ -30,493 +30,11 @@
 	</head>
 	<body>
 
-		
-
-<span class="spanacce" style="display:none" id="MessageArea_ACCE_Title">Message Dialog</span>
-<div id="MessageArea" class="store_message" role="alert" aria-labelledby="MessageArea_ACCE_Title">
-	<div id="msgpopup_content_wrapper" class="content">
-		<a id="clickableErrorMessageImg" role="button" class="close tlignore" href="javascript:MessageHelper.hideMessageArea();" title="Close">
-			<div class="close_text">Close</div>
-			<div class="close_icon"></div>
-			<div class="clear_float"></div>
-		</a>
-		
-		<div class="clear_float"></div>
-		
-		<div class="message">
-			<div class="message_icon">
-				<img id="error_icon" style="display:none;" class="error_icon" src="../RECURSOS/img/error_icon.txt" alt="">
-				<img id="success_icon" style="display:none;" class="error_icon" src="../RECURSOS/img/success_icon.txt" alt="">
-			</div>
-			<div class="message_text" role="region" aria-required="true" aria-labelledby="MessageArea">
-				<span id="ErrorMessageText">
-					
-				</span>
-			</div>
-			<div class="clear_float"></div>
-		</div>		
-	</div>
-</div>
-<span class="spanacce" id="ariaMessage_ACCE_Label" style="display:none">Display Update Message</span>
-<span class="spanacce" role="region" aria-labelledby="ariaMessage_ACCE_Label" id="ariaMessage" aria-live="assertive" aria-atomic="true" aria-relevant="additions"></span>
-
 		<div id="page">
-			<div id="headerWrapper">
-				
-
-
-<div id="header" role="banner">
-	<!-- Elemento nuevo, preHeader: Se agrega elemento para botones  -->
-	<div class="preHeader">
-		<ul>
-			<!-- Elemento nuevo, login: Esconder cuando el usuario no esté logueado -->
-			<li class="login"><a href="" >Hola, Usuario</a></li>
-
-			<li class="encuentra"><a href="" >Encuentra tu tienda</a></li>
-			<li class=""><a href="" >Ayuda</a></li>
-		</ul>
-		<div class="clear_float"></div>
-	</div>
-	<!-- fin -->
-	<div id="headerRow1">
-		<div id="logo">
-			
-			
-			<div id="contentRecommendationWidget_HeaderStoreLogo_Content" class="contentRecommendationWidget">
-
-
-<div class="left_espot centered">
-	
-	
-					<a id="contentLink_1_HeaderStoreLogo_Content" href="http://localhost/webapp/wcs/stores/servlet/ClickInfo?evtype=CpgnClick&amp;mpe_id=13960&amp;intv_id=0&amp;storeId=10851&amp;catalogId=10701&amp;langId=-1&amp;URL=http%3a%2f%2flocalhost%2fwebapp%2fwcs%2fstores%2fservlet%2fen%2faurorademo" title="AuroraDemo">
-						<img id="contentImage_1_HeaderStoreLogo_Content" src="../RECURSOS/img/logo.png" alt="AuroraDemo">
-					</a>
-				
-	
-</div>
-
-<!-- END Content_UI.jspf -->
-			</div>
-		<!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp -->
-			
-		</div>
-
-<a id="searchButton" href="#" role="button" data-toggle="searchBar" aria-label="Search" title="Search"><span id="searchButton_ACCE_Label" class="spanacce">Search</span></a>
-
-<div id="searchBar" data-parent="header">
-	
-	<form id="searchBox" name="CatalogSearchForm" method="get" action="http://localhost/webapp/wcs/stores/servlet/SearchDisplay">
-		<input id="categoryId" name="categoryId" type="hidden">
-		<input name="storeId" value="10851" type="hidden">
-		<input name="catalogId" value="10701" type="hidden">
-		<input name="langId" value="-1" type="hidden">
-		<input name="sType" value="SimpleSearch" type="hidden">
-		<input name="resultCatEntryType" value="2" type="hidden">
-		<input name="showResultsPage" value="true" type="hidden">
-		<input name="searchSource" value="Q" type="hidden">
-		<input name="pageView" value="" type="hidden">
-		<input name="beginIndex" value="0" type="hidden">
-		<input name="pageSize" value="12" type="hidden">
-
-		<div id="searchTermWrapper"><label id="searchFormLabel" for="SimpleSearchForm_SearchTerm">Search</label><input id="SimpleSearchForm_SearchTerm" name="searchTerm" placeholder="Search" autocomplete="off" type="text"></div>
-		<!-- Start SearchDropdownWidget -->
-		<div id="searchDropdown">
-			<div id="autoSuggest_Result_div">
-				<div id="widget_search_dropdown">
-					<!-- Main Content Area -->
-					<div id="AutoSuggestDiv" role="list" aria-required="true" onmouseover="SearchJS.autoSuggestHover = true;" onmouseout="SearchJS.autoSuggestHover = false; document.getElementById('SimpleSearchForm_SearchTerm').focus();">
-						<ul><li><span id="autoSuggestDynamic_Result_div_ACCE_Label" class="spanacce">Suggested keywords menu</span>
-						<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestDynamic_Result_div" controllerid="AutoSuggestDisplayController" id="autoSuggestDynamic_Result_div" role="list" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestDynamic_Result_div_ACCE_Label" lang="en">
-						
-						</div></li></ul>
-						<ul><li><div id="autoSuggestStatic_1"></div></li></ul>
-						<ul><li><div id="autoSuggestStatic_2"></div></li></ul>
-						<ul><li><div id="autoSuggestStatic_3"></div></li></ul>
-						<ul><li><div id="autoSuggestHistory"></div></li></ul>
-						<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851" onclick="SearchJS.gotoAdvancedSearch('http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851');return false;" id="advancedSearch"><div>Advanced Search</div></a></li></ul>
-					</div>
-					<!-- End content Section -->
-				</div>
-			</div>
-		</div>
-		<!-- End SearchDropdownWidget -->
-		<!-- Refresh area to retrieve cached suggestions -->
-		<span id="autoSuggestCachedSuggestions_div_ACCE_Label" class="spanacce">Suggested site content and search history menu</span>
-		<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="autoSuggestCachedSuggestions_div" controllerid="AutoSuggestCachedSuggestionsController" id="autoSuggestCachedSuggestions_div" role="region" aria-live="polite" aria-atomic="true" aria-relevant="all" aria-labelledby="autoSuggestCachedSuggestions_div_ACCE_Label" lang="en"></div>
-		<div class="separator"></div>
-		<a href="#" class="submitButton" role="button" aria-label="Search" title="Search"><span id="submitButton_ACCE_Label" class="spanacce">Search</span></a>
-	</form>
-</div>
-<!-- Elemento nuevo, contactInfo: se agrega elemento con información de contacto -->
-<div class="contactInfo">
-	<ul>
-		<li class="phone">600 600 3279</li>
-		<li class="mobile">02 2213 1652</li>
-	</ul>
-	<p>Servicio al cliente & Fono Compras</p>
-</div>
-
-		<ul id="quickLinksBar"><li class="">
-					<a id="signInOutQuickLink_alt" href="https://localhost/webapp/wcs/stores/servlet/LogonForm?catalogId=10701&amp;myAcctMain=1&amp;langId=-1&amp;storeId=10851">
-						<img src="../RECURSOS/img/register.png" /><br />
-						Regístrate / Crear cuenta
-					</a>
-				</li><li class="separator-false">
-			
-
-
-<span id="MiniShoppingCart_Label" class="spanacce">Shopping <br>Cart</span>
-<div title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" id="MiniShoppingCart" widgetid="MiniShoppingCart" controllerid="MiniShoppingCartController" ariamessage="Shopping Cart Display Updated" arialiveid="ariaMessage" role="region" aria-labelledby="MiniShoppingCart_Label" lang="en">
-	
-
-
-<a id="widget_minishopcart" href="#" role="button" onclick="javascript:toggleMiniShopCartDropDown('widget_minishopcart','quick_cart_container','orderItemsList');" onkeypress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');" aria-label="Shopping Cart">
-	<img src="../RECURSOS/img/redCart.png" /><br />
-	<!-- Elemento nuevo, precio: Se agrega precio total -->
-	4 Items - $596.000
-</a>
-
-<div id="placeHolder"></div>
-<div id="MiniShopCartProductAdded">
-	<div id="MiniShopCartProductAddedWrapper" style="display:none;" aria-labelledby="cartDropdownMessage">
-		<div id="widget_minishopcart_popup_1">
-			<div id="cartDropdown">
-				<h3 id="cartDropdownMessage">This item has been successfully added:</h3>
-				<a id="MiniShopCartCloseButton_2" href="javascript:dijit.byId('MiniShopCartProductAdded').hide();" class="closeButton">Close</a>
-				<div class="content">
-					<div class="products added">
-						
-					</div>
-				</div>
-				<div class="footer">
-					<a id="GotoCartButton2" href="http://localhost/webapp/wcs/stores/servlet/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;catalogId=10701&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10851&amp;URL=https%3A%2F%2Flocalhost%2Fwebapp%2Fwcs%2Fstores%2Fservlet%2FAjaxOrderItemDisplayView%3F" class="basicButton">
-						<span>Go to Cart</span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-</div>
-
-<div role="group" title="" class="dijitContentPane" id="MiniShopCartContents" dojotype="wc.widget.RefreshArea" widgetid="MiniShopCartContents" controllerid="MiniShopCartContentsController" aria-labelledby="MiniShoppingCart_Label" lang="en">
-</div>
-
-
-		</li></ul>
-	</div>
-
-	<div id="headerRow2">
-		<a id="departmentsButton" href="#" class="basicButton" role="button" aria-haspopup="true" data-toggle="departmentsMenu"><span>Departments</span></a><div id="wc_widget_RefreshArea_0" role="group" title="" class="dijitContentPane" dojotype="wc.widget.RefreshArea" widgetid="wc_widget_RefreshArea_0" controllerid="departmentSubMenu_Controller" aria-labelledby="departmentsButton" lang="en">
-		<ul id="departmentsMenu" role="menu" class="" data-parent="header" aria-labelledby="departmentsButton"><li class="active">
-			<a id="departmentButton_10701" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10701"><span>Apparel</span></a>
-			<div id="departmentMenu_10701" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10701" aria-label="Apparel">
-				<div class="header">
-					<a id="departmentLink_10701" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="link menuLink" role="menuitem" tabindex="-1">Apparel</a>
-					<a id="departmentToggle_10701" href="#" class="toggle" role="button" data-toggle="departmentMenu_10701" aria-labelledby="departmentLink_10701"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10701_10705" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls" class="menuLink" role="menuitem" tabindex="-1">Girls</a>
-						
-							<ul class="subcategoryList"><li>
-								
-								<a id="subcategoryLink_10701_10705_10720" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/shoes-10720--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10705_10721" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/pants-10721--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10705_10722" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/skirts-10722--1" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10705_10723" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/girls/tops-10723--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
-							</li></ul>
-						
-					</li><li>
-						
-						<a id="categoryLink_10701_10704" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys" class="menuLink" role="menuitem" tabindex="-1">Boys</a>
-						
-							<ul class="subcategoryList"><li>
-								
-								<a id="subcategoryLink_10701_10704_10724" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/pants-10724--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10704_10725" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/tops-10725--1" class="menuLink" role="menuitem" tabindex="-1">Tops</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10704_10726" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/boys/shoes-10726--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
-							</li></ul>
-						
-					</li><li>
-						
-						<a id="categoryLink_10701_10703" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women" class="menuLink" role="menuitem" tabindex="-1">Women</a>
-						
-							<ul class="subcategoryList"><li>
-								
-								<a id="subcategoryLink_10701_10703_10706" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/dresses" class="menuLink" role="menuitem" tabindex="-1">Dresses</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10707" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/blouses" class="menuLink" role="menuitem" tabindex="-1">Blouses</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10708" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/sweaters" class="menuLink" role="menuitem" tabindex="-1">Sweaters</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10709" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/skirts" class="menuLink" role="menuitem" tabindex="-1">Skirts</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10710" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/pants" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10711" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/shoes" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10712" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/handbags" class="menuLink" role="menuitem" tabindex="-1">Handbags</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10703_10713" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/women/accessories" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
-							</li></ul>
-						
-					</li><li>
-						
-						<a id="categoryLink_10701_10702" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men" class="menuLink" role="menuitem" tabindex="-1">Men</a>
-						
-							<ul class="subcategoryList"><li>
-								
-								<a id="subcategoryLink_10701_10702_10714" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/jackets" class="menuLink" role="menuitem" tabindex="-1">Jackets</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10702_10715" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shirts" class="menuLink" role="menuitem" tabindex="-1">Shirts</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10702_10716" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/suits" class="menuLink" role="menuitem" tabindex="-1">Suits</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10702_10717" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/pants-10717--1" class="menuLink" role="menuitem" tabindex="-1">Pants</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10702_10718" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/accessories-10718--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
-							</li><li>
-								
-								<a id="subcategoryLink_10701_10702_10719" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel/men/shoes-10719--1" class="menuLink" role="menuitem" tabindex="-1">Shoes</a>
-							</li></ul>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="">
-			<a id="departmentButton_10727" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10727"><span>Electronics</span></a>
-			<div id="departmentMenu_10727" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10727" aria-label="Electronics">
-				<div class="header">
-					<a id="departmentLink_10727" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="link menuLink" role="menuitem" tabindex="-1">Electronics</a>
-					<a id="departmentToggle_10727" href="#" class="toggle" role="button" data-toggle="departmentMenu_10727" aria-labelledby="departmentLink_10727"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10727_10728" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/accessories-10728--1" class="menuLink" role="menuitem" tabindex="-1">Accessories</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10727_10729" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/tablets-10729--1" class="menuLink" role="menuitem" tabindex="-1">Tablets</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10727_10730" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/laptops-10730--1" class="menuLink" role="menuitem" tabindex="-1">Laptops</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10727_10731" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/desktops" class="menuLink" role="menuitem" tabindex="-1">Desktops</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10727_10732" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics/components" class="menuLink" role="menuitem" tabindex="-1">Components</a>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="">
-			<a id="departmentButton_10733" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10733"><span>Grocery</span></a>
-			<div id="departmentMenu_10733" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10733" aria-label="Grocery">
-				<div class="header">
-					<a id="departmentLink_10733" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="link menuLink" role="menuitem" tabindex="-1">Grocery</a>
-					<a id="departmentToggle_10733" href="#" class="toggle" role="button" data-toggle="departmentMenu_10733" aria-labelledby="departmentLink_10733"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10733_10734" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/dairy" class="menuLink" role="menuitem" tabindex="-1">Dairy</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10733_10735" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/fruit-10735--1" class="menuLink" role="menuitem" tabindex="-1">Fruit</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10733_10736" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/meat" class="menuLink" role="menuitem" tabindex="-1">Meat</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10733_10737" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery/vegetables" class="menuLink" role="menuitem" tabindex="-1">Vegetables</a>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="">
-			<a id="departmentButton_10738" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10738"><span>Health</span></a>
-			<div id="departmentMenu_10738" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10738" aria-label="Health">
-				<div class="header">
-					<a id="departmentLink_10738" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="link menuLink" role="menuitem" tabindex="-1">Health</a>
-					<a id="departmentToggle_10738" href="#" class="toggle" role="button" data-toggle="departmentMenu_10738" aria-labelledby="departmentLink_10738"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10738_10739" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/medicine" class="menuLink" role="menuitem" tabindex="-1">Medicine</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10738_10740" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health/vitamins" class="menuLink" role="menuitem" tabindex="-1">Vitamins</a>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="">
-			<a id="departmentButton_10741" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10741"><span>Home &amp; Furnishing</span></a>
-			<div id="departmentMenu_10741" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10741" aria-label="Home &amp; Furnishing">
-				<div class="header">
-					<a id="departmentLink_10741" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="link menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
-					<a id="departmentToggle_10741" href="#" class="toggle" role="button" data-toggle="departmentMenu_10741" aria-labelledby="departmentLink_10741"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10741_10742" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/bath-accessories" class="menuLink" role="menuitem" tabindex="-1">Bath Accessories</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10741_10743" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/furniture" class="menuLink" role="menuitem" tabindex="-1">Furniture</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10741_10744" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/kitchenware" class="menuLink" role="menuitem" tabindex="-1">Kitchenware</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10741_10745" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/lighting" class="menuLink" role="menuitem" tabindex="-1">Lighting</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10741_10746" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/tableware" class="menuLink" role="menuitem" tabindex="-1">Tableware</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10741_10747" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing/appliances" class="menuLink" role="menuitem" tabindex="-1">Appliances</a>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="hidden">
-			<a id="departmentButton_10748" href="#" class="departmentButton" role="menuitem" aria-haspopup="true" data-toggle="departmentMenu_10748"><span>Newsletters &amp; Magazines</span></a>
-			<div id="departmentMenu_10748" class="departmentMenu" role="menu" data-parent="departmentsMenu" data-id="10748" aria-label="Newsletters &amp; Magazines">
-				<div class="header">
-					<a id="departmentLink_10748" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="link menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
-					<a id="departmentToggle_10748" href="#" class="toggle" role="button" data-toggle="departmentMenu_10748" aria-labelledby="departmentLink_10748"><span role="presentation"></span></a>
-				</div>
-				
-					<ul class="categoryList"><li>
-						
-						<a id="categoryLink_10748_10749" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/magazines-10749--1" class="menuLink" role="menuitem" tabindex="-1">Magazines</a>
-						
-					</li><li>
-						
-						<a id="categoryLink_10748_10750" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines/newsletters" class="menuLink" role="menuitem" tabindex="-1">Newsletters</a>
-						
-					</li></ul>
-				
-			</div>
-		</li><li class="">
-			<a id="allDepartmentsButton" href="#" class="departmentButton" role="button" aria-haspopup="true" data-toggle="allDepartmentsMenu"><span>All Departments</span></a>
-			<ul id="allDepartmentsMenu" class="departmentMenu" role="menu" data-parent="departmentsMenu" aria-labelledby="allDepartmentsButton"><li>
-				<a id="departmentLink_10701_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/apparel" class="menuLink" role="menuitem" tabindex="-1">Apparel</a>
-			</li><li>
-				<a id="departmentLink_10727_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/electronics" class="menuLink" role="menuitem" tabindex="-1">Electronics</a>
-			</li><li>
-				<a id="departmentLink_10733_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/grocery" class="menuLink" role="menuitem" tabindex="-1">Grocery</a>
-			</li><li>
-				<a id="departmentLink_10738_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/health" class="menuLink" role="menuitem" tabindex="-1">Health</a>
-			</li><li>
-				<a id="departmentLink_10741_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/home---furnishing" class="menuLink" role="menuitem" tabindex="-1">Home &amp; Furnishing</a>
-			</li><li>
-				<a id="departmentLink_10748_alt" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/newsletters---magazines" class="menuLink" role="menuitem" tabindex="-1">Newsletters &amp; Magazines</a>
-			</li></ul>
-		</li></ul>
-		<ul class="social">
-				<li>
-					<a href=""><img src="../RECURSOS/img/facebook.png"></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/pinterest.png"></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/twitter.png"></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/instagram.png"></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/youtube.png"></a>
-				</li>
-			</ul>
-
-	</div>
-
-	</div>
-</div>
-
-<!-- Final del header -->
-				
-			</div>
 			
 			<div id="contentWrapper">
 				<div id="content" role="main">
-	<div class="row">
-		<div class="col6 acol12" data-slot-id="2">
-			<div id="contentRecommendationWidget_2_-1012_2703" class="contentRecommendationWidget">
-			<!-- subHeader -->
-
-<div class="left_espot">
 	
-	
-					<div style="padding:10px 0;background-color:#f5f5f5;color:#C64200;font-size:15px;text-align:center;"><b>SAVE 20%</b> on all New Arrivals</div>
-				
-	
-</div>
-
-<!-- END Content_UI.jspf -->
-			</div>
-
-</div>
-		<div class="col6 acol12" data-slot-id="3">
-			<div id="contentRecommendationWidget_3_-1012_2704" class="contentRecommendationWidget">
-			<!-- BEGIN Content_UI.jspf -->
-
-<div class="left_espot">
-	
-	
-					<div style="padding:10px 0;background-color:#f5f5f5;color:#707070;font-size:15px;text-align:center;"><b>RECEIVE 15% OFF</b> Your Entire Purchase</div>
-				
-	
-</div>
-
-<!-- END Content_UI.jspf -->
-			</div>
-
-</div>
-	</div>
 <div class="rowContainer categoryContainer" id="container_11202">
 	
 	
@@ -550,7 +68,7 @@
 	<div class="row margin-true">
 		<div class="col12 acol12" data-slot-id="4">
 			<div class="secondaryCarousel mainCarousel carousel">
-		<div class="content" data-dojo-attach-point="content">
+		<div class="content">
 			<ul data-dojo-attach-point="ul">
 				<li>
 					<a href=""><img src="../RECURSOS/img/slide_principal.png"></a>
@@ -587,7 +105,7 @@
 
 	
 			<div class="row facetContainer">
-				<div id="facetOptions_5_-1004_2706" class="col12">
+				<div class="col12">
 					<div aria-expanded="true" aria-label="Facet Widget" role="navigation" id="facet_nav_collapsible_5_-1004_2706" class="facetWidget collapsible">
 						<h3 aria-describedby="facet_widget_acce_desc" aria-label="Filter by" aria-controls="facet_nav_collapsible_5_-1004_2706" tabindex="0" role="button" class="toggle">Filter by</h3>
 						<span class="spanacce" id="facet_widget_acce_desc">Press enter to collapse or expand the menu.</span>
@@ -606,20 +124,18 @@
 
 									<div class="vertical">
 										<div class="optionContainer" id="section_0_5_-1004_2706">
-											<div class="title" onclick="SearchBasedNavigationDisplayJS.toggleExpand(&quot;0_5_-1004_2706&quot;); return false;" onkeydown="if(event.keyCode == dojo.keys.SPACE || event.keyCode == dojo.keys.ENTER) {SearchBasedNavigationDisplayJS.toggleExpand(&quot;0_5_-1004_2706&quot;); return false;}" aria-describedby="facet_widget_acce_desc" aria-label="PRICE" aria-controls="section_list_0_5_-1004_2706" tabindex="0" role="button" id="section_button_0_5_-1004_2706">
+											<div class="title">
 												<div class="arrow" id="icon_0_5_-1004_2706">-</div>
 												Precio
 											</div>
-											<div aria-labelledby="section_button_0_5_-1004_2706" aria-expanded="true" role="group" class="facetSelectContainer" id="section_list_0_5_-1004_2706">
+											<div class="facetSelectContainer" id="section_list_0_5_-1004_2706">
 
 												<ul class="facetSelect">
 													
 														<li class="" id="facet_4012342324948481253249484841_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '4012342324948481253249484841');}else{dojo.topic.publish('Facet_Remove', '4012342324948481253249484841');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '4012342324948481253249484841');}else{dojo.topic.publish('Facet_Remove', '4012342324948481253249484841')};}else{this.checked = false};" value="price_USD%3A%28%7B*+100%7D+100%29" id="4012342324948481253249484841" aria-labelledby="4012342324948481253249484841_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('4012342324948481253249484841');" data-for="4012342324948481253249484841" href="#" class="facetbutton" id="facetButton_5_-1004_2706_31_Less_than_$100" aria-labelledby="4012342324948481253249484841_ACCE_Label" role="button">
+															<input type="checkbox">
+															<a class="facetbutton" id="facetButton_5_-1004_2706_31_Less_than_$100" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="4012342324948481253249484841">Facet Value</label></span>
-																
-																	
 																	
 																		<div class="checkBox">
 																			<div class="checkmark"></div>
@@ -635,12 +151,9 @@
 														
 
 														<li class="" id="facet_40123504848325148481253251484841_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '40123504848325148481253251484841');}else{dojo.topic.publish('Facet_Remove', '40123504848325148481253251484841');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '40123504848325148481253251484841');}else{dojo.topic.publish('Facet_Remove', '40123504848325148481253251484841')};}else{this.checked = false};" value="price_USD%3A%28%7B200+300%7D+300%29" id="40123504848325148481253251484841" aria-labelledby="40123504848325148481253251484841_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('40123504848325148481253251484841');" data-for="40123504848325148481253251484841" href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Between_$200_and_$300" aria-labelledby="40123504848325148481253251484841_ACCE_Label" role="button">
+															<input type="checkbox"  class="nodisplay" tabindex="-1">
+															<a href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Between_$200_and_$300" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="40123504848325148481253251484841">Facet Value</label></span>
-																
-																	
-																	
 																		<div class="checkBox">
 																			<div class="checkmark"></div>
 																		</div>
@@ -693,7 +206,7 @@
 
 									<div class="vertical">
 										<div class="optionContainer" id="section_mfName_ntk_cs_5_-1004_2706">
-											<div class="title" onclick="SearchBasedNavigationDisplayJS.toggleExpand(&quot;mfName_ntk_cs_5_-1004_2706&quot;); return false;" onkeydown="if(event.keyCode == dojo.keys.SPACE || event.keyCode == dojo.keys.ENTER) {SearchBasedNavigationDisplayJS.toggleExpand(&quot;mfName_ntk_cs_5_-1004_2706&quot;); return false;}" aria-describedby="facet_widget_acce_desc" aria-label="BRAND" aria-controls="section_list_mfName_ntk_cs_5_-1004_2706" tabindex="0" role="button" id="section_button_mfName_ntk_cs_5_-1004_2706">
+											<div class="title">
 												<div class="arrow arrow_collapsed" id="icon_0_5_-1004_2706">-</div>
 												Brand
 											</div>
@@ -702,8 +215,8 @@
 												<ul class="facetSelect">
 												
 														<li class="" id="facet_-10026510898105110105_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '-10026510898105110105');}else{dojo.topic.publish('Facet_Remove', '-10026510898105110105');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '-10026510898105110105');}else{dojo.topic.publish('Facet_Remove', '-10026510898105110105')};}else{this.checked = false};" value="mfName_ntk_cs%3A%22Albini%22" id="-10026510898105110105" aria-labelledby="-10026510898105110105_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('-10026510898105110105');" data-for="-10026510898105110105" href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Albini" aria-labelledby="-10026510898105110105_ACCE_Label" role="button">
+															<input type="checkbox" class="nodisplay" tabindex="-1">
+															<a href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Albini" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="-10026510898105110105">Facet Value</label></span>
 																
 																	
@@ -721,8 +234,8 @@
 														</li>
 
 														<li class="" id="facet_-100271117115115111_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '-100271117115115111');}else{dojo.topic.publish('Facet_Remove', '-100271117115115111');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '-100271117115115111');}else{dojo.topic.publish('Facet_Remove', '-100271117115115111')};}else{this.checked = false};" value="mfName_ntk_cs%3A%22Gusso%22" id="-100271117115115111" aria-labelledby="-100271117115115111_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('-100271117115115111');" data-for="-100271117115115111" href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Gusso" aria-labelledby="-100271117115115111_ACCE_Label" role="button">
+															<input type="checkbox" class="nodisplay" tabindex="-1">
+															<a class="facetbutton" id="facetButton_5_-1004_2706_8_Gusso" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="-100271117115115111">Facet Value</label></span>
 																
 																	
@@ -741,8 +254,8 @@
 
 
 														<li class="" id="facet_-100276117105103105328697108101110116105_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '-100276117105103105328697108101110116105');}else{dojo.topic.publish('Facet_Remove', '-100276117105103105328697108101110116105');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '-100276117105103105328697108101110116105');}else{dojo.topic.publish('Facet_Remove', '-100276117105103105328697108101110116105')};}else{this.checked = false};" value="mfName_ntk_cs%3A%22Luigi+Valenti%22" id="-100276117105103105328697108101110116105" aria-labelledby="-100276117105103105328697108101110116105_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('-100276117105103105328697108101110116105');" data-for="-100276117105103105328697108101110116105" href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Luigi_Valenti" aria-labelledby="-100276117105103105328697108101110116105_ACCE_Label" role="button">
+															<input type="checkbox" class="nodisplay" tabindex="-1">
+															<a href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Luigi_Valenti" aria-labelledby="-100276117105103105328697108101110116105_ACCE_Label" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="-100276117105103105328697108101110116105">Facet Value</label></span>
 																
 																	
@@ -761,8 +274,8 @@
 														
 
 														<li class="" id="facet_-10028610111411597116105108_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '-10028610111411597116105108');}else{dojo.topic.publish('Facet_Remove', '-10028610111411597116105108');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '-10028610111411597116105108');}else{dojo.topic.publish('Facet_Remove', '-10028610111411597116105108')};}else{this.checked = false};" value="mfName_ntk_cs%3A%22Versatil%22" id="-10028610111411597116105108" aria-labelledby="-10028610111411597116105108_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('-10028610111411597116105108');" data-for="-10028610111411597116105108" href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Versatil" aria-labelledby="-10028610111411597116105108_ACCE_Label" role="button">
+															<input type="checkbox" class="nodisplay" tabindex="-1">
+															<a href="#" class="facetbutton" id="facetButton_5_-1004_2706_8_Versatil" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="-10028610111411597116105108">Facet Value</label></span>
 																
 																	
@@ -780,8 +293,8 @@
 														</li>
 													
 														<li class="" id="facet_-10027210111410910511697103101326711110810810199116105111110_5_-1004_2706">
-															<input type="checkbox" onkeypress="if(event.keyCode == dojo.keys.ENTER) {this.checked=!this.checked;if(this.checked){dojo.topic.publish('Facet_Add', '-10027210111410910511697103101326711110810810199116105111110');}else{dojo.topic.publish('Facet_Remove', '-10027210111410910511697103101326711110810810199116105111110');}}" onclick="if(this.disabled == false){if(this.checked){dojo.topic.publish('Facet_Add', '-10027210111410910511697103101326711110810810199116105111110');}else{dojo.topic.publish('Facet_Remove', '-10027210111410910511697103101326711110810810199116105111110')};}else{this.checked = false};" value="mfName_ntk_cs%3A%22Hermitage+Collection%22" id="-10027210111410910511697103101326711110810810199116105111110" aria-labelledby="-10027210111410910511697103101326711110810810199116105111110_ACCE_Label" class="nodisplay" tabindex="-1">
-															<a onclick="javascript:setCurrentId('-10027210111410910511697103101326711110810810199116105111110');" data-for="-10027210111410910511697103101326711110810810199116105111110" href="#" class="facetbutton" id="facetButton_5_-1004_2706_7_Hermitage_Collection" aria-labelledby="-10027210111410910511697103101326711110810810199116105111110_ACCE_Label" role="button">
+															<input type="checkbox" class="nodisplay" tabindex="-1">
+															<a href="#" class="facetbutton" id="facetButton_5_-1004_2706_7_Hermitage_Collection" role="button">
 																<span class="spanacce"><label aria-label="checkbox" for="-10027210111410910511697103101326711110810810199116105111110">Facet Value</label></span>
 																
 																	
@@ -860,7 +373,7 @@
 	<!-- Sección principal -->
 		<div data-slot-id="6" class="col9 acol12 ccol9 right">
 
-<div lang="en" aria-labelledby="searchBasedNavigation_widget_ACCE_Label" role="region" arialiveid="ariaMessage" ariamessage="Product List Display Updated" controllerid="searchBasedNavigation_controller_6_-1011_2710" objectid="_6_-1011_2710" id="searchBasedNavigation_widget_6_-1011_2710" widgetid="searchBasedNavigation_widget_6_-1011_2710" dojotype="wc.widget.RefreshArea" class="dijitContentPane" title="">
+<div lang="en" class="dijitContentPane" title="">
 
 		<!-- Paginación -->
 		<div class="productListingWidget">
@@ -1697,646 +1210,17 @@
 		</div>
 		
 	
-	<div class="compareCheckboxLabels">
-	    <label>Comparar</label>
-	    <label>Add more to Comparar</label>
-	    <label>Added</label>
-	</div>
-	
 </div>
 <!-- END CatalogEntryList.jsp --></div>
 	</div>
 </div>
 
-<!-- Newsletter -->
-
-<div class="row margin-true">
-		<div class="col12 acol12 row" data-slot-id="4">
-			<div class="newsletterWrapper">
-			<div class="newsletter">
-				<div class="newsletterText">Regístrate para enterarte primero de nuestras ofertas:</div>
-				<div id="newsletterBar" data-parent="header" class="acol12 col4">
-	
-	<form id="newsetterBox" name="CatalogSearchForm" method="get" action="http://localhost/webapp/wcs/stores/servlet/SearchDisplay">
-
-		<div id="newsletterTermWrapper" class="col8"><label id="searchFormLabel" for="SimpleSearchForm_SearchTerm">Correo Electrónico</label><input id="SimpleSearchForm_SearchTerm" name="searchTerm" placeholder="Correo electrónico" autocomplete="off" type="text"></div>
-		<!-- Start SearchDropdownWidget -->
-		
-		<div class="separator"></div>
-		<a href="#" class="submitButton" role="button" aria-label="Search" title="Search"><span id="submitButton_ACCE_Label" class="spanacce">Search</span></a>
-	</form>
-</div>
-			<div class="newsletterButton col12">
-				<a class="button basicButton button_secondary" href="">
-								<span>Regístrate</span>
-							</a>
-			</div>
-
-			</div>
+				</div>
 			</div>
 			
 		</div>
-</div>
-
-				</div>
-			</div>
-			<!-- Footer -->
-			<div id="footerWrapper">
-
-<div id="footer" role="navigation" aria-label="Content Information">
-	<div id="footerRow1">
-		<div id="footerCustomerServiceSection" class="section">
-			<div class="header">
-				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
-				<h3>Customer Service</h3>
-			</div>
-			<ul>
-				
-				<li><a id="footerHelpLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/help">Help</a></li>
-				<li><a id="footerContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/contact-us">Contact Us</a></li>
-				<li><a id="footerReturnPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/return-policy">Return Policy</a></li>
-				<li><a id="footerPrivacyPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/privacy-policy">Privacy Policy</a></li>
-			</ul>
-		</div><div id="footerCorporateInfoSection" class="section">
-			<div class="header">
-				<a class="toggle" href="#" data-toggle="footerCorporateInfoSection" role="button"><span id="footerCorporateInfoSection_div_ACCE_Label" class="spanacce">Corporate Info</span></a>
-				<h3>Corporate Info</h3>
-			</div>
-			<ul>
-				<li><a id="footerAboutUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-info">About Us</a></li>
-				<li><a id="footerCorporateContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/corporate-contact-us">Contact Us</a></li>
-				
-					<li><a id="footerStoreLocatorLink" href="http://localhost/webapp/wcs/stores/servlet/AjaxStoreLocatorDisplayView?catalogId=10701&amp;langId=-1&amp;storeId=10851">Store Locator</a></li>
-				
-			</ul>
-		</div><div id="footerExploreSection" class="section">
-			<div class="header">
-				<a class="toggle" href="#" data-toggle="footerExploreSection" role="button"><span id="footerExploreSection_div_ACCE_Label" class="spanacce">Explore</span></a>
-				<h3>Explore</h3>
-			</div>
-			<ul>
-				<li><a id="footerSiteMapLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/sitemap">Site Map</a></li>
-				
-				
-					<li><a id="footerAdvancedSearchLink" href="http://localhost/webapp/wcs/stores/servlet/AdvancedSearchDisplay?catalogId=10701&amp;langId=-1&amp;storeId=10851">Advanced Search</a></li>
-				
-			</ul>
-		</div>
-		<div id="footerSocial" class="section">
-			<div class="header">
-				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
-				<h3>Customer Service</h3>
-			</div>
-			<ul>
-				
-				<li><a id="footerHelpLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/help">Help</a></li>
-				<li><a id="footerContactUsLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/contact-us">Contact Us</a></li>
-				<li><a id="footerReturnPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/return-policy">Return Policy</a></li>
-				<li><a id="footerPrivacyPolicyLink" href="http://localhost/webapp/wcs/stores/servlet/en/aurorademo/privacy-policy">Privacy Policy</a></li>
-			</ul>
-		</div>
-		<div id="footerCustomerServiceSection" class="section">
-			<div class="header">
-				<a class="toggle" href="#" data-toggle="footerCustomerServiceSection" role="button"><span id="footerCustomerServiceSection_div_ACCE_Label" class="spanacce">Customer Service</span></a>
-				<h3>Customer Service</h3>
-			</div>
-			<ul class="social">
-				<li>
-					<a href=""><img src="../RECURSOS/img/facebook.png" /></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/pinterest.png" /></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/twitter.png" /></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/instagram.png" /></a>
-				</li>
-				<li>
-					<a href=""><img src="../RECURSOS/img/youtube.png" /></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<img src="../RECURSOS/img/footerInfo.png" class="footerInfo"/>
-
-				
-			</div>
-		</div>
 		
 
-<div widgetid="progress_bar_dialog" id="progress_bar_dialog" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="progress_bar_dialog_title" lang="en">
-	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
-		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="progress_bar_dialog_title" role="header" level="1"></span>
-		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
-			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
-		</span>
-	</div>
-	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
-	<div id="progress_bar">
-		<div id="loading_popup">
-			<div class="top_left" id="WC_StoreCommonUtilities_div_1"><img src="../RECURSOS/img/transparent.gif" alt="No image available"></div>
-		        <div class="top_right" id="WC_StoreCommonUtilities_div_2"><img src="../RECURSOS/img/transparent.gif" alt="No image available"></div>
-		        <div class="header" id="WC_StoreCommonUtilities_div_3"></div>
-		        <div class="bodyarea" id="WC_StoreCommonUtilities_div_4">
-				<div class="bodycontent" id="WC_StoreCommonUtilities_div_5">
-					<img src="../RECURSOS/img/loading.gif" alt="Your request is being processed." border="0" height="44" width="44">
-			        </div>
-			</div>
-			<div class="footer" id="WC_StoreCommonUtilities_div_6">
-				 <div class="bot_left" id="WC_StoreCommonUtilities_div_7"></div>
-				 <div class="bot_right" id="WC_StoreCommonUtilities_div_8"></div>
-			</div>
-		</div>
-	</div>
-</div>
-</div><div widgetid="widget_product_comparison_popup" id="widget_product_comparison_popup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_product_comparison_popup_title" lang="en">
-	<div title="Product Comparison" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
-		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_product_comparison_popup_title" role="header" level="1">Product Comparison</span>
-		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
-			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
-		</span>
-	</div>
-	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
-		<div class="widget_product_comparison_popup widget_site_popup">													
-			<!-- Top Border Styling -->
-			<div class="top">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Main Content Area -->
-			<div class="middle">
-				<div class="content_left_border">
-					<div class="content_right_border">
-						<div class="content">
-							<div class="header">
-								<span>Product Comparison</span>
-								<a id="ComparePopupClose" class="close" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="CLOSE"></a>
-								<div class="clear_float"></div>
-							</div>
-							<div class="body">
-								The maximum number of products that can be compared is 4. Please refine your selection.
-							</div>
-							
-							<div class="footer">
-								<div class="button_container ">
-									<a id="ComparePopupOK" class="button_primary" tabindex="0" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="OK">
-										<div class="left_border"></div>
-										<div class="button_text">OK</div>
-										<div class="right_border"></div>
-									</a>
-									<div class="clear_float"></div>
-								</div>
-								
-							</div>
-							<div class="clear_float"></div>
-						<!-- End content Section -->
-						</div>
-					<!-- End content_right_border -->
-					</div>
-				<!-- End content_left_border -->
-				</div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Bottom Border Styling -->
-			<div class="bottom">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-		</div>
-	</div>
-</div><div widgetid="inactivityWarningPopup" id="inactivityWarningPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="inactivityWarningPopup_title" lang="en">
-	<div title="Inactivity Warning Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
-		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="inactivityWarningPopup_title" role="header" level="1">Inactivity Warning Dialog</span>
-		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
-			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
-		</span>
-	</div>
-	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
-	<div class="widget_site_popup">
-		<div class="top">
-			<div class="left_border"></div>
-			<div class="middle"></div>
-			<div class="right_border"></div>
-		</div>
-		<div class="clear_float"></div>
-		<div class="middle">
-			<div class="content_left_border">
-				<div class="content_right_border">
-					<div class="content">
-						<a role="button" id="inactivityWarningPopup_close" class="close_acce" title="CLOSE" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);}"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="../RECURSOS/img/close_normal.txt" class="closeImg" alt="CLOSE"></a>
-						<div class="clear_float"></div>
-						<div id="inactivityWarningPopup_body" class="body">
-							<div class="message_icon left">
-								<img class="error_icon" src="../RECURSOS/img/warning_icon.txt" alt="Warning">
-							</div>
-							
-							
-							
-							<div class="message_text left">
-							Your session is about to timeout due to inactivity.  Click OK to extend your time for an additional 30 minutes.
-							</div>
-							<div class="clear_float"></div>
-						</div>
-						<div class="footer">
-							<div class="button_container">
-								<a role="button" aria-labelledby="inactivityWarningPopupOK_Label" id="inactivityWarningPopupOK" href="javascript:void(0);" onclick="dijit.byId('inactivityWarningPopup').hide(); if (dialogTimeoutTracker != null) {clearTimeout(dialogTimeoutTracker);} resetServerInactivity();" class="button_primary">
-									<div class="left_border"></div>
-									<div id="inactivityWarningPopupOK_Label" class="button_text">OK</div>
-									<div class="right_border"></div>
-								</a>
-								<div class="clear_float"></div>
-							</div>
-							<div class="clear_float"></div>
-						</div>
-						<div class="clear_float"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="clear_float"></div>
-		<div class="bottom">
-			<div class="left_border"></div>
-			<div class="middle"></div>
-			<div class="right_border"></div>
-		</div>
-		<div class="clear_float"></div>
-	</div>
-</div>
-</div><div widgetid="shoppingListItemAddedPopup" id="shoppingListItemAddedPopup" style="display: none; position: absolute;" title="" class="dijitDialog" role="dialog" aria-labelledby="shoppingListItemAddedPopup_title" lang="en">
-	<div title="This item has been successfully added to your list." data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
-		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="shoppingListItemAddedPopup_title" role="header" level="1">This item has been successfully added to your list.</span>
-		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
-			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
-		</span>
-	</div>
-	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
-		<div class="widget_site_popup">
-													
-			<!-- Top Border Styling -->
-			<div class="top">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Main Content Area -->
-			<div class="middle">
-				<div class="content_left_border">
-					<div class="content_right_border">
-						<div class="content">
-							<div class="header">
-								<span>This item has been successfully added to your list.</span>
-								<a role="button" id="shoppingListItemAddedClose" href="javascript:ShoppingListDialogJS.close();" onclick="javascript: document.getElementById('addToShoppingList').focus();" class="close tlignore" title="Close" aria-label="Close"></a>
-								<div class="clear_float"></div>
-							</div>
-							
-								<div class="product">
-						<div class="compare_target" id="compare_15301">
-							<input type="checkbox" onchange="javascript:shoppingActionsJS.addOrRemoveFromCompare('15301',this.checked)" value="15301" name="comparebox_15301" id="comparebox_15301">
-							<label for="comparebox_15301">Comparar</label>
-							<a aria-label="Compare" role="button" href="javascript:shoppingActionsJS.compareProducts({top_category: '', parent_category_rn: '', categoryId: '10706'});" id="compareButton_15301">Compare</a>
-						</div>
-
-									<div class="product_image">
-										<img id="shoppingListItemAddedImg" alt="">
-									</div>
-									<div id="shoppingListItemAddedName" class="product_name"></div>
-									<div class="clear_float"></div>
-								</div>
-							
-							<div class="footer">
-								<div class="button_container ">
-									<a id="shoppingListItemAddedContinue" href="javascript:ShoppingListDialogJS.close();" class="button_primary tlignore" title="Continue Shopping">
-										<div class="left_border"></div>
-										<div class="button_text">Continue Shopping</div>
-										<div class="right_border"></div>
-									</a>
-									<div class="clear_float"></div>
-								</div>
-								
-							</div>
-							<div class="clear_float"></div>
-						<!-- End content Section -->
-						</div>
-					<!-- End content_right_border -->
-					</div>
-				<!-- End content_left_border -->
-				</div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Bottom Border Styling -->
-			<div class="bottom">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-		</div>
-	</div>
-</div><div style="display: none; position: absolute;" widgetid="widget_language_and_currency_popup" id="widget_language_and_currency_popup" title="" class="dijitDialog" role="dialog" aria-labelledby="widget_language_and_currency_popup_title" lang="en">
-	<div title="Language and Currency Dialog" data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
-		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="widget_language_and_currency_popup_title" role="header" level="1">Language and Currency Dialog</span>
-		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
-			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
-		</span>
-	</div>
-	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent">
-		<div class="widget_language_and_currency_popup widget_site_popup">										
-			<!-- Top Border Styling -->
-			<div class="top">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Main Content Area -->
-			<div class="middle">
-				<div class="content_left_border">
-					<div class="content_right_border">
-						<div class="content">
-							<div class="header">
-								<span>Please select a language and currency</span>
-								<a id="close" class="close_acce tlignore" title="CLOSE" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();"><img role="button" onmouseover="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_hover.png'" onmouseout="this.src='/wcsstore/AuroraDemo/images/colors/color1/close_normal.png'" src="../RECURSOS/img/close_normal.txt" class="closeImg" alt="CLOSE"></a>
-								<div class="clear_float"></div>
-							</div>
-							<div class="selectors">
-								<div class="selector">
-									<span class="option_name">Language:&nbsp;</span>
-									<label for="languageSelection" class="nodisplay">Language:</label>
-									<select id="languageSelection" name="langId" onchange="javascript:document.getElementById('languageSelectionHidden').value=this.value">
-										
-											
-												
-													
-												
-											
-												
-											
-												
-											
-												
-											
-												
-											
-												
-											
-												
-											
-											
-												
-													
-												
-											
-											
-												
-													<option value="-1" selected="selected">United States English</option>
-												
-												
-											
-										
-									</select>
-									<div class="clear_float"></div>
-								</div>
-								<div class="selector">
-									<span class="option_name">Currency:&nbsp;</span>
-									<label for="currencySelection" class="nodisplay">Currency:</label>
-									<select id="currencySelection" name="currency" onchange="javascript:document.getElementById('currencySelectionHidden').value=this.value">
-										
-											
-												
-													
-												
-											
-											
-												
-													<option value="USD" selected="selected">US Dollar</option>
-												
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="BRL">Brazilian Real</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="CAD">Canadian Dollar</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="CNY">Chinese Yuan</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="EGP">Egyptian Pound</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="EUR">Euro</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="GBP">British Pound</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="JPY">Japanese Yen</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="KRW">South Korean Won</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="PLN">Polish Zloty</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="RON">Romanian Leu</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="RUB">Russian Ruble</option>
-												
-											
-										
-											
-												
-													
-												
-											
-											
-												
-												
-													<option value="TWD">Taiwan Dollar</option>
-												
-											
-										
-									</select>
-									<div class="clear_float"></div>
-								</div>
-								<form id="SetLanguageCurrencyPreferenceForm" action="/webapp/wcs/stores/servlet/SetCurrencyPreference" method="post">
-									<input name="storeId" value="10851" type="hidden">
-									<input name="catalogId" value="10701" type="hidden">
-									<input id="languageSelectionHidden" name="langId" value="-1" type="hidden">
-									<input id="currencySelectionHidden" name="currency" value="USD" type="hidden">									
-									
-									
-										
-										
-											<input name="URL" value="/webapp/wcs/stores/servlet/TopCategoriesDisplay?currency*=" id="WC_SidebarDisplay_FormInput_URL_2" type="hidden">
-										
-									
-									
-										
-											
-												<input name="pageGroup" value="Content" id="WC_SidebarDisplay_FormInput_parm_1_1" type="hidden">
-											
-										
-									
-										
-											
-										
-									
-										
-											
-										
-									
-										
-											
-												<input name="pageName" value="HomePage" id="WC_SidebarDisplay_FormInput_parm_4_1" type="hidden">
-											
-										
-									
-										
-											
-										
-									
-									
-								</form>
-							</div>
-							<div class="footer">
-								<div class="button_container ">
-									<a id="LangCurrencyApplyBtn" class="button_primary tlignore" tabindex="0" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();document.getElementById('SetLanguageCurrencyPreferenceForm').submit();">
-										<div class="left_border"></div>
-										<div id="LangCurrencyApplyBtnText" class="button_text">Apply</div>
-										<div class="right_border"></div>
-									</a>
-									<div class="clear_float"></div>
-								</div>
-								
-							</div>
-							<div class="clear_float"></div>
-						<!-- End content Section -->
-						</div>
-					<!-- End content_right_border -->
-					</div>
-				<!-- End content_left_border -->
-				</div>
-			</div>
-			<div class="clear_float"></div>
-			<!-- Bottom Border Styling -->
-			<div class="bottom">
-				<div class="left_border"></div>
-				<div class="middle"></div>
-				<div class="right_border"></div>
-			</div>
-			<div class="clear_float"></div>
-		</div>
-	</div>
-</div></body><!-- END TopCategoriesDisplay.jsp --></html>
+</body><!-- END TopCategoriesDisplay.jsp --></html>
 
 
