@@ -1056,7 +1056,24 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 @media (max-width: 600px){
 	#searchButton{
+		width: 90%;
+		margin-left: 0;
 		display: none !important;
+	}
+	#searchBar{
+		width: 90% !important;
+		display: block !important;
+		margin-left: 0 !important;
+		position: relative !important;
+		left: 5%;
+		margin-left: 5%;
+
+	}
+}
+
+@media (max-width: 900px){
+	.contactInfo{
+		width: 100% !important; 
 	}
 }
 
@@ -1394,6 +1411,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	float: left;
 	margin-right: 20px;
     margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .newsletterButton{
@@ -1420,6 +1438,12 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
   	margin-top: 40px !important;
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+	#newsletterBar{
+		width: 66% !important;
+	}
+}
 
 /* Categoría */
 .categoryNavWidget.collapsible h3{
