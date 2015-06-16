@@ -2315,6 +2315,7 @@ ul.facetSelect li div.facetCountContainer{
 
 
 .product_main_image{
+	max-height: auto !important;
 	float: none !important;
 	margin: 0 !important;
 	border: #cccccc 1px solid;
