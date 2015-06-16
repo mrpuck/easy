@@ -2212,9 +2212,12 @@ ul.facetSelect li div.facetCountContainer{
 }
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a{
-	display: inline-block;
 	clear: both;
 } 
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a img{
+	margin-top: 15px;
+}
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item.imageCompare{
 	position: relative;
 }
