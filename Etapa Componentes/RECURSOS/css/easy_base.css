@@ -869,12 +869,6 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	text-align: left;
 }
 
-@media screen and (max-width: 800px) {
-	.productSlider ul li{
-		width: 100% !important;
-		margin-top: 20px;
-	}
-}
 
 .whiteCart{
 	float: right;
@@ -1478,7 +1472,7 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 }
 
 .categoryContainer .homeSectionTitle{
-	width: 94%;
+	width: 96%;
 	margin: 0 auto;
 }
 
@@ -2049,10 +2043,6 @@ ul.facetSelect li div.facetCountContainer{
   margin-left: 2%;
 }
 
-.tab_header.tab_header_double{
-	margin-left: -1px;
-}
-
 .tabButtonContainer{
 	margin-left: 0px !important; 	
 }
@@ -2084,6 +2074,17 @@ ul.facetSelect li div.facetCountContainer{
 	margin: 0 3px !important; 
 }
 
+@media screen and (max-width: 800px) {
+	.productSlider ul li{
+		width: 100% !important;
+		margin-top: 20px;
+	}
+	.productSlider.searchProducts ul li{
+		width: 100% !important;
+		margin-top: 20px;
+	}
+}
+
 .noresultsHeader{
 	width: 97%;
 	border: #c3c6c4 1px solid;
@@ -2107,6 +2108,8 @@ ul.facetSelect li div.facetCountContainer{
 .topBorderResults{
 	border-top: #c3c6c4 1px solid;
 	padding-top: 15px;
+	color: #363636;
+	font-weight: bold;
 }
 
 .topBorderResults span{
@@ -2135,7 +2138,8 @@ ul.facetSelect li div.facetCountContainer{
 }
 
 .compare_back a{
-	font-weight: 12px !important;
+	font-size: 13px !important;
+	font-weight: bold;
 	text-decoration: underline !important;
 	color: #4c4b4f !important;
 }
@@ -2163,10 +2167,8 @@ ul.facetSelect li div.facetCountContainer{
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item{
 	box-sizing: border-box;
 	width: 20% !important;
-	padding: 10px 15px !important;
-	font-weight: bold;
+	padding: 10px 14px !important;
 	font-size: 14px;
-	
 	flex: 1 1 100%;
 }
 
@@ -2193,6 +2195,8 @@ ul.facetSelect li div.facetCountContainer{
 	width: 20% !important;
 	flex: 1 1 100%;
 	display:flex;
+	font-size: 14px !important;
+	font-weight: normal !important;
 }
 
 .middle{
@@ -2207,12 +2211,15 @@ ul.facetSelect li div.facetCountContainer{
 	font-weight: bold;
 	padding: 5px 0;
 	position: absolute;
-	margin-left: -15px;
+	margin-left: -14px;
 	top: 0;
 }
 
 
 /* Home Mundo Experto */
+.noborder{
+	border: 0 !important; 
+}
 .mundoexpertoNoticias>div>div .noticiaContainer{
 	border: #ccc 1px solid;
 	width: 96%;
@@ -2238,6 +2245,10 @@ ul.facetSelect li div.facetCountContainer{
 
 
 /* Página Producto*/
+
+.tabTitle{
+	font-size: 14px !important;
+}
 .productCarousel ul{
 	float: left;
 	margin-left: 10% !important;
@@ -2367,6 +2378,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .infobox span{
+	font-weight: bold;
 	margin-left: 45px;
 	color: #000;
 	font-size: 15px;
@@ -2551,25 +2563,33 @@ div.namePartPriceContainer > span.sku{
 }
 
 .financiamiento input, .financiamiento label {
-	width: 48%;
+	width: 46%;
 	margin: 0 !important;
 	float: left;
 	font-size: 15px;
 	height: 20px !important;
 }
 
+.financiamiento label{
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+  width: 46%;
+}
+
 .financiamiento .sorting_controls{
-	width: 48%;
+	width: 46%;
 	margin: 0;
 	height: 24px !important;
 }
 
 .financiamiento .sorting_controls select{
-	width: 98%;
+	width: 180px;
 	height: 24px !important;
 }
 
 .tambien{
+	font-weight: bold;
 	width: 96% !important;
 	display: block;
 	border-top: #ccc 1px solid;
