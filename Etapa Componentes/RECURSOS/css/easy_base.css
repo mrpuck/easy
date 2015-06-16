@@ -2166,11 +2166,40 @@ ul.facetSelect li div.facetCountContainer{
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item{
 	box-sizing: border-box;
+	position: relative;
 	width: 20% !important;
 	padding: 10px 14px !important;
 	font-size: 14px;
 	flex: 1 1 100%;
 }
+
+@media screen and (max-width: 600px) {
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4, .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_3{
+		width: 100% !important;
+	}
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item{
+		width: 50% !important;
+		overflow: hidden;
+	}
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons .whiteCart{
+		position: relative;
+		left: -20px;
+	}
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons .whiteCart span{
+	  	font-size: 14px;
+  		padding-right: 3px !important;
+  	}
+}
+
+@media screen and (max-width: 321px) {
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4, .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_3{
+		width: 100% !important;
+	}
+	.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item{
+		width: 100% !important;
+	}
+}
+
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons> .item{
 	text-align: center;
