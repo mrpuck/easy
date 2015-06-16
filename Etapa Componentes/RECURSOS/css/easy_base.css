@@ -9,6 +9,7 @@ Archivo estilos comunes portal Easy.
 body{
 	font-family: 'Open Sans', sans-serif !important; 
 }
+ html,body { height: 100% !important;  }
 
 
 /* Header */
@@ -447,6 +448,9 @@ div.namePartPriceContainer > div > span.price{
 	background-color: #555b59 !important;
 	color: #fff !important;
 	text-align: center;
+	padding: 0;
+	width: 80%;
+	margin-left: 20%;
 }
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row_border{
@@ -1167,6 +1171,8 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	background: url('../img/expertBack.png') left center repeat-x;
 	height: 10px;
 	clear: both; 
+	margin: -1px 0 0 0 !important;
+	padding: 0 !important;
 }
 
 #quickLinksBar > li > a > br {
@@ -1988,7 +1994,7 @@ ul.facetSelect li div.facetCountContainer{
 
 .list_mode .cantidad{
 	float: left;
-	width: 46%;
+	width: 45%;
 }
 
 .list_mode .cantidad label{
@@ -2028,4 +2034,553 @@ ul.facetSelect li div.facetCountContainer{
 /* Navegación subcategoría */
 .categoryNavWidget.collapsible>.content ul.categoryMenu{
 	padding: 0 !important;
+}
+
+
+/* Entrega 16 Junio*/
+
+/* Buscador */
+.row.margin-true > div > div.tab{
+	margin-top: -1px !important;
+}
+
+.product_listing_container {
+  width: 98%;
+  margin-left: 2%;
+}
+
+.tab_header.tab_header_double{
+	margin-left: -1px;
+}
+
+.tabButtonContainer{
+	margin-left: 0px !important; 	
+}
+
+.resultsHeading{
+	font-size: 12px;
+	line-height: 20px;
+}
+.resultsHeading>*{
+	float: left;
+	margin-bottom: 16px;
+	color: #333333;
+}
+
+.resultsHeading h2{
+	font-size: 16px !important;
+	font-weight: bold;
+	color: #000;
+	margin-right: 20px;
+}
+
+.resultsHeading a{
+	text-decoration: underline;
+	margin-right: 5px;
+}
+
+.productSlider.searchProducts li{
+	width: 24% !important;
+	margin: 0 3px !important; 
+}
+
+.noresultsHeader{
+	width: 97%;
+	border: #c3c6c4 1px solid;
+	padding: 16px	 1% !important; 
+	margin-top: 48px !important; 
+}
+.noresultsHeader h2{
+	margin-left: 5px;
+}
+
+.secondarySearchMessage{
+	font-size: 14px;
+}
+
+.secondarySearchMessage a{
+	padding: 8px;
+	margin: 8px 18px;
+
+}
+
+.topBorderResults{
+	border-top: #c3c6c4 1px solid;
+	padding-top: 15px;
+}
+
+.topBorderResults span{
+	text-decoration: line-through;
+}
+
+.categoryListCategory.nomargin{
+	margin-bottom: 0 !important
+}
+
+.compareTop{
+	margin: 0 !important;
+	color: #fff;
+	width: 100%;
+	background: #e52428;
+	text-transform: uppercase;
+	text-align: center;	
+	padding: 5px 0 !important;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 30px !important;
+}
+
+.widget_product_compare{
+	width: 100% !important;
+}
+
+.compare_back a{
+	font-weight: 12px !important;
+	text-decoration: underline !important;
+	color: #4c4b4f !important;
+}
+
+.compare_main .item{
+	padding: 0 !important;
+	border: #cccccc 1px solid
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .item{
+	min-height: 30px;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row{
+	display: flex !important;
+	height: 100%;
+	flex-flow: row column;
+}
+
+.left_border, .right_border{
+	border: 0 !important;
+	background: transparent !important; 
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item{
+	box-sizing: border-box;
+	width: 20% !important;
+	padding: 10px 15px !important;
+	font-weight: bold;
+	font-size: 14px;
+	
+	flex: 1 1 100%;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons> .item{
+	text-align: center;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons .whiteCart{
+  margin-right: 0;
+  float: none;
+  margin-top: 10px;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a{
+	display: inline-block;
+	clear: both;
+} 
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item.imageCompare{
+	position: relative;
+}
+
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .heading{
+	box-sizing: border-box;
+	width: 20% !important;
+	flex: 1 1 100%;
+	display:flex;
+}
+
+.middle{
+	margin: 0 !important; 
+}
+
+.compareProductTitle{
+	background: #efefee;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0;
+	position: absolute;
+	margin-left: -15px;
+	top: 0;
+}
+
+
+/* Home Mundo Experto */
+.mundoexpertoNoticias>div>div .noticiaContainer{
+	border: #ccc 1px solid;
+	width: 96%;
+	margin: 20px 2% !important;
+}
+
+.mundoexpertoNoticias>div>div .noticiaContainer img{
+	width: 96%;
+	margin: 2%;
+}
+
+.mundoexpertoNoticias>div>div .noticiaContainer p{
+	width: 96%;
+	margin: 0 2% 2% 2%;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.banner img{
+	width: 98%;
+	margin: 20px 1%; 
+}
+
+
+/* Página Producto*/
+.productCarousel ul{
+	float: left;
+	margin-left: 10% !important;
+}
+
+.productCarousel li{
+	width: 42% !important;
+}
+
+.image_container{
+	text-align: center;
+	position: relative;
+}
+
+.image_container .hover_text{
+	position: absolute;
+	bottom: 25px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	background: #999;
+	padding: 3px 5px;
+	left: 43%;
+}
+.image_container .hover_text span, .image_container .hover_text img{
+	float: left;
+}
+
+.image_container .hover_text span{
+	margin: 0 7px;
+}
+
+
+.product_main_image{
+	float: none !important;
+	margin: 0 !important;
+	border: #cccccc 1px solid;
+}
+
+.other_views{
+	text-align: center;
+  	margin: 10px auto !important;
+  	width: 50%;
+}
+.other_views > ul{
+	width: 100%;
+}
+
+.other_views > ul > li{
+	width: 25% !important;
+	text-align: center;
+	border: 0 !important; 
+}
+
+.other_views > ul > li img{
+	width: 86% !important;
+	text-align: center;
+	border: #ccc 1px solid;
+	box-sizing: border-box;
+	height: auto !important;  
+}
+
+.tabButtonContainer.productTab{
+	margin-bottom: -1px !important;
+}
+
+.tab.left{
+	margin-left: 5px;
+}
+
+.tab.left .content{
+	width: 90%;
+	margin: 20px 5%;
+	font-size: 13px;
+	color: #000;
+}
+
+.tab.left .content ul{
+	list-style: none;
+	margin: 10px 0;
+	font-weight: bold;
+	padding: 0;
+}
+
+.tab.left .content ul li{
+	margin: 10px 0;
+}
+
+.calculator{
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.main_header{
+	font-size: 22px !important;
+	font-weight: bold;
+}
+
+.brand{
+	font-size: 22px;
+	width: 100%;
+	display: block;
+}
+
+div.namePartPriceContainer > span.sku{
+	margin: 0 !important;  
+}
+
+.namePartPriceContainer .especial{
+	margin: 20px 0;
+	color: #C52925 !important;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.namePartPriceContainer .especial .priceNumber{
+	float: right;
+	color: #e42420 !important;
+}
+
+.infobox{
+	border: #ccc 1px solid;
+	background: url('../img/info.png') 5px 10px no-repeat;
+	margin: 20px 0;
+	padding: 19px 10px;
+	min-height: 20px;
+}
+
+.infobox span{
+	margin-left: 45px;
+	color: #000;
+	font-size: 15px;
+}
+
+.infobox a{
+	font-size: 14px;
+	padding: 5px 10px;
+	margin-top: -5px;
+}
+
+.productSecondary{
+	margin-left: 50px !important;
+}
+
+.namePartPriceContainer .internet, .namePartPriceContainer .normal, .namePartPriceContainer .especial {
+	width: 70%;
+}
+
+.namePartPriceContainer .internet {
+	color: #000;
+}
+
+.namePartPriceContainer .normal{
+	color: #666;
+}
+
+.dcto{
+	color: #e42420;
+	font-weight: bold;
+}
+
+.definingAttributes{
+	font-size: 18px !important;
+	margin: 20px 0;
+}
+.definingAttributes .heading{
+  float: left;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+.circle{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #fff;
+	border: #ccc 1px solid;
+	float: left;
+	margin: 0 5px;
+}
+
+.quantity_section{
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	padding-top: 0 !important;
+	margin-right: 20px;
+}
+
+.quantity_section input{
+	border: #ccc 1px solid;
+	border-radius: 0;
+	margin-right: 20px
+}
+
+
+.shopperActions .wishlist{
+		color: #000;
+		font-size: 13px;
+		padding-left: 15px;
+		background: url('../img/heart.png') center left no-repeat; 
+		margin-bottom: 14px;
+		display: inline-block;
+		width: 35%;
+		text-align: left;
+}
+
+.shopperActions .whiteCart{
+	width: 27% !important;
+	margin-right: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+	.shopperActions .whiteCart{
+		width: 35% !important;
+		float: left;
+	}
+	.financiamientoHeader span{
+	  	width: 70%;
+  		display: block;
+  	}
+  	.financiamiento>div, .financiamiento input, .financiamiento label{
+  		width: 97% !important;
+  		display: block;
+  	}
+  	.financiamiento .sorting_controls{
+  		width: 97% !important;
+  		margin: 0 !important;
+  	}
+}
+
+@media screen and (max-width: 600px) {
+	.pseudoCol{
+		width: 100% !important;
+	}
+	.productSecondary{
+		margin-left: 0 !important;
+	}
+	.shopperActions .whiteCart{
+		width: 92% !important;
+	}
+	.financiamientoHeader span{
+		width: 65% !important;
+	}
+	.productCarousel ul{
+		margin-left: 4% !important;
+	}
+	.infobox span{
+		width: 92%;
+		display: block;
+	}
+
+	.infobox a{
+		margin-top: 25px;
+		width: 92%;
+		display: block;
+	}
+}
+.compartir{
+	text-align: left;
+  	float: left;
+  	width: 100%;
+  	font-size: 13px;
+  	margin-bottom: 30px;
+}
+
+.compartir span{
+	display: block;
+	float: left;	
+	margin-top: 13px;
+}
+.compartir ul.social{
+	list-style: none;
+	padding: 0;
+	padding: 9px 0 0 0;
+	float: left;
+	margin-left: 20px;
+	width: 40%;
+	margin-right: 10px;
+}
+
+.compartir ul.social li{
+	float: left;
+	width: auto;
+	padding: 0 2px;
+	width: 16%;
+}
+
+.compartir ul.social li img{
+	width: 100%;
+}
+
+.financiamiento{
+	float: left;
+	border: #ccc 1px solid;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.financiamiento >div{
+	width: 46%;
+	padding: 2%;
+
+}
+
+.financiamientoHeader{
+	font-size: 15px;
+	color: #000;
+	padding: 15px 10px;
+	background: #efefee url('../img/exclusiva.png') 96% center no-repeat
+}
+
+.financiamiento input, .financiamiento label {
+	width: 48%;
+	margin: 0 !important;
+	float: left;
+	font-size: 15px;
+	height: 20px !important;
+}
+
+.financiamiento .sorting_controls{
+	width: 48%;
+	margin: 0;
+	height: 24px !important;
+}
+
+.financiamiento .sorting_controls select{
+	width: 98%;
+	height: 24px !important;
+}
+
+.tambien{
+	width: 96% !important;
+	display: block;
+	border-top: #ccc 1px solid;
+}
+
+.tambien span{
+	float: left;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+.pseudoCol{
+	width: 47%;
 }
