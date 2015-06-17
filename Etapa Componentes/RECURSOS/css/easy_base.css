@@ -428,6 +428,7 @@ div.namePartPriceContainer > div > span.price{
   font-size: 16px !important;
   color: #000 !important;
   font-weight: bold !important;
+  margin-bottom: 0 !important;  
 }
 
 
@@ -2211,6 +2212,10 @@ ul.facetSelect li div.facetCountContainer{
   margin-top: 10px;
 }
 
+.widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row.compareButtons .whiteCart img{
+  margin-top: 3px !important;
+}
+
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a{
 	clear: both;
 } 
@@ -2249,6 +2254,9 @@ ul.facetSelect li div.facetCountContainer{
 
 
 /* Home Mundo Experto */
+.cienporciento{
+	width: 100%;
+}
 .noborder{
 	border: 0 !important; 
 }
@@ -2277,6 +2285,30 @@ ul.facetSelect li div.facetCountContainer{
 
 
 /* Página Producto*/
+
+.product5 .col2{
+	width: 20% !important;
+}
+
+.product5 .col2 img{
+	width: 90% !important;
+}
+
+@media screen and (max-width: 800px){
+	.product5 .col2{
+		width: 100% !important;
+	}
+
+	.product5 .col2 img{
+		width: 90% !important;
+	}
+	.consejosWrapper .content.list.section >div>div img, .consejosWrapper .categoryTitle{
+		width: 100%;
+	}
+	.financiamiento label{
+		text-align: left !important;
+	}
+}
 
 .tabTitle{
 	font-size: 14px !important;
@@ -2412,7 +2444,7 @@ div.namePartPriceContainer > span.sku{
 
 .infobox span{
 	font-weight: bold;
-	margin-left: 45px;
+	margin-left: 55px;
 	color: #000;
 	font-size: 15px;
 }
@@ -2462,6 +2494,18 @@ div.namePartPriceContainer > span.sku{
 	border: #ccc 1px solid;
 	float: left;
 	margin: 0 5px;
+}
+
+.circle.red{
+	background: #ff0000;
+}
+
+.circle.green{
+	background: #00ff00;
+}
+
+.circle.blue{
+	background: #0000ff;
 }
 
 .quantity_section{
