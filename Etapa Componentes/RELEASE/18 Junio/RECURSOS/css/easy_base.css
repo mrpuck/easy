@@ -1010,6 +1010,12 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	  margin-left: 30px;
 }
 
+/* Corrección logo chrome v32*/
+#logo .contentRecommendationWidget, #logo .contentRecommendationWidget > .left_espot, #logo .contentRecommendationWidget > .left_espot > a, #logo .contentRecommendationWidget > .left_espot > a > img, #logo .genericESpot{
+	height: auto !important;
+}
+
+
 @media screen and (max-width: 800px) {
 	#logo{
 		width: 100%;
