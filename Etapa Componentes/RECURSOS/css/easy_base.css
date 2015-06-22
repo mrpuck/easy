@@ -3169,7 +3169,7 @@ div.namePartPriceContainer > span.sku{
 /* Carro de compra */
 
 .fullTable{
-	display: block;
+	display: table;
 }
 .mobileTable{
 	display: none;
