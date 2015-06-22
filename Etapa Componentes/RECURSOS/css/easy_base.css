@@ -3225,12 +3225,7 @@ div.namePartPriceContainer > span.sku{
 		padding-right: 0 !important;
 		text-align: center;
 	}
-	.fullTable{
-		display: none;
-	}
-	.mobileTable{
-		display: block;
-	}
+	
 	.cartTable .product_image{
 		width: 100% !important
 	}
@@ -3253,7 +3248,14 @@ div.namePartPriceContainer > span.sku{
 		padding: 10px 0 !important;
 	}
 }
-
+@media screen and (max-width:900px){	
+	.fullTable{
+		display: none;
+	}
+	.mobileTable{
+		display: table;
+	}
+}
 
 .cartHeader{
 	font-size: 22px;
