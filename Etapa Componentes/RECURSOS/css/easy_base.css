@@ -3249,6 +3249,9 @@ div.namePartPriceContainer > span.sku{
 		padding: 0 !important;
 		width: 99% !important; 
 	}
+	.productTable td{
+		padding: 10px 0 !important;
+	}
 }
 
 
