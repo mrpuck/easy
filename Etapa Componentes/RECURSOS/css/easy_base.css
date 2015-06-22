@@ -1255,8 +1255,10 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 #departmentsMenu{
 	margin: 0 !important;
 	float: left;
-	width: 75%;
+	width: 87%;
 }
+
+
 
 #departmentsMenu.active li.active{
 	background: #fff;
@@ -1303,9 +1305,40 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	width: 100%;
 }
 
+@media (max-width: 1025px){
+	#departmentsButton{
+		display: block !important;
+	}
+	#departmentsMenu {
+	  width: 100% !important;
+	}
+	.social{
+		display: none !important;
+	}
+	.contactInfo{
+		width: 35% !important;
+	}
+	.departmentButton, .mundoexperto .departmentButton{
+		display: none !important;
+		padding-right: 10px !important;
+		background:none !important;
+	}
+	.departmentButton > span{
+		padding: 0 5px 0 15px !important;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	#headerRow2 ul.social{
 		display: none;	
+	}
+	.contactInfo{
+		width: 100% !important;
+	}
+	#searchBar{
+		margin: 0 auto !important;
+		width: 90% !important;
+		right: 0  !important;
 	}
 }
 
