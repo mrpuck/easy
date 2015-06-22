@@ -2208,7 +2208,7 @@ ul.facetSelect li div.facetCountContainer{
 	box-sizing: border-box;
 	position: relative;
 	width: 20% !important;
-	padding: 10px 14px !important;
+	padding: 10px 8px !important;
 	font-size: 14px;
 	flex: 1 1 100%;
 }
@@ -2261,9 +2261,12 @@ ul.facetSelect li div.facetCountContainer{
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a img{
 	margin-top: 15px;
+	width: 100%;
 }
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item.imageCompare{
 	position: relative;
+	padding: 10px 0 !important;
+	flex: none !important;
 }
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .row > .heading{
@@ -2287,7 +2290,7 @@ ul.facetSelect li div.facetCountContainer{
 	font-weight: bold;
 	padding: 5px 0;
 	position: absolute;
-	margin-left: -14px;
+	left: 0;
 	top: 0;
 }
 
@@ -3110,7 +3113,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .paymentMethod form label, .paymentOption form label{
-	margin-right: 50px;
+	margin-right: 40px;
 	font-size: 16px;
 	font-weight: bold;
 }
