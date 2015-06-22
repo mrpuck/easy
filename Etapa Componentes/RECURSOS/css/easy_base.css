@@ -2691,6 +2691,7 @@ div.namePartPriceContainer > span.sku{
 
 /* Entrega 22 Junio */
 /* Proceso Checkout*/
+
 .checkoutLogo{
 	margin: 20px 30px 40px 40px;
 }
@@ -2866,10 +2867,13 @@ div.namePartPriceContainer > span.sku{
 }
 .productTable .product_info .sku{
 	margin-bottom: 10px;
+	font-style: italic;
+	font-weight: normal;
+	color: #000;
+	font-size: 12px;
 }
 
 .discount{
-	font-weight: normal;
 	color: #e42420;
 	display: block;
 }
@@ -2879,6 +2883,11 @@ div.namePartPriceContainer > span.sku{
 	display: block;
 	font-size: 13px;
 	font-weight: normal;
+}
+
+.eliminar img{
+	margin-top: 4px;
+  	float: left;
 }
 
 .productTable .product_info .wishlist{
@@ -2893,20 +2902,21 @@ div.namePartPriceContainer > span.sku{
 
 .numberInput{
 	width: 55px;
+	text-align: center;
 	margin: 0 auto;
 }
 
 .pagandocon{
+
 	text-align: left;
 	font-weight: normal;
 	font-size: 15px;
-	padding-left: 10px;
+	padding-left: 30px;
 	margin-bottom: 20px;
 	color: #000;
 }
 .pagandocon>div{
 	width: 110px;
-	float: left;
 }
 
 .pagandocon>div span{
@@ -2925,7 +2935,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .dateSelector{
-	width: 100%;
+	width: 300px;
 }
 
 .dateSelector table{
@@ -3025,7 +3035,7 @@ div.namePartPriceContainer > span.sku{
 .subtotal table td{
 	width: 40%;
 	text-align: right;
-	padding: 10px 20px 10px 10px;
+	padding: 5px 20px 5px 10px;
 }
 
 .subtotal table td:first-child {
@@ -3046,7 +3056,7 @@ div.namePartPriceContainer > span.sku{
 .paymentMethod, .paymentOption{
 	border: #ccc 1px solid;
 	color: #000;
-	width: 90%;
+	width: 95%;
 }
 
 .paymentMethod h2, .paymentOption h2{
@@ -3065,9 +3075,13 @@ div.namePartPriceContainer > span.sku{
 }
 
 .paymentMethod form label, .paymentOption form label{
-	margin-right: 10px;
+	margin-right: 50px;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+.paymentMethod form input{
+	margin-right: 10px;
 }
 
 .payments>div p {
@@ -3102,6 +3116,7 @@ div.namePartPriceContainer > span.sku{
 
 .paymentOption form img{
 	margin-top: 10px;
+	margin-right: 30px;
 }
 
 .spacer10top{
@@ -3117,6 +3132,78 @@ div.namePartPriceContainer > span.sku{
 
 
 /* Carro de compra */
+
+.fullTable{
+	display: table;
+}
+.mobileTable{
+	display: none;
+}
+
+@media screen and (max-width: 500px){
+	.checkoutLogo{
+		text-align: center !important;
+		margin-top: 30px !important;
+		float: none !important;
+	}
+	.progressbar{
+		margin: 0 auto !important;
+		float: none !important;
+		width: 95% !important;
+	}
+	.progressbar>div{
+		width: 66% !important;
+		margin: 10px 0 !important;
+	}
+
+	.opcionesDespacho{
+		margin-bottom: 30px !important;
+	}
+	.dateselectorHeader{
+		margin-top: 20px;
+	}
+	.subtotal{
+		width: 100%;
+	}
+	.paymentMethod, .paymentOption{
+		width: 100%;
+		margin-top: 30px !important;
+	}
+	.paymentOption form label{
+		width: 100%;		
+		margin-top: 30px !important;
+	}
+	.spacer10top{
+		margin-top: 0 !important;
+	}
+}
+
+@media screen and (max-width:590px){
+	.cartHeader{
+		margin-bottom: 30px;
+	}
+	.cartGoPay,.cartGoBack{
+		width: 100%;
+		margin: 10px 0 !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center;
+	}
+	.fullTable{
+		display: none;
+	}
+	.mobileTable{
+		display: table;
+	}
+	.cartTable .product_image{
+		width: 100% !important
+	}
+	.cartTable .product{
+		width: 100% !important
+	}
+}
+
+
 .cartHeader{
 	font-size: 22px;
 	font-weight: bold;
@@ -3177,6 +3264,7 @@ div.namePartPriceContainer > span.sku{
   	width: 60%;
   	padding-right: 20%;
   	border-right: #ccc 1px dotted;
+  	margin-bottom: 30px;
 }
 
 
@@ -3218,7 +3306,7 @@ div.namePartPriceContainer > span.sku{
 	margin-bottom: 10px;
 	float: left;
   	width: 75%;
-  	background-color: #bcbebb !important;
+  	background-color: #efefee !important;
 	border: 0 !important; 
 }
 
