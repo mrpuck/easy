@@ -3193,6 +3193,7 @@ div.namePartPriceContainer > span.sku{
 
 	.opcionesDespacho{
 		margin-bottom: 30px !important;
+		padding-left: 5px; 
 	}
 	.dateselectorHeader{
 		margin-top: 20px;
@@ -3235,6 +3236,13 @@ div.namePartPriceContainer > span.sku{
 	}
 	.cartTable .product{
 		width: 100% !important
+	}
+
+	.payments>div p, .volver{
+		padding-left: 5px;
+	}
+	.paymentButton{
+		margin-left: 0 !important;
 	}
 }
 
