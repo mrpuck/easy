@@ -3244,6 +3244,11 @@ div.namePartPriceContainer > span.sku{
 	.paymentButton{
 		margin-left: 0 !important;
 	}
+
+	.productTable .product{
+		padding: 0 !important;
+		width: 99% !important; 
+	}
 }
 
 
