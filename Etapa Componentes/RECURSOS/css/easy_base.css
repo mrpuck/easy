@@ -256,6 +256,8 @@ div#widget_breadcrumb > ul li a{
 
 /* Filtros de búsqueda */
 .optionContainer > .title {
+	min-height: 40px !important;
+	height: auto !important;
 	border-radius: 0 !important;
 	background: #C5282C !important;
   	color: #fff !important;
@@ -2264,7 +2266,6 @@ ul.facetSelect li div.facetCountContainer{
 
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item a img{
 	margin-top: 15px;
-	width: 100%;
 }
 .widget_product_compare > .middle > .left_border > .right_border > .content > .compare_main .compare_4 .row > .item.imageCompare{
 	position: relative;
@@ -3615,4 +3616,252 @@ div.namePartPriceContainer > span.sku{
 
 .paymentOption>img{
 	float: left;
+}
+
+/* Sección Mi cuenta*/
+.margin5{
+	margin: 5px !important;
+}
+
+.personalData, .recentOrders{
+	border: #cccbcb 1px solid;
+	margin: 5px;
+	padding: 10px;
+	color: #000;
+	font-size: 13px;
+}
+.personalData h3, .recentOrders h3{
+	color: #e52428;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.personalData p{
+	margin-bottom: 5px;
+}
+
+.editButton{
+	padding: 5px 45px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.recentOrders table, .recentOrders tr, .recentOrders td, .recentOrders th{
+	border-collapse: collapse;
+	font-weight: normal;
+	border: #000 1px solid;
+}
+
+.recentOrders table{
+	width: 100%;
+}
+
+.recentOrders th{
+	padding: 5px;
+}
+
+.recentOrders td{
+	padding: 5px 10px;
+	text-align: center;
+}
+.recentOrders td a.details{
+	color: #2c4a9a;
+	padding: 0;
+	font-weight: normal;
+}
+
+.recentOrders td a{
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+.recentOrders tr td:first-child{
+	padding-left: 30px;
+	text-align: left;
+}
+
+/* Datos personales */
+.userForm{
+	border: #ccc 1px solid;
+	margin: 5px;
+	padding: 20px 0 !important; 
+}
+
+.userForm .formRow{
+	font-size: 13px;
+	width: 100%;
+	float: left;
+	margin: 5px 0;
+	display: inline-block;
+	position: relative;
+}
+
+.userForm label{
+	float: left;
+	width: 220px;
+	padding-right: 10px;
+	text-align: right;
+	color: #000;
+	padding-top: 5px;
+}
+
+.userForm .formRow input{
+	font-size: 13px;
+	padding: 3px;
+	color: #000;
+	border: 0;
+	background: #efefee;
+	width: 180px;
+	float: left;
+}
+
+.userForm .formRow input.small{
+	width: 25px;
+	margin-right: 5px;
+}
+.userForm .formRow input.mid{
+	width: 145px;
+}
+
+.userForm .formRow span{
+	float: left;
+	margin-top: 3px;
+}
+
+.userForm .formRow span input[type=radio]{
+	width: auto;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 3px; 
+}
+
+.userForm .button{
+	float: right;
+	margin-right: 33%;
+	text-align: center;
+	padding: 5px 10px;
+	width: 95px;
+}
+.vaidationMessage{
+	position: absolute;
+	bottom: 15px;
+	right: 10px; 
+	padding-left: 24px;
+}
+
+.validatonText{
+	padding: 15px 10px;
+	background: #e52428;
+	color: #fff;
+	font-size: 13px;
+}
+
+.validatonArrow{
+	width: 24px;
+	height: 27px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url('../img/redArrow.png') center center no-repeat
+}
+
+.selectContainer{
+	background: #efefee url('../img/selectArrow.png') top right no-repeat;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	min-height: 21px;
+	margin-right: 7px;
+	padding: 3px 30px 0 10px; 
+}
+
+.selectContainer select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+	width: 120%;
+	position: relative;
+	border: 0;
+	background: transparent;
+}
+
+.selectContainer select::-ms-expand {
+    display: none;
+}
+
+
+.registerTitle{
+	background: #e52428;
+	font-weight: bold;	
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	color: #fff; 
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+.newsletterRegistration{
+  	float: left;
+  	width: 40%;
+  	padding: 10px;
+}
+
+.bordered{
+	 border: #ccc 1px solid;
+}
+
+.newsletterRegistration .opcionesCheck label{
+	text-align: left;
+	width: auto !important	
+}
+
+.newsletterRegistration .opcionesCheck input[type="checkbox"] + label span{
+	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+.nofloat{
+	margin-right: 20px !important; 
+}
+
+.button_secondary.nofloat{
+	margin-right: 20% !important; 
+}
+
+.questionClicker{
+	background: #cccbcb;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	display: inline-block;
+}
+
+.mundoexpertoSelect{
+	width: 115px;
+}
+
+@media (max-width: 440px) {
+	.userForm label{
+		width: 100%;
+		margin-left: 0 !important;
+		text-align: left;
+	}
+	.userForm .formRow input{
+		width:90%;
+	}
+
+	.userForm .formRow input.mid{
+		width: 81%;
+	}
+	.newsletterRegistration{
+		width: 93%;
+	}
+	.userForm .button{
+		width: 92%;
+		margin: 0 !important;
+	}
 }
