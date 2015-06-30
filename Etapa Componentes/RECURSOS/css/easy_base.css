@@ -3759,7 +3759,7 @@ div.namePartPriceContainer > span.sku{
 .userForm .button{
 	margin-top: 15px;
 	margin-bottom: 15px;  
-	float: right;
+
 	margin-right: 33%;
 	text-align: center;
 	padding: 5px 10px;
@@ -3860,8 +3860,8 @@ div.namePartPriceContainer > span.sku{
 	margin-right: 20px !important; 
 }
 
-.button_secondary.nofloat{
-	margin-right: 20% !important; 
+.button_primary.nofloat{
+	margin-left: 40% !important; 
 }
 
 .questionClicker{
@@ -3901,11 +3901,9 @@ div.namePartPriceContainer > span.sku{
 		margin: 0 !important;
 	}
 	.userForm .button.button_primary{
-		margin-top: -66px !important;
+		margin-bottom: 20px !important;
 	}
-	.userForm .button.button_secondary{
-		
-	}
+
 }
 
 .underline{
