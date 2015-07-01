@@ -3917,3 +3917,7 @@ div.namePartPriceContainer > span.sku{
 .button:hover{
 	opacity: 0.8;
 }
+
+.floatRight{
+	float: right;
+}
