@@ -2716,6 +2716,12 @@ div.namePartPriceContainer > span.sku{
 	height: 24px !important;
 }
 
+@media screen and (max-width: 1020px){
+	.financiamiento .sorting_controls select{
+		width: 106%;
+	}
+}
+
 .tambien{
 	font-weight: bold;
 	width: 96% !important;
