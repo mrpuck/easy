@@ -4033,7 +4033,7 @@ div.namePartPriceContainer > span.sku{
 .borderSection ul{
 	padding-left: 0;
 }
-.borderSection li{
+.borderSection .questionTitle li{
 	font-size: 13px;
   	padding-left: 45px;
   	padding-right: 30px;
@@ -4042,17 +4042,17 @@ div.namePartPriceContainer > span.sku{
   	margin: 15px 0;
   	background: url('../img/redArrowLeft.png') 20px 3px no-repeat;
 }
-.borderSection li>div{
+.borderSection .questionTitle li>div{
 	display: none;
 	font-weight: normal;
 	margin: 20px 0;
 }
 
-.borderSection li.active{
+.borderSection .questionTitle li.active{
 	background: url('../img/redArrowDown.png') 16px 5px no-repeat;
 }
 
-.borderSection li.active>div{
+.borderSection .questionTitle li.active>div{
 	display: block;
 }
 
@@ -4065,7 +4065,7 @@ div.namePartPriceContainer > span.sku{
 /* Centro inspiración */
 .ayudaHabitacion{
 	float: left;
-	width: 137px;
+	width: 123px;
 	position: relative;
 	margin: 5px;
 	font-weight: 22px;
@@ -4089,19 +4089,19 @@ div.namePartPriceContainer > span.sku{
 
 
 .ayudaHabitacion a {
-	  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  background: #fff;
-  color: #000;
-  opacity: 0.8;
-  position: absolute;
-  left: -30px;
-  padding: 15px;
-  top: 113px;
-  width: 255px;
+ 	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	background: #fff;
+	color: #000;
+	opacity: 0.8;
+	position: absolute;
+	left: -30px;
+	padding: 15px;
+	top: 101px;
+	width: 224px;
 }
 
 .inspiracion .consejosHeader span{
@@ -4139,15 +4139,16 @@ div.namePartPriceContainer > span.sku{
 	padding: 0;
 	padding: 9px 0 0 0;
 	float: right;
-	width: 20%;
-	margin-right: 10px;
+	width: 15%;
+	margin-right: 0px;
 }
 
 .headerSocial ul.social li{
+	width: 20% !important;
+	box-sizing: border-box;
 	float: left;
 	width: auto;
 	padding: 0 2px;
-	width: 16%;
 }
 
 .headerSocial ul.social li img{
@@ -4164,6 +4165,10 @@ div.namePartPriceContainer > span.sku{
 }
 
 /* Como */
+
+.imageHeader{
+	margin: 0 !important;
+}
 .imageHeader>.col6{
 	float: left;
 	margin: 5px 0;
@@ -4282,12 +4287,17 @@ div.namePartPriceContainer > span.sku{
 	float: left;
 }
 
+.localTabs .tab_header .tab_container.inactive_tab{
+	border-bottom: #ccc 1px solid !important;
+  	position: relative !important;
+}
+
+
 .localTabs .tab{
 	float: left;
 	padding: 50px;
 	color: #000;
 	font-size: 15px;
-	font-weight: bold;
 }
 
 .localTabs .tab img{
@@ -4334,10 +4344,10 @@ div.namePartPriceContainer > span.sku{
 
 .localHorario .hoy{
 	position: absolute;
-  	left: -45px;
   	background-color: #e42420;
-  	padding: 5px;
   	top: 0;
+  	left: -73px;
+    padding: 5px 15px 5px 25px;
 }
 
 .localHorario .hoy:after, .localHorario .hoy:before {
@@ -4399,4 +4409,8 @@ div.namePartPriceContainer > span.sku{
 		text-align: center !important;
 		padding: 5px;
 	}
+}
+
+.localTab{
+	font-size: 17px;
 }
