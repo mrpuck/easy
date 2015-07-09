@@ -4290,6 +4290,7 @@ div.namePartPriceContainer > span.sku{
 
 
 .localTabs .tab{
+	box-sizing: border-box;
 	float: left;
 	padding: 50px;
 	color: #000;
