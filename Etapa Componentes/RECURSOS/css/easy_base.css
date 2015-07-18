@@ -2504,6 +2504,13 @@ div.namePartPriceContainer > span.sku{
 	font-size: 14px;
 	padding: 5px 10px;
 	margin-top: -5px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+	.infobox a{
+		margin-top: 20px;
+	}
 }
 
 .productSecondary{
@@ -2564,7 +2571,7 @@ div.namePartPriceContainer > span.sku{
 	font-weight: bold;
 	color: #000;
 	padding-top: 0 !important;
-	margin-right: 20px;
+	margin-right: 13%;
 }
 
 .quantity_section input{
@@ -2581,7 +2588,6 @@ div.namePartPriceContainer > span.sku{
 		background: url('../img/heart.png') center left no-repeat; 
 		margin-bottom: 14px;
 		display: inline-block;
-		width: 35%;
 		text-align: left;
 }
 
@@ -2800,6 +2806,18 @@ div.namePartPriceContainer > span.sku{
 
 .progressbar>div.active:after {
     border-left-color: #e42420;
+}
+
+@media screen and (max-width: 840px){
+	.progressbar>div{
+    	padding: 10px 10px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+	.progressbar>div{
+    	padding: 10px 30px 10px 40px;
+    }
 }
 
 .spacer{
@@ -3640,13 +3658,15 @@ div.namePartPriceContainer > span.sku{
 }
 
 /* Sección Mi cuenta*/
-.margin5{
-	margin: 0 5px !important;
-}
 
 .fullWrapper{
 	margin: 0 !important;
 }
+.margin5{
+	margin: 0 5px !important;
+}
+
+
 .personalData, .recentOrders{
 	border: #cccbcb 1px solid;
 	margin: 5px;
@@ -3658,7 +3678,7 @@ div.namePartPriceContainer > span.sku{
 	color: #e52428;
 	font-weight: bold;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 .personalData p{
@@ -3739,11 +3759,11 @@ div.namePartPriceContainer > span.sku{
 
 .userForm .formRow input{
 	font-size: 13px;
-	padding: 3px;
+	padding: 4px;
 	color: #000;
 	border: 0;
 	background: #efefee;
-	width: 180px;
+	width: 178px;
 	float: left;
 }
 
@@ -4410,4 +4430,80 @@ div.namePartPriceContainer > span.sku{
 
 .localTab{
 	font-size: 17px;
+}
+
+
+/* Entrega Correcciones FP8*/
+
+/* Header*/
+
+.loginMenuDropdown{
+	right: 140px !important;
+	top: 114px !important;
+	background: #FFF !important;
+}
+
+/* Página producto */
+.available .header{
+	float: left;
+	font-size: 18px !important;
+	color: #000;
+	margin-top: 8px;
+	margin-right: 15px;
+}
+
+.available .subHeading{
+	float: left;
+	clear: left;
+	font-size: 12px !important;
+	padding-left: 0 !important;
+}
+
+.available > .sublist{
+	padding-top: 11px !important;
+}
+
+.available .availabilityBorder{
+	margin-left: 0 !important;
+}
+
+/* Popup */ 
+#quickInfoPopup .dijitDialogPaneContent{
+	border: #ccc 3px solid;
+}
+
+div.widget_quick_info_popup > .middle > .content_left_border > .content_right_border > .content > .right_column{
+	line-height: initial !important;
+}
+
+#quickInfoPopup .dijitDialogPaneContent .shopperActions .whiteCart{
+	float: left;
+	width: 45% !important;
+}
+
+
+#quickInfoPopup .dijitDialogPaneContent .namePartPriceContainer .internet, #quickInfoPopup .dijitDialogPaneContent .namePartPriceContainer .normal, #quickInfoPopup .dijitDialogPaneContent .namePartPriceContainer .especial{
+	width: 100% !important;
+}
+
+.popupDescription{
+	border-top: #ccc 1px solid;
+	border-bottom: #ccc 1px solid;
+	padding: 10px 0;
+	margin: 10px 0;
+	display: block; 
+}
+
+.popupDescription a{
+	color: #006ECC;
+	display: block;
+	margin-top: 10px;
+} 
+
+.gift_header{
+	border: 0 !important;
+	background: #e42420 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+
 }

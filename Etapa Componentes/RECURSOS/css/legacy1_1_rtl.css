@@ -24,7 +24,7 @@
 	line-height:1.1em;
 }
 .sign_in_registration .title {
-	padding: 13px 0px 13px 0px;
+	padding: 17px 0px 0px 0px;
 	font-size: 14px;
 }
 
@@ -132,8 +132,13 @@
 	padding-right: 15px;
 }
 
-.headingtext, .quick_drop{
+.headingtext {
 	float:right;
+}
+
+.quick_drop {
+	float:right;
+	width: 44.5%;
 }
 
 /* UserRegistrationAddForm.jsp */
@@ -186,6 +191,11 @@
 	padding:0px 0px 0px 0px;
 	margin:0px;
 	display:block;
+}
+
+#box.myAccountMarginRight{
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 /* box_1 used in address entry form in OrderShippingDetails page */
 #box .body, #box_1 .body {
@@ -365,17 +375,21 @@
 }
 
 #order_details .shipAddress{
-	width:150px;
+	min-width: 100px;
+	max-width: 150px;
+	word-wrap: break-word;
 }
 #order_details .shipMethod{
-	width:300px;
+	min-width:110px;
+	max-width:200px;
 }
 #order_details .requestedShippingDate {
 	width:12%;
 	padding-left:4px;
 }
 #order_details .expedite {
-	width:15%;
+	text-align: left;
+	width: 10%;
 }
 #order_details .received {
 	text-align: center;
@@ -463,6 +477,9 @@
 #order_details  div[id^="WC_MSOrderItemDetails_div_1_"] img  {
 	width: 100%;
 }
+#order_details  div[id^="WC_OrderItemDetailsf_div_2_"] {
+	width: 220px;
+}
 #order_details .product_specs {
 	margin-right: 16px;
 }
@@ -495,7 +512,7 @@
 }
 
 #order_details .th_align_left_normal {
-	min-width: 140px;
+	min-width: 120px;
 	border-bottom: 2px dotted #E5E5E5;
 	font-weight: normal;
 	padding: 6px 0px;
@@ -554,6 +571,11 @@ div#shopping_cart_product_table_tall {
 	font-size:12px;
 	color: #4d4d4d;
 	line-height:0px;
+	margin-bottom: 0px;
+}
+
+div#scheduling_options {
+	line-height:2;
 }
 
 div#purchase_options input {
@@ -698,7 +720,7 @@ div#purchase_options label img {
 }
 
 #location .location_select_button {
-	padding-top: 21px;
+	padding-top: 13px;
 	padding-right:5px;
 	margin-right:5px;
 	display:block;
@@ -1041,15 +1063,18 @@ div.free_gifts_block {
 
 #billing .billing_address_container, .billing .billing_address_container {
    float:right;
+   min-width: 100px;
+   max-width: 200px;
+   word-wrap: break-word;
 }
 
 .card_info {
 	display:inline-block;
-	width:350px;
+	width:300px;
 }
 .card_info .col1 {
 	float:right;
-	width:390px;
+	width:365px;
 	padding-top:5px;
 
 }
@@ -1117,10 +1142,16 @@ div.free_gifts_block {
 	overflow: visible;
 }
 .dijitTooltipContainer {
-	border: solid black 2px;
 	background: #b8b5b5;
 	color: black;
 	font-size: small;
+	background-color: #fafafa;
+	border:1px solid #CA4200;
+	padding:0.12em;
+	border-radius: 6px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 6px;
+	width: auto;
 }
 
 .dijitTooltipFocusNode {
@@ -1149,15 +1180,7 @@ div.free_gifts_block {
 .dijitTooltipAbove {
 	padding-bottom: 13px;
 }
-.dijitTooltipContainer {
-	background-color: #fafafa;
-	border:1px solid #b6c7d5;
-	padding:0.45em;
-	border-radius: 6px;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 6px;
-	width: auto;
-}
+
 .dijitTooltipConnector {
 	border:0px;
 	z-index: 2;
@@ -1675,7 +1698,7 @@ table.dijitInline {
   vertical-align: middle;
 }
 tr.dijitCalendarMonthContainer {
-  background: url("../images/colors/color1/calendarMonthLabel.png") repeat-x scroll center top white;
+ /* background: url("../images/colors/color1/calendarMonthLabel.png") repeat-x scroll center top white; */
 }
 .dijitCalendarContainer thead tr th, .dijitCalendarContainer thead tr td, .dijitCalendarContainer tbody tr td, .dijitCalendarContainer tfoot tr td {
 	padding: 0;
@@ -1718,7 +1741,7 @@ tr.dijitCalendarMonthContainer {
   display: none;
 }
 .dijitCalendarDayLabelTemplate {
-	background: url("../images/colors/color1/calendarDayLabel.png") repeat-x scroll center bottom white;
+	/*background: url("../images/colors/color1/calendarDayLabel.png") repeat-x scroll center bottom white;*/
 	border-top: 1px solid #EEEEEE;
 	color: #293A4B;
 	font-weight: normal;
@@ -1772,7 +1795,7 @@ tr.dijitCalendarMonthContainer {
   color: #999999;
 }
 .dijitCalendarYearContainer {
-  background: url("../images/colors/color1/calendarYearLabel.png") repeat-x scroll center bottom white;
+  /*background: url("../images/colors/color1/calendarYearLabel.png") repeat-x scroll center bottom white;*/
   border-top: 1px solid #CCCCCC;
 }
 .dijitCalendarYearControl {
@@ -1950,7 +1973,6 @@ tr.dijitCalendarMonthContainer {
 */
 #centered_single_column_form {
 	width:240px;
-	margin:0 auto;
 	font-size:12px;
 }
 #centered_single_column_form h1 {
@@ -1962,7 +1984,7 @@ tr.dijitCalendarMonthContainer {
 #centered_single_column_form_footer {
 	padding-left:25px;
 	padding-top:10px;
-	text-align:left;
+	text-align:right;
 }
 
 /* Shipping and billing on summary page
@@ -1993,7 +2015,7 @@ tr.dijitCalendarMonthContainer {
 	font-size:12px;
 
 }
-#billing_summary .title, .billing_summary .title, .billing_address .title, .billing_method .title, #billing_method {
+#billing_summary .title, .billing_summary .title, .billing_address .title, .billing_method .title, #billing_method, #purchase_order .title {
 	color: #777777;
 }
 #billing_summary .billing_address, .billing_summary .billing_address {
@@ -2008,6 +2030,10 @@ tr.dijitCalendarMonthContainer {
 }
 .shipping_billing_height {
 	height:100%;
+}
+
+#purchase_order {
+	padding: 0 0 0 3px;
 }
 
 #WC_SingleShipmentSummary_div_21, #WC_OrderShippingBillingConfirmationPage_div_21 {
@@ -2186,6 +2212,10 @@ div.gift_item_container div.image {
 	float: right;
 	padding: 6px 5px;
 	width: 70px;
+}
+
+div.gift_item_container div.image > img {
+	width: 100%;
 }
 
 div.gift_item_container div.product_info {
@@ -2442,6 +2472,7 @@ div.info_table div.row div.info_content select {
 	min-width:50%;
 	max-width:100%;
 	float:right;
+	position: relative;
 }
 .form_2column .column select {
 	max-width: 325px;
@@ -2452,7 +2483,7 @@ div.info_table div.row div.info_content select {
 }
 .form_2column .birthdayColumn {
 	float:right;
-	margin-left:2px;
+	width: 28.6%;
 }
 .form_2column .label_spacer {
 	padding-bottom: 5px;
@@ -2549,7 +2580,11 @@ div.info_table div.row div.info_content select {
 }
 .order_status_table .ul .li {
 	float: right;
-	padding: 3px 0px;
+	padding: 15px 0px;
+}
+
+.order_status_table .ul .row {
+	min-height:35px;
 }
 
 .order_status_table .ul .clear_float {
@@ -2564,8 +2599,8 @@ div.info_table div.row div.info_content select {
 	text-align: right;
 }
 .order_status_table .column_heading th.li {
-	padding-top: 8px;
-	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-bottom: 15px;
 }
 .order_status_table .row {
 	border-bottom: 2px dotted #e5e5e5;
@@ -2578,15 +2613,15 @@ div.info_table div.row div.info_content select {
 	padding: 0;
 }
 .order_status_table .order_number_column_1 {
-	width: 18%;
+	width: 14%;
 }
 
 .order_status_table .order_date_column_1 {
-	width: 18%;
+	width: 16%;
 }
 
 .order_status_table .status_column_1 {
-	width: 19%;
+	width: 17%;
 	line-height:18px;
 }
 
@@ -2596,7 +2631,7 @@ div.info_table div.row div.info_content select {
 
 .order_status_table .total_price_column_1 {
 	text-align: left;
-	width: 12%;
+	width: 15%;
 }
 
 .order_status_table .order_scheduled_column_1 {
@@ -2626,11 +2661,17 @@ div#Scheduled {
 }
 
 .order_status_table .purchase_order_column_1 {
-	width: 15%;
+	width: 16%;
 }
 .order_status_table .option_1 {
-	width: 24%; /* Increased for g18n */
+	width: 22%; /* Increased for g18n */
 	float: left !important;
+}
+
+@media (max-width: 900px) {
+	.order_status_table .option_1  .button_text {
+		padding: 0 10px;
+	}
 }
 
 .order_status_table .order_number_column_2 {
@@ -2671,7 +2712,6 @@ div#Scheduled {
 	position: static;
 }
 .order_status {
-	background: #fff url('../images/colors/color1/product_tab_box_tile2.png') repeat-y;
 	padding-bottom:0px;
 	width: 100%;
 }
@@ -2681,8 +2721,6 @@ div#Scheduled {
 	line-height: 15px;
 }
 .order_status .tabfooter {
-	background: url('../images/colors/color1/product_tab_box_footer2.png');
-	background-repeat:no-repeat;
 	height:14px;
 }
 
@@ -3055,6 +3093,7 @@ div#top_pagination, div .top_pagination {
 	padding:0px 7px 0px 10px;
 	margin: 0px;
 	vertical-align: top;
+	line-height: normal;
 }
 
 #four-grid-wishlist .item .description_fixedwidth {
@@ -3392,8 +3431,9 @@ td.item .listPrice {
 }
 
 .sign_in_registration .title h1 {
-	font-size:14px;
-	font-weight:normal;
+	height: 46px;
+	line-height: 46px;
+	padding: 0px 0px;
 }
 
 #SendMsgForm .header h2 {
@@ -3556,7 +3596,6 @@ td.item .listPrice {
 /* A div to hold the entire couponWallet jsp so that it can be aligned on the page differently in the My Account section. */
 .couponWalletContainer {
 	float: right;
-	width: 700px;
 }
 /* Override definition below since this table is shared between My Coupons and Shopping cart pages */
 .couponWalletContainer .couponWalletTable_couponName {
@@ -3629,21 +3668,30 @@ td.item .listPrice {
 /* Scheduled Orders
 -------------------------------------------------------------------
 */
+#box {
+	word-wrap: break-word;
+}
 #box .order_number_column {
-	width: 20%;
+	width: 17%;
 }
 #box .order_scheduled_column {
-	width: 17%;
+	width: 19%;
 }
 #box .next_order_column {
 	width: 17%;
 }
 #box .order_status_column {
-	width: 9%;
+	width: 11%;
 }
 #box .total_price_column {
-	width: 9%;
+	width: 12%;
 }
+@media (max-width: 900px) {
+	#box .options_column .button_text {
+		padding: 0 10px;
+	}
+}
+
 .actions_down_arrow {
 	margin: 0px;
 	padding: 0px;
@@ -3885,6 +3933,9 @@ td.item .listPrice {
 	float:left;
 	padding:2px 0px 0px 9px;
 }
+#discountDetailsSection .info_icon {
+	color: #006ECC;
+}
 
 #WC_EmptyShopCartDisplayf_div_1 {
 	min-height:150px;
@@ -4017,16 +4068,17 @@ td.item .listPrice {
 /* QuickOrderForm.jsp
 -------------------------------------------------------------------
 */
+.quick_order_col {
+	float: none !important;
+	min-width: 220px;
+}
+
 #quick_order {
 	padding:11px;
 	white-space:normal;
 	line-height:1.4;
 	font-size:12px;
-}
-#quick_order .line_number {
-	float:right;
-	padding:8px 5px 0px 5px;
-	width:15px;
+	min-width:220px;
 }
 #quick_order .input_form {
 	float:right;
@@ -4048,23 +4100,36 @@ td.item .listPrice {
 #quick_order .input_form .QTY {
 	float:right;
 	border-bottom:solid 1px #c9d3de;
-	padding-left:20px;
+	padding-left:5px;
 	width:45px;
 }
 #quick_order .input_form .SKU {
 	float:right;
 	border-bottom:solid 1px #c9d3de;
-	padding-right:19px;
-	width:197px;
+	padding-right:25px;
+	width:145px;
 }
 #quick_order .input_form .input .SKU_field {
-	width:176px;
+	width:126px;
 	margin-left:7px;
 }
-
+#quick_order .input_form .input .QTY_field {
+	width:45px;	
+}
+#quick_order .input_form .input .line_number {
+	width:15px;
+	display:inline-block;
+	margin-left:7px;
+	text-align:center;
+}
+#quick_order .input_form .input_sub_fields {
+	display:inline-block;
+}
 #quick_order .input_fields {
 	padding-top: 5px;
+	width:100%;
 }
+
 #content710 {
 	float:right;
 	padding-top:1px;
@@ -4179,8 +4244,61 @@ td.item .listPrice {
 	}
 }
 
+/* -----------------------------------------------------------------------------*/
+/*  Shipping & Billing - ShipCharge
+/* -----------------------------------------------------------------------------*/
+#B2BShippingChargeExt_shipcharge_table {
+	/*float:right;*/
+	clear:both;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-top:5px;
+}
+
+#B2BShippingChargeExt_shipcharge_table tr.nested th {
+	border-bottom:1px solid #e5e5e5;
+	height:19px;
+	vertical-align:top;
+	padding-top: 1px;
+	padding-bottom: 4px;
+	color: #777777;
+	line-height:18px;
+}
+
+#B2BShippingChargeExt_shipcharge_table th {
+	height:18px;
+	vertical-align:top;
+	padding:0px;
+	font-weight:bold;
+
+}
+
+#B2BShippingChargeExt_shipcharge_table td {
+	border-bottom: 2px dotted #e5e5e5;
+	font-weight: normal;
+	padding: 8px 0px;
+	text-align: right;
+	vertical-align: top;
+}
+
+#B2BShippingChargeExt_shipcharge_table .th_align_left_no_bottom {
+	border-bottom:0px;
+}
+
+#B2BShippingChargeExt_shipcharge_table .align_left {
+	text-align: right;
+}
+
+#B2BShippingChargeExt_shipcharge_table .th_align_left_normal {
+	border-bottom:0px;
+	min-width: 140px;
+	padding: 6px 0px;
+	text-align: right;
+}
+
 /* BEGIN MANUAL OVERRIDES */
 .priceRangeContainer span.right + span.inputbox {
 	padding-right: 0;
 }
 /* END MANUAL OVERRIDES */
+

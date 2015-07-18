@@ -25,3 +25,7 @@ div.widget_quick_info_popup > .middle > .content_left_border > .content_right_bo
 div.widget_quick_info_popup > .middle > .content_left_border > .content_right_border > .content > .right_column > a {
 	font-size: 10px;
 }
+
+.loginMenuDropdown .field a#Header_GlobalLogin_WC_AccountDisplay_links_1.link {
+    font-size: 10px;
+}

@@ -669,6 +669,7 @@ div.store_message{
 		width: 403px;
 		padding-top: 5px;
 		padding-bottom: 45px;
+		padding-right: 10px;
 		box-shadow: 0 0 10px 2px #888888;
 		filter:progid:DXImageTransform.Microsoft.Glow(color='#888888',Strength ='5');
 	}
