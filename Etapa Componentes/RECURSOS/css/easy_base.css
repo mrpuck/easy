@@ -4,6 +4,13 @@ Archivo estilos comunes portal Easy.
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700');
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
 
 /* Tipografía general. Es necesario agregar en el header el link a la fuente Open Sans de google */
 body{
@@ -199,6 +206,10 @@ body{
 #footerRow1 > .section > ul > li > a{
 	padding: 5px 10px !important; 
 }
+
+#footerRow1 .social{
+	display: block !important; 
+}
 /* Categorías */
 
 .categoryNavWidget.collapsible{
@@ -268,7 +279,7 @@ div#widget_breadcrumb > ul li a{
 	min-height: 40px !important;
 	height: auto !important;
 	border-radius: 0 !important;
-	background: #C5282C !important;
+	background: #e52428 !important;
   	color: #fff !important;
   	margin: 0 !important; 
 }
@@ -698,6 +709,10 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	text-align: right !important;
 }
 
+.content.list.section >div>div.proyecto:last-child, .content.list.section >div>div.proyecto:first-child{
+	text-align: center !important;
+}
+
 /* Categorías populares */ 
 .content.categoryListHome{
 	padding: 0 !important;
@@ -918,6 +933,17 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
   	margin-left: 12px;
 }
 
+@media screen and (max-width: 870px) and (min-width: 600px){
+	.basicButton > span{
+		padding: 0 5px !important; 
+		padding-top: 6px !important;
+	}
+	.whiteCart img{
+		margin-right: 4px !important;
+		margin-left: 10px !important;
+	}
+}
+
 .prevPageButton.secondary{
 	background: url('../img/prevSliderSecondary.png') center center no-repeat; 
 	width: 40px !important;
@@ -1111,7 +1137,14 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
 	.contactInfo{
 		width: 100% !important; 
 	}
+
 }
+@media (max-width: 1050px){
+	.contactInfo p{
+		width: 100% !important; 	
+	}
+}
+
 
 .contactInfo{
 	font-weight: bold;
@@ -1576,14 +1609,18 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
   	padding-left: 25px;
 }
 
+.consejosHeader.inspiracion span{
+	margin-left: 2%;
+}
+
 .consejosWrapper .content.list.section >div>div img, .consejosWrapper .categoryTitle{
 	width: 75%;
 	font-weight: bold;
 }
 
 .consejosWrapper .content.list.section{
-	margin-top: 40px !important;
-	margin-bottom: 40px !important;
+	margin-top: 50px !important;
+	margin-bottom: 50px !important;
 }
 
 #content .collapsible > h3.second, .categoryNavWidget.collapsible > h3.second, .linkWidget.collapsible > h3.second{
@@ -1659,7 +1696,14 @@ div.widget_left_nav > div.content_left_border > div.content_right_border > div.c
    border: 1px solid #ccc;
 }
 
-
+.sorting_controls.checkoutControls{
+	background: url(../img/checkoutSelect.png) no-repeat 99% center transparent;
+	height: 22px;
+	border: 0;
+}
+.sorting_controls.checkoutControls select{
+	height: 22px;
+}
 
 .sorting_controls select {
    background: transparent;
@@ -1732,7 +1776,7 @@ ul.facetSelect li div.facetCountContainer{
 }
 
 .facetSelect{
-	padding-left: 20px !important;
+	padding-left: 0px !important;
 }
 
 .arrow:before{
@@ -1849,6 +1893,13 @@ ul.facetSelect li div.facetCountContainer{
 	text-align: left;
 	font-weight: normal;
 	float: left;
+}
+
+@media screen and (max-width: 1250px){
+	.grid_mode .product_info .wishlist{
+	    width: 81% !important;
+	    float: right !important;
+	}
 }
 
 .grid_mode .product_info .whiteCart{
@@ -2440,6 +2491,10 @@ ul.facetSelect li div.facetCountContainer{
 	}
 }
 
+.content.list.section.fullWidth{
+	width: 100% !important;
+}
+
 .tabTitle{
 	font-size: 14px !important;
 }
@@ -2769,6 +2824,15 @@ div.namePartPriceContainer > span.sku{
 	width: 100%;
 }
 
+.comoSocial{
+	min-width: 180px !important;
+	display: block !important;
+}
+
+.comoSocial{
+
+}
+
 .financiamiento{
 	float: left;
 	border: #ccc 1px solid;
@@ -2853,6 +2917,22 @@ div.namePartPriceContainer > span.sku{
 	padding: 0;
 	float: right !important;
     text-align: center;
+}
+
+@media screen and (max-width: 640px){
+	.progressbar{
+		width: 87%;
+		margin-top: 0;
+	}
+	.confirmationHeader>.right{
+		width: 91% !important;
+		margin-top: 10px !important;
+	}
+	.confirmationHeader>.right *{
+		text-align: left !important;
+		float: left !important;
+		width: 100% !important;
+	}
 }
 
 .progressbar>div{
@@ -3034,12 +3114,13 @@ div.namePartPriceContainer > span.sku{
 	font-style: italic;
 	font-weight: normal;
 	color: #000;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .discount{
 	color: #e42420;
 	display: block;
+	font-weight: normal;
 }
 
 .eliminar{
@@ -3071,13 +3152,14 @@ div.namePartPriceContainer > span.sku{
 }
 
 .pagandocon{
-
-	text-align: left;
-	font-weight: normal;
-	font-size: 15px;
-	padding-left: 30px;
-	margin-bottom: 20px;
-	color: #000;
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 9px;
+    margin-bottom: 20px;
+    margin-right: 9px;
+    color: #000;
+    width: 150px;
 }
 .pagandocon>div{
 	width: 110px;
@@ -3187,7 +3269,7 @@ div.namePartPriceContainer > span.sku{
 
 .subtotal{
 	margin: 20px 0 !important;
-	width: 35%;
+	width: 40%;
 }
 .subtotal table{
 	width: 100%;
@@ -3230,8 +3312,7 @@ div.namePartPriceContainer > span.sku{
 .paymentMethod h2, .paymentOption h2{
 	font-size: 16px;
 	background: #dcdddc;
-	padding: 5px 10px;
-
+	padding: 5px 25px;
 }
 
 .payments>div{
@@ -3246,6 +3327,25 @@ div.namePartPriceContainer > span.sku{
 	margin-right: 40px;
 	font-size: 16px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+	.paymentMethod form label, .paymentOption form label{
+		    width: 100%;
+	    display: block;
+	}
+	.paymentOption form input, .paymentOption form img {
+		float: left;
+		margin: 0 !important;
+	}
+	.paymentOption form input{
+		margin-right: 20px !important;
+		margin-top: 2% !important;
+		margin-bottom: 30px !important;
+	}
+	.paymentOption form label{
+		margin-bottom: 10px !important;
+	}
 }
 
 .paymentMethod form input{
@@ -3331,9 +3431,7 @@ div.namePartPriceContainer > span.sku{
 	.dateselectorHeader{
 		margin-top: 20px;
 	}
-	.subtotal{
-		width: 100%;
-	}
+	
 	.paymentMethod, .paymentOption{
 		width: 100%;
 		margin-top: 30px !important;
@@ -3348,6 +3446,9 @@ div.namePartPriceContainer > span.sku{
 }
 
 @media screen and (max-width:590px){
+	.subtotal{
+		width: 100% !important;
+	}
 	.cartHeader{
 		margin-bottom: 30px;
 	}
@@ -3407,6 +3508,7 @@ div.namePartPriceContainer > span.sku{
 
 .cartGoPay{
 	padding: 7px 40px;
+	font-weight: bold;
 }
 
 .noborder, .noborder td, .noborder tr{
@@ -3473,7 +3575,7 @@ div.namePartPriceContainer > span.sku{
 	font-size: 14px !important;
 	font-weight: bold;
 	width: 200px;
-  	padding: 3px 0;
+  	padding: 6px 0;
   	text-align: center;
 }
 
@@ -3483,6 +3585,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .loginWrapper label{
+	font-weight: bold;
   	width: 70px;
   	display: block;
   	margin-bottom: 10px;
@@ -3502,6 +3605,14 @@ div.namePartPriceContainer > span.sku{
 	margin-left: 70px;
 	color: #000;
 	font-size: 13px;
+}
+
+@media screen and (max-width: 1150px){
+	.recordarClave{
+		clear: both;
+	    float: left;
+	    margin-left: 0;
+	}
 }
 
 .paymentButton{
@@ -3541,9 +3652,11 @@ div.namePartPriceContainer > span.sku{
 
 .gobackButton{
 	padding: 10px;
-	font-size: 14px;
+	font-size: 75%;
 	font-weight: bold;
 	margin: 10px 0;
+	width: 83%;
+	box-sizing: border-box;
 }
 
 .acol12.nomargin{
@@ -3591,7 +3704,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .saveData p{
-	width: 90%;
+	width: 89%;
 	float: left;
 	margin-top: 10px;
 	padding-left: 0;
@@ -3707,6 +3820,7 @@ div.namePartPriceContainer > span.sku{
 .orderSummary{
 	width: 100%;
 	float: left;
+	text-align: left !important;
 	margin-bottom: 30px;
 }
 
@@ -3745,7 +3859,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .paymentOption p{
-	padding: 15px;
+	padding: 15px 25px;
 	float: left;
 	width: auto !important;
 }
@@ -3896,7 +4010,7 @@ div.namePartPriceContainer > span.sku{
 .vaidationMessage{
 	position: absolute;
 	bottom: 17px;
-	right: 10px; 
+	right: 70px; 
 	padding-left: 24px;
 }
 
@@ -4061,6 +4175,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .iconContainer{
+	font-weight: bold;
 	float: left;
 	text-align: center;
 	font-size: 13px;
@@ -4107,6 +4222,16 @@ div.namePartPriceContainer > span.sku{
 	margin-top: 25px;
 }
 
+@media screen and (max-width: 1100px) and (min-width: 880px){
+	.ayudaSocial{
+		margin-right: 15% !important;
+	}
+	.ayudaSocial .social{
+		display: block !important;
+	}
+}
+
+
 .ayudaSocial span{
 	color: #000;
 	font-size: 13px;
@@ -4133,8 +4258,9 @@ div.namePartPriceContainer > span.sku{
 .borderSection ul.social{
 	list-style: none;
 	padding: 0;
-	padding: 9px 0 0 0;
-	width: 100%
+	padding: 15px 0 22px 0 !important;
+	width: 100%;
+	float: left;
 }
 
 .borderSection ul.social li{
@@ -4193,6 +4319,7 @@ div.namePartPriceContainer > span.sku{
 	margin: 0.5%;
 	font-weight: 22px;
 	text-transform: uppercase;
+	margin-bottom: 15px;
 
 }
 
@@ -4221,6 +4348,14 @@ div.namePartPriceContainer > span.sku{
 	font-size: 18px;
 	padding-left: 35px;
 	background: url('../img/whiteHeartBig.png') center left no-repeat;
+}
+
+.consejosHeader.checklist span{
+    background: url('../img/checklist.png') center left no-repeat !important;
+    padding-left: 32px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-top: 5px;
 }
 
 .consejosWrapper.inspiracion .content.list.section >div>div img{
@@ -4278,20 +4413,24 @@ div.namePartPriceContainer > span.sku{
 }
 
 /* Como */
+.marginBottom{
+	margin-bottom: 15px !important;
+}
 
 .imageHeader{
 	margin: 0 !important;
 }
-.imageHeader>.col6{
+.imageHeader>.col12{
 	float: left;
 	margin: 5px 0;
 }
 
-.imageHeader>.col6 img{
+.imageHeader>.col12 img{
 	width: 32%;
 }
 
-.imageHeader>.col6 a{
+.imageHeader>.col12 a{
+	font-weight: bold;
 	margin-top: 10px;
 	font-size: 14px;
 	padding: 5px;
@@ -4323,16 +4462,17 @@ div.namePartPriceContainer > span.sku{
 }
 
 .secondaryList li{
-	margin: 5px;
+	margin: 1%;
 	text-align: center;
-	width: 19%;
+	width: 18%;
 	float: left;
 	border: #ccc 1px solid;
-	padding: 10px;
+	padding: 1%;
 	box-sizing: border-box; 
 }
 
 .secondaryList li>span{
+	font-weight: bold;
 	font-size: 15px;
 	display: block;
 	width: 100%;
@@ -4342,6 +4482,7 @@ div.namePartPriceContainer > span.sku{
 
 .secondaryList li>img{
 	margin: 10px 0;
+	width: 100%;
 }
 
 .secondaryList li .whiteCart{
@@ -4395,7 +4536,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .localTabs .tab_header .tab_container{
-	margin-right: 20px !important;
+	margin-right: 30px !important;
 	display: block;
 	float: left;
 }
@@ -4436,8 +4577,8 @@ div.namePartPriceContainer > span.sku{
 .localHorario{
 	text-align: left !important;
 	padding-left: 10px;
-	width: 90%;
-	margin-left: 10%;
+	width: 85%;
+	margin-left: 15%;
 }
 
 .localHorario th{
@@ -4531,7 +4672,7 @@ div.namePartPriceContainer > span.sku{
 }
 
 .localTab{
-	font-size: 17px;
+	font-size: 16px;
 }
 
 
@@ -4635,6 +4776,41 @@ div.widget_quick_info_popup > .middle > .content_left_border > .content_right_bo
 	border: 0 !important;
 	background: #e42420 !important;
 	color: #fff !important;
+	margin-top: 0 !important;
 	font-weight: bold !important;
 
+}
+.gift_content{
+	border: #ccc 1px solid;
+}
+
+.borderStore{
+	border: #ccc 1px solid;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1190px){
+	.left_espot.localTab{
+		min-height: 44px;
+	}
+	.localTabs .tab_header .tab_container{
+		margin-right: 15px !important
+	}
+}
+
+@media screen and (max-width: 840px){
+	.localTabs .tab_header{
+		margin: 0 !important; 
+	}
+	.localTabs .tab_header .tab_container{
+		width: 100% !important;
+		box-sizing: border-box;
+		margin: 0 !important;
+
+	}
+}
+
+.garantizada {
+    width: 23%;
+    margin-top: 1%;
 }

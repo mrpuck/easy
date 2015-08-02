@@ -42,9 +42,83 @@
 				<div id="content" role="main">
 					<div class="rowContainer">
 						<div class="row margin-true">
+							<!-- Elemento FP8 -->
+							<div class="ccol12 acol12 col12 borderStore" >
+								<h2 class="gift_header">Store Locator</h2>
+								<div class="gift_content">
+									<a id="findNearest" class="button_primary" href="#">
+										<div class="left_border"></div>
+										<div class="button_text">Find stores near my current location</div>
+										<div class="right_border"></div>
+									</a>
+								</div>
+								<div class="gift_content">
+									<span class="instruction">Select a location to find a store near you.</span>
+									
+									<div id="location">
+										
+										<form name="searchByGeoNodeForm" id="searchByGeoNodeForm">
 
+											<div class="location_select" id="WC_StoreLocator_div_29">
+												<div class="location_select_label" id="WC_StoreLocator_div_30"><label for="selectCountry">Country:</label></div>
+												<div class="location_select_form" id="WC_StoreLocator_div_31">
+													<select class="drop_down_country" id="selectCountry" name="selectCountry">
+														<option value="11051">Canada</option>
+														<option value="11052">United States</option>
+													</select>
+												</div>
+											</div>
+											<div class="location_select" id="WC_StoreLocator_div_32">
+												<div class="location_select_label" id="WC_StoreLocator_div_33"><label for="selectState">State/Province:</label></div>
+												<div class="location_select_form" id="WC_StoreLocator_div_34">
+													<div id="provinceSelections" class="dijitContentPane">
+														<select class="drop_down_country" id="selectState">
+														        <option value="11053">Alberta</option>
+														        <option value="11061">British Columbia</option>
+														        <option value="11082">Manitoba</option>
+														        <option value="11084">New Brunswick</option>
+														        <option value="11088">Newfoundland and Labrador</option>
+														        <option value="11090">Nova Scotia</option>
+														        <option value="11094">Ontario</option>
+														        <option value="11138">Prince Edward Island</option>
+														        <option value="11140">Quebec</option>
+														        <option value="11159">Saskatchewan</option>
+														</select>
+													</div>						
+												</div>
+											</div>
+											<div class="location_select" id="WC_StoreLocator_div_35">
+												<div class="location_select_label" id="WC_StoreLocator_div_36"><label for="selectCity">City:</label></div>
+												<div class="location_select_form" id="WC_StoreLocator_div_37">
+													<div id="citySelections"  class="dijitContentPane">
+														<select class="drop_down_country" id="selectCity" name="selectCity">
+														        <option value="11054">Calgary</option>
+														        <option value="11055">Edmonton</option>
+														        <option value="11056">Lethbridge</option>
+														        <option value="11057">Medicine Hat</option>
+														        <option value="11058">Red Deer</option>
+														        <option value="11059">St. Albert</option>
+														        <option value="11060">Strathcona County</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="location_select" id="WC_StoreLocator_div_38">
+												<div class="location_select_button" id="WC_StoreLocator_div_39">
+													<a id="cityGo" class="button_primary" role="button" href="#">
+														<div class="left_border"></div>
+														<div class="button_text">GO</div>
+														<div class="right_border"></div>
+													</a>
+												</div>
+											</div>
+										</form>
+										<br clear="all">
+									</div>
+								</div>
+							</div>
 							<div class="col12 acol12 ccol12">
-								<h2 class="homeSectionTitle ">
+								<h2 class="homeSectionTitle marginBottom">
 									ALTO LAS CONDES
 								</h2>
 							</div>
@@ -83,83 +157,8 @@
 											
 											</div>
 										</div>
-										<div class="dijitContentPane tab" title="">
-											<!-- Elemento FP8 -->
-											<div class="ccol12 acol12 col12" >
-												<h2 class="gift_header">Store Locator</h2>
-												<div class="gift_content">
-													<a id="findNearest" class="button_primary" href="#">
-														<div class="left_border"></div>
-														<div class="button_text">Find stores near my current location</div>
-														<div class="right_border"></div>
-													</a>
-												</div>
-												<div class="gift_content">
-													<span class="instruction">Select a location to find a store near you.</span>
-													
-													<div id="location">
-														
-														<form name="searchByGeoNodeForm" id="searchByGeoNodeForm">
-
-															<div class="location_select" id="WC_StoreLocator_div_29">
-																<div class="location_select_label" id="WC_StoreLocator_div_30"><label for="selectCountry">Country:</label></div>
-																<div class="location_select_form" id="WC_StoreLocator_div_31">
-																	<select class="drop_down_country" id="selectCountry" name="selectCountry">
-																		<option value="11051">Canada</option>
-																		<option value="11052">United States</option>
-																	</select>
-																</div>
-															</div>
-															<div class="location_select" id="WC_StoreLocator_div_32">
-																<div class="location_select_label" id="WC_StoreLocator_div_33"><label for="selectState">State/Province:</label></div>
-																<div class="location_select_form" id="WC_StoreLocator_div_34">
-																	<div id="provinceSelections" class="dijitContentPane">
-																		<select class="drop_down_country" id="selectState">
-																		        <option value="11053">Alberta</option>
-																		        <option value="11061">British Columbia</option>
-																		        <option value="11082">Manitoba</option>
-																		        <option value="11084">New Brunswick</option>
-																		        <option value="11088">Newfoundland and Labrador</option>
-																		        <option value="11090">Nova Scotia</option>
-																		        <option value="11094">Ontario</option>
-																		        <option value="11138">Prince Edward Island</option>
-																		        <option value="11140">Quebec</option>
-																		        <option value="11159">Saskatchewan</option>
-																		</select>
-																	</div>						
-																</div>
-															</div>
-															<div class="location_select" id="WC_StoreLocator_div_35">
-																<div class="location_select_label" id="WC_StoreLocator_div_36"><label for="selectCity">City:</label></div>
-																<div class="location_select_form" id="WC_StoreLocator_div_37">
-																	<div id="citySelections"  class="dijitContentPane">
-																		<select class="drop_down_country" id="selectCity" name="selectCity">
-																		        <option value="11054">Calgary</option>
-																		        <option value="11055">Edmonton</option>
-																		        <option value="11056">Lethbridge</option>
-																		        <option value="11057">Medicine Hat</option>
-																		        <option value="11058">Red Deer</option>
-																		        <option value="11059">St. Albert</option>
-																		        <option value="11060">Strathcona County</option>
-																		</select>
-																	</div>
-																</div>
-															</div>
-															<div class="location_select" id="WC_StoreLocator_div_38">
-																<div class="location_select_button" id="WC_StoreLocator_div_39">
-																	<a id="cityGo" class="button_primary" role="button" href="#">
-																		<div class="left_border"></div>
-																		<div class="button_text">GO</div>
-																		<div class="right_border"></div>
-																	</a>
-																</div>
-															</div>
-														</form>
-														<br clear="all">
-													</div>
-												</div>
-											</div>
-											<div class="ccol6 acol12 col12">
+										<div class="dijitContentPane tab row margin-true" title="">
+											<div class="ccol6 acol12 col6">
 												<img src="../RECURSOS/img/alto_las_condes.png">
 												<div class="localData">
 													<p><span class="bold">Easy -Alto Las Condes</span><br/>
@@ -174,7 +173,7 @@
 													</p>
 												</div>
 											</div>
-											<div class="ccol6 acol12 col12">
+											<div class="ccol6 acol12 col6">
 												<table class="localHorario">
 													<tr>
 														<th>Fecha</th>
